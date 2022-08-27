@@ -190,7 +190,9 @@ export const data = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1660906395000
+  },
   "readingTime": {
     "minutes": 28,
     "words": 7448

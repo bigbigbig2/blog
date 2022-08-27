@@ -88,7 +88,9 @@ export const data = {
       ]
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1660906395000
+  },
   "readingTime": {
     "minutes": 8,
     "words": 2031

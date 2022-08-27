@@ -84,7 +84,9 @@ export const data = {
       "children": []
     }
   ],
-  "git": {},
+  "git": {
+    "updatedTime": 1660906395000
+  },
   "readingTime": {
     "minutes": 6,
     "words": 1479

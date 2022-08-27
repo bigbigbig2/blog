@@ -1409,6 +1409,90 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "材质与表面",
+    "subtitle": "漫反射材质、光泽材质、理想的反射/折射材料、完美的镜面反射、镜面折射、菲涅尔项、微表面材质、各向异性/各向同性材质、BRDF的测量",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Material材质",
+        "slug": "_1-material材质",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Diffuse / Lambertian Material (BRDF)漫反射材质",
+            "slug": "_1-diffuse-lambertian-material-brdf-漫反射材质",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Glossy material (BRDF)光泽材质",
+            "slug": "_2-glossy-material-brdf-光泽材质",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]Ideal reflective / refractive material理想的反射 /折射 材料",
+            "slug": "_3-ideal-reflective-refractive-material理想的反射-折射-材料",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]Perfect Specular Reflection完美的镜面反射",
+            "slug": "_4-perfect-specular-reflection完美的镜面反射",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]镜面折射 Specular Refraction",
+            "slug": "_5-镜面折射-specular-refraction",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]菲涅尔项 Fresnel Reflection / Term",
+            "slug": "_6-菲涅尔项-fresnel-reflection-term",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[7]Microfacet Material微表面材质",
+            "slug": "_7-microfacet-material微表面材质",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[8]Isotropic / Anisotropic Materials (BRDFs)各向异性/各向同性材质",
+            "slug": "_8-isotropic-anisotropic-materials-brdfs-各向异性-各向同性材质",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[9]BRDF性质总结",
+            "slug": "_9-brdf性质总结",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.BRDF 测量",
+        "slug": "_2-brdf-测量",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]基于图像的 BRDF 测量",
+            "slug": "_1-基于图像的-brdf-测量",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E6%9D%90%E8%B4%A8%E4%B8%8E%E8%A1%A8%E9%9D%A2.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "模块化系统",
     "subtitle": "模块化定义，历程，解析策略",
     "headers": [
@@ -2333,6 +2417,79 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "高级的光线传播与复杂外观建模",
+    "subtitle": "无偏光线传播、有偏的光线传播、高级外观建模：非表面模型(散射介质、头发/毛皮/纤维、颗粒材料)、表面模型(半透明材料BSSRDF、布料、详细模型)",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Unbiased light transport methods无偏光线传播",
+        "slug": "_1-unbiased-light-transport-methods无偏光线传播",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]双向路径追踪（BDPT）",
+            "slug": "_1-双向路径追踪-bdpt",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Metropolis Light Transport (MLT)",
+            "slug": "_2-metropolis-light-transport-mlt",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.有偏的光线传播",
+        "slug": "_2-有偏的光线传播",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Photon Mapping光子映射",
+            "slug": "_1-photon-mapping光子映射",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]顶点连接与合并VCM",
+            "slug": "_2-顶点连接与合并vcm",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.Instant Radiosity实时辐射度算法(IR)",
+        "slug": "_3-instant-radiosity实时辐射度算法-ir",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.高级外观建模",
+        "slug": "_4-高级外观建模",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Non-surface models非表面模型",
+            "slug": "_1-non-surface-models非表面模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Surface models表面模型",
+            "slug": "_2-surface-models表面模型",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E9%AB%98%E7%BA%A7%E5%85%89%E7%BA%BF%E4%BC%A0%E6%92%AD%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%A4%96%E8%A7%82%E5%BB%BA%E6%A8%A1.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -2440,6 +2597,14 @@ export const searchIndex = [
     "title": "Tags",
     "headers": [],
     "path": "/tags/SSR/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/%E6%9D%90%E8%B4%A8/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"

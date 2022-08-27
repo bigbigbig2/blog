@@ -35,6 +35,8 @@ export const pagesData = {
   "v-b5ff2e00": () => import(/* webpackChunkName: "v-b5ff2e00" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/图形学中的数学知识.html.js").then(({ data }) => data),
   // path: /posts/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR.html
   "v-02c3439c": () => import(/* webpackChunkName: "v-02c3439c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/服务端渲染SSR.html.js").then(({ data }) => data),
+  // path: /posts/%E6%9D%90%E8%B4%A8%E4%B8%8E%E8%A1%A8%E9%9D%A2.html
+  "v-74bbfe04": () => import(/* webpackChunkName: "v-74bbfe04" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/材质与表面.html.js").then(({ data }) => data),
   // path: /posts/%E6%A8%A1%E5%9D%97%E5%8C%96.html
   "v-562fabc0": () => import(/* webpackChunkName: "v-562fabc0" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/模块化.html.js").then(({ data }) => data),
   // path: /posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%90%84%E7%A7%8D%E6%B5%81%E6%B0%B4%E7%BA%BF.html
@@ -47,6 +49,8 @@ export const pagesData = {
   "v-c4e09fec": () => import(/* webpackChunkName: "v-c4e09fec" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/线性代数.html.js").then(({ data }) => data),
   // path: /posts/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF.html
   "v-75d99ce6": () => import(/* webpackChunkName: "v-75d99ce6" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/贝塞尔曲线.html.js").then(({ data }) => data),
+  // path: /posts/%E9%AB%98%E7%BA%A7%E5%85%89%E7%BA%BF%E4%BC%A0%E6%92%AD%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%A4%96%E8%A7%82%E5%BB%BA%E6%A8%A1.html
+  "v-36a1c02c": () => import(/* webpackChunkName: "v-36a1c02c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/高级光线传播与复杂外观建模.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /
@@ -75,6 +79,8 @@ export const pagesData = {
   "v-63f73328": () => import(/* webpackChunkName: "v-63f73328" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/数据结构与算法/index.html.js").then(({ data }) => data),
   // path: /tags/SSR/
   "v-cd35d44c": () => import(/* webpackChunkName: "v-cd35d44c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/SSR/index.html.js").then(({ data }) => data),
+  // path: /tags/%E6%9D%90%E8%B4%A8/
+  "v-8e602d92": () => import(/* webpackChunkName: "v-8e602d92" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/材质/index.html.js").then(({ data }) => data),
   // path: /tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%B3%BB%E7%BB%9F/
   "v-83b85b80": () => import(/* webpackChunkName: "v-83b85b80" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/模块化系统/index.html.js").then(({ data }) => data),
   // path: /tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/
