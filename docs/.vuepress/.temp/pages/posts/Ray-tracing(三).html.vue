@@ -1,4 +1,5 @@
-<template><h2 id="_1-monte-carlo-integration蒙特卡洛积分" tabindex="-1"><a class="header-anchor" href="#_1-monte-carlo-integration蒙特卡洛积分" aria-hidden="true">#</a> 1.Monte Carlo Integration蒙特卡洛积分</h2>
+<template><nav class="table-of-contents"><ul><li><RouterLink to="#_1-monte-carlo-integration蒙特卡洛积分">1.Monte Carlo Integration蒙特卡洛积分</RouterLink></li><li><RouterLink to="#_2-path-tracing路径追踪">2.Path Tracing路径追踪</RouterLink><ul><li><RouterLink to="#_1-路径追踪">[1]路径追踪</RouterLink></li><li><RouterLink to="#_2-russian-roulette俄罗斯轮盘赌">[2]Russian Roulette俄罗斯轮盘赌</RouterLink></li><li><RouterLink to="#_3-对光源进行采样">[3]对光源进行采样</RouterLink></li></ul></li></ul></nav>
+<h2 id="_1-monte-carlo-integration蒙特卡洛积分" tabindex="-1"><a class="header-anchor" href="#_1-monte-carlo-integration蒙特卡洛积分" aria-hidden="true">#</a> 1.Monte Carlo Integration蒙特卡洛积分</h2>
 <p><strong>蒙特卡洛积分</strong>（Monte Carlo Integration） 是一种积分的方法</p>
 <p>先脑补一下莱布尼茨解法，发现如果F(x)很复杂，不容易求出，那么可以使用蒙特卡洛积分来近似求解定积分，其实还有一个也是求近似的叫黎曼积分，这里就不张开
 <img src="https://img-blog.csdnimg.cn/94c4685567b64afb9f667967f0b54bbc.png" alt="在这里插入图片描述"></p>

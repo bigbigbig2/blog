@@ -63,13 +63,39 @@ export const data = {
           "level": 3,
           "title": "[3]光线和显式表面的求交",
           "slug": "_3-光线和显式表面的求交",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "光线与三角形求交",
+              "slug": "光线与三角形求交",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Möller Trumbore算法",
+              "slug": "moller-trumbore算法",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[4]Box包围盒",
           "slug": "_4-box包围盒",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "光线与二维包围盒求交",
+              "slug": "光线与二维包围盒求交",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "为什么要使用轴对齐？",
+              "slug": "为什么要使用轴对齐",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -88,7 +114,14 @@ export const data = {
           "level": 3,
           "title": "[2]Spatial Partitions空间划分",
           "slug": "_2-spatial-partitions空间划分",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "KD-tree",
+              "slug": "kd-tree",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -104,7 +137,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 12,
-    "words": 3058
+    "words": 3059
   },
   "filePathRelative": "posts/光线追踪(一）.md"
 }

@@ -1,4 +1,5 @@
-<template><p>为了正确描述光照的属性，需要引入辐射度量学</p>
+<template><nav class="table-of-contents"><ul><li><RouterLink to="#_1-辐射能量和通量-功率">[1]辐射能量和通量（功率）</RouterLink><ul><li><RouterLink to="#radiant-flux辐射通量">Radiant Flux辐射通量</RouterLink></li></ul></li><li><RouterLink to="#_2-单位立体角">[2]单位立体角</RouterLink></li><li><RouterLink to="#_3-radiant-intensity辐射强度">[3]Radiant Intensity辐射强度</RouterLink></li><li><RouterLink to="#_4-irradiance辐照度">[4]Irradiance辐照度</RouterLink></li><li><RouterLink to="#_5-radiance辐射率">[5]Radiance辐射率</RouterLink><ul><li><RouterLink to="#irradiance-vs-radiance">Irradiance vs. Radiance</RouterLink></li></ul></li><li><RouterLink to="#_6-双向反射分布函数brdf">[6]双向反射分布函数BRDF</RouterLink><ul><li><RouterLink to="#反射方程">反射方程</RouterLink></li></ul></li><li><RouterLink to="#_7-the-rendering-equation渲染方程">[7]The Rendering Equation渲染方程</RouterLink><ul><li><RouterLink to="#渲染方程应用">渲染方程应用</RouterLink></li></ul></li></ul></nav>
+<p>为了正确描述光照的属性，需要引入辐射度量学</p>
 <p><strong>辐射度量学</strong>（Radiometry）：用于衡量光照的系统和单位，它能够精确测量光的空间特性、描述光线的物理性质，在物理上更准确地进行光照计算</p>
 <h2 id="_1-辐射能量和通量-功率" tabindex="-1"><a class="header-anchor" href="#_1-辐射能量和通量-功率" aria-hidden="true">#</a> [1]辐射能量和通量（功率）</h2>
 <p>Radiant Energy（辐射能量）</p>

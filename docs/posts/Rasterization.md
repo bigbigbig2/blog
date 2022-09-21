@@ -7,6 +7,7 @@ headerImage: /img/in-post/bu/1.jpg
 tags:
   - 计算机图形学
 ---
+[[toc]]
 
 ## 1.屏幕	
 

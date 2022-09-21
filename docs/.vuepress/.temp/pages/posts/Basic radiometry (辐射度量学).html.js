@@ -93,7 +93,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 8,
-    "words": 2031
+    "words": 2032
   },
   "filePathRelative": "posts/Basic radiometry (辐射度量学).md"
 }

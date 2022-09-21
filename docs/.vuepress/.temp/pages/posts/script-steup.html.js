@@ -36,7 +36,20 @@ export const data = {
           "level": 3,
           "title": "3，setup参数",
           "slug": "_3-setup参数",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "props",
+              "slug": "props",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "context上下文",
+              "slug": "context上下文",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -55,13 +68,45 @@ export const data = {
           "level": 3,
           "title": "2，defineExpose",
           "slug": "_2-defineexpose",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "子组件暴露属性和方法，给父组件引用",
+              "slug": "子组件暴露属性和方法-给父组件引用",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "父组件调用子组件方法和属性",
+              "slug": "父组件调用子组件方法和属性",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "在setup如何定义变量(字符串,对象,数组)",
+              "slug": "在setup如何定义变量-字符串-对象-数组",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "3、Watch和WatchEffect",
           "slug": "_3、watch和watcheffect",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "基本使用：",
+              "slug": "基本使用",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "watch与 watchEffect 比较，推荐watch监听",
+              "slug": "watch与-watcheffect-比较-推荐watch监听",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,

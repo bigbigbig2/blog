@@ -9,7 +9,7 @@ tags:
   - 计算机图形学
   - 光线追踪
 ---
-
+[[toc]]
 ## 1.Monte Carlo Integration蒙特卡洛积分
 
 **蒙特卡洛积分**（Monte Carlo Integration） 是一种积分的方法

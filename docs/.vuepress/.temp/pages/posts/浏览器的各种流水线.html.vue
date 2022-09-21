@@ -1,4 +1,5 @@
-<template><h2 id="_1-http请求流程" tabindex="-1"><a class="header-anchor" href="#_1-http请求流程" aria-hidden="true">#</a> 1.HTTP请求流程</h2>
+<template><nav class="table-of-contents"><ul><li><RouterLink to="#一、http请求流程">一、HTTP请求流程</RouterLink><ul><li><RouterLink to="#_1-构建请求">[1]构建请求</RouterLink></li><li><RouterLink to="#_2-查找缓存">[2]查找缓存</RouterLink></li><li><RouterLink to="#_3-准备ip地址和端口">[3]准备IP地址和端口</RouterLink></li><li><RouterLink to="#_4-等待-tcp-队列">[4]等待 TCP 队列</RouterLink></li><li><RouterLink to="#_5-建立-tcp-连接">[5]建立 TCP 连接</RouterLink></li><li><RouterLink to="#_6-发送-http-请求">[6]发送 HTTP 请求</RouterLink></li><li><RouterLink to="#_7-返回请求">[7]返回请求</RouterLink></li><li><RouterLink to="#_8-断开连接">[8]断开连接</RouterLink></li><li><RouterLink to="#_9-重定向">[9]重定向</RouterLink></li></ul></li><li><RouterLink to="#二、从输入url到页面展示流程">二、从输入URL到页面展示流程</RouterLink><ul><li><RouterLink to="#_1-用户输入">[1]用户输入</RouterLink></li><li><RouterLink to="#_2-url-请求过程">[2]URL 请求过程</RouterLink><ul><li><RouterLink to="#响应数据类型处理">响应数据类型处理</RouterLink></li></ul></li><li><RouterLink to="#_3-准备渲染进程">[3]准备渲染进程</RouterLink></li><li><RouterLink to="#_4-提交文档">[4]提交文档</RouterLink></li><li><RouterLink to="#_5-渲染阶段">[5]渲染阶段</RouterLink></li><li><RouterLink to="#_6-总结">[6]总结</RouterLink></li></ul></li><li><RouterLink to="#三、页面渲染流程">三、页面渲染流程</RouterLink><ul><li><RouterLink to="#_1-构建-dom-树">[1]构建 DOM 树</RouterLink></li><li><RouterLink to="#_2-样式计算-recalculate-style">[2]样式计算（Recalculate Style）</RouterLink><ul><li><RouterLink to="#把-css-转换为浏览器能够理解的结构">把 CSS 转换为浏览器能够理解的结构</RouterLink></li><li><RouterLink to="#转换样式表中的属性值-使其标准化">转换样式表中的属性值，使其标准化</RouterLink></li><li><RouterLink to="#计算出-dom-树中每个节点的具体样式">计算出 DOM 树中每个节点的具体样式</RouterLink></li></ul></li><li><RouterLink to="#_3-布局阶段">[3]布局阶段</RouterLink><ul><li><RouterLink to="#创建布局树">创建布局树</RouterLink></li><li><RouterLink to="#布局计算">布局计算</RouterLink></li></ul></li><li><RouterLink to="#_4-分层">[4]分层</RouterLink></li><li><RouterLink to="#_5-图层绘制">[5]图层绘制</RouterLink></li><li><RouterLink to="#_5-栅格化-raster-操作">[5]栅格化（raster）操作</RouterLink></li><li><RouterLink to="#_6-合成和显示">[6]合成和显示</RouterLink></li><li><RouterLink to="#_7-页面渲染流程小结">[7]页面渲染流程小结</RouterLink></li><li><RouterLink to="#_8-相关概念补充">[8]相关概念补充</RouterLink><ul><li><RouterLink to="#渲染进程与gpu进程">渲染进程与GPU进程</RouterLink></li><li><RouterLink to="#更新了元素的几何属性-重排">更新了元素的几何属性（重排）</RouterLink></li><li><RouterLink to="#更新元素的绘制属性-重绘">更新元素的绘制属性（重绘）</RouterLink></li><li><RouterLink to="#直接合成阶段">直接合成阶段</RouterLink></li></ul></li></ul></li></ul></nav>
+<h2 id="一、http请求流程" tabindex="-1"><a class="header-anchor" href="#一、http请求流程" aria-hidden="true">#</a> 一、HTTP请求流程</h2>
 <p>在url栏中输入一个网址</p>
 <h3 id="_1-构建请求" tabindex="-1"><a class="header-anchor" href="#_1-构建请求" aria-hidden="true">#</a> [1]构建请求</h3>
 <div class="language-http ext-http line-numbers-mode"><pre v-pre class="language-http"><code>#首先，浏览器构建请求行信息
@@ -51,7 +52,7 @@ GET /index.html HTTP1.1
 <p>打开<code>geekbang.org</code>后</p>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/b86c6f4190464e879fc60b21c36fb4c0.png" alt="image-20220419200624584"></p>
 <p>响应行返回的状态码是 301，状态 301  就是告诉浏览器，我需要重定向到另外一个网址，而需要重定向的网址正是包含在响应头的 Location 字段中，接下来，浏览器获取 Location 字段中的地址，并使用该地址重新导航，这就是一个完整重定向的执行流程。这也就解释了为什么输入的是 geekbang.org，最终打开的却是  https://www.geekbang.org 了。</p>
-<h2 id="_2-从输入url到页面展示流程" tabindex="-1"><a class="header-anchor" href="#_2-从输入url到页面展示流程" aria-hidden="true">#</a> 2.从输入URL到页面展示流程</h2>
+<h2 id="二、从输入url到页面展示流程" tabindex="-1"><a class="header-anchor" href="#二、从输入url到页面展示流程" aria-hidden="true">#</a> 二、从输入URL到页面展示流程</h2>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/a139c1bc11f7ba3434d57ab681d337a0.png" alt="image-20220324110435465"></p>
 <ul>
 <li>浏览器进程主要负责用户交互、子进程管理和文件储存等功能。</li>
@@ -163,7 +164,7 @@ https://www.geekbang.org:8080
 3. 浏览器进程接收到确认消息后更新浏览器界面状态：安全、地址栏url、前进后退的历史状态、更新web页面</p>
 </li>
 </ol>
-<h2 id="_3-渲染流程" tabindex="-1"><a class="header-anchor" href="#_3-渲染流程" aria-hidden="true">#</a> 3.渲染流程</h2>
+<h2 id="三、页面渲染流程" tabindex="-1"><a class="header-anchor" href="#三、页面渲染流程" aria-hidden="true">#</a> 三、页面渲染流程</h2>
 <p>渲染进程拿到浏览器主进程提交的文档（HTML、CSS和JavaScript）是如何转变成我们常见的页面的。</p>
 <p>渲染阶段至关重要，关乎优化页面卡顿问题</p>
 <p><img src="https://img-blog.csdnimg.cn/2d1780f24e2448fdae6abff8f7076293.png" alt="在这里插入图片描述"></p>
@@ -288,7 +289,7 @@ https://www.geekbang.org:8080
 <h3 id="_6-合成和显示" tabindex="-1"><a class="header-anchor" href="#_6-合成和显示" aria-hidden="true">#</a> [6]合成和显示</h3>
 <p>一旦所有图块都被光栅化，合成线程就会生成一个绘制图块的命令——“<code>DrawQuad</code>”，然后将该命令提交给浏览器进程。</p>
 <p>浏览器进程里面有一个叫 <code>viz</code> 的组件，用来接收合成线程发过来的 <code>DrawQuad</code> 命令，然后根据 <code>DrawQuad</code>  命令，将其页面内容绘制到内存中，最后再将内存显示在屏幕上。</p>
-<h3 id="_7-渲染流水线大总结" tabindex="-1"><a class="header-anchor" href="#_7-渲染流水线大总结" aria-hidden="true">#</a> [7]渲染流水线大总结</h3>
+<h3 id="_7-页面渲染流程小结" tabindex="-1"><a class="header-anchor" href="#_7-页面渲染流程小结" aria-hidden="true">#</a> [7]页面渲染流程小结</h3>
 <p><img src="https://img-blog.csdnimg.cn/be20455e4f3041aeb19ded686283ca50.png" alt="在这里插入图片描述"></p>
 <ol>
 <li>渲染进程将 HTML 内容转换为能够读懂的  DOM 树结构。</li>
@@ -301,6 +302,11 @@ https://www.geekbang.org:8080
 <li>浏览器进程根据 DrawQuad 消息生成页面，并显示到显示器上。</li>
 </ol>
 <h3 id="_8-相关概念补充" tabindex="-1"><a class="header-anchor" href="#_8-相关概念补充" aria-hidden="true">#</a> [8]相关概念补充</h3>
+<h4 id="渲染进程与gpu进程" tabindex="-1"><a class="header-anchor" href="#渲染进程与gpu进程" aria-hidden="true">#</a> 渲染进程与GPU进程</h4>
+<ul>
+<li>浏览器内核就是浏览器渲染进程，从接收下载文件后再到呈现整个页面的过程，由浏览器渲染进程负责</li>
+<li>负责3D绘制和硬件加速</li>
+</ul>
 <h4 id="更新了元素的几何属性-重排" tabindex="-1"><a class="header-anchor" href="#更新了元素的几何属性-重排" aria-hidden="true">#</a> 更新了元素的几何属性（重排）</h4>
 <p><img src="https://img-blog.csdnimg.cn/7cb2473f6c12478193b028cfbc298ee5.png" alt="在这里插入图片描述"></p>
 <p>如果你通过 JavaScript 或者 CSS 修改元素的几何位置属性，例如改变元素的宽度、高度等，那么浏览器会触发重新布局，解析之后的一系列子阶段，这个过程就叫重排。无疑，重排需要更新完整的渲染流水线，所以开销也是最大的。</p>

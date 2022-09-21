@@ -62,7 +62,14 @@ export const data = {
           "level": 3,
           "title": "[7]Microfacet Material微表面材质",
           "slug": "_7-microfacet-material微表面材质",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "微表面材质的BRDF",
+              "slug": "微表面材质的brdf",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -93,11 +100,11 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1661603965000
   },
   "readingTime": {
     "minutes": 9,
-    "words": 2256
+    "words": 2257
   },
   "filePathRelative": "posts/材质与表面.md"
 }

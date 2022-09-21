@@ -31,13 +31,57 @@ export const data = {
           "level": 3,
           "title": "[1]implicit隐式几何",
           "slug": "_1-implicit隐式几何",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Algebraic surfaces代数曲面",
+              "slug": "algebraic-surfaces代数曲面",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Constructive solid geometry（CSG）建设性实体几何形状",
+              "slug": "constructive-solid-geometry-csg-建设性实体几何形状",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Distance Functions",
+              "slug": "distance-functions",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Level Set Methods水平集",
+              "slug": "level-set-methods水平集",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[2]Explicit显式几何",
           "slug": "_2-explicit显式几何",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Point Cloud",
+              "slug": "point-cloud",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Polygon Mesh多边形网格",
+              "slug": "polygon-mesh多边形网格",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Wavefront对象文件（.OBJ）格式",
+              "slug": "wavefront对象文件-obj-格式",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -50,7 +94,14 @@ export const data = {
           "level": 3,
           "title": "[1]Bézier Curves",
           "slug": "_1-bezier-curves",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "de Casteljau算法",
+              "slug": "de-casteljau算法",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -88,13 +139,39 @@ export const data = {
           "level": 3,
           "title": "[1]Mesh subdivision网格细分",
           "slug": "_1-mesh-subdivision网格细分",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Loop Subdivision",
+              "slug": "loop-subdivision",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Catmull-Clark 细分(通用网格)",
+              "slug": "catmull-clark-细分-通用网格",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[2]Mesh simplification网格简化",
           "slug": "_2-mesh-simplification网格简化",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Collapsing An Edge边坍缩",
+              "slug": "collapsing-an-edge边坍缩",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Quadric Error Metrics（二次误差度量）",
+              "slug": "quadric-error-metrics-二次误差度量",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -141,7 +218,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 16,
-    "words": 4147
+    "words": 4148
   },
   "filePathRelative": "posts/几何.md"
 }

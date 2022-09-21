@@ -42,13 +42,33 @@ export const data = {
           "level": 3,
           "title": "[2]配置文件说明",
           "slug": "_2-配置文件说明",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "环境变量的权重",
+              "slug": "环境变量的权重",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[3]配置文件中的变量名问题",
           "slug": "_3-配置文件中的变量名问题",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "vuecli",
+              "slug": "vuecli",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "vite",
+              "slug": "vite",
+              "children": []
+            }
+          ]
         }
       ]
     }

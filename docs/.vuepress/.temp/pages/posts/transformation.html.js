@@ -94,7 +94,20 @@ export const data = {
           "level": 3,
           "title": "[2]Projection (投影) transformation",
           "slug": "_2-projection-投影-transformation",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Orthographic (正交) projection",
+              "slug": "orthographic-正交-projection",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Perspective (透视) projection",
+              "slug": "perspective-透视-projection",
+              "children": []
+            }
+          ]
         }
       ]
     }
@@ -104,7 +117,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 18,
-    "words": 3944
+    "words": 3945
   },
   "filePathRelative": "posts/transformation.md"
 }

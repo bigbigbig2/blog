@@ -44,13 +44,51 @@ export const data = {
           "level": 3,
           "title": "[4]思考向量的特点方式",
           "slug": "_4-思考向量的特点方式",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "向量是空间中的箭头",
+              "slug": "向量是空间中的箭头",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "向量是有序的数字列表",
+              "slug": "向量是有序的数字列表",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "三维空间中的向量",
+              "slug": "三维空间中的向量",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[5]向量加法和向量数乘",
           "slug": "_5-向量加法和向量数乘",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "向量加法",
+              "slug": "向量加法",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "向量数乘",
+              "slug": "向量数乘",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "总结",
+              "slug": "总结",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -69,7 +107,20 @@ export const data = {
           "level": 3,
           "title": "[2]张成的空间",
           "slug": "_2-张成的空间",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "二维向量的张成的空间",
+              "slug": "二维向量的张成的空间",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "三维向量的张成的空间",
+              "slug": "三维向量的张成的空间",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -118,7 +169,20 @@ export const data = {
           "level": 3,
           "title": "[4]使用矩阵来线性线性变换",
           "slug": "_4-使用矩阵来线性线性变换",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "旋转变换",
+              "slug": "旋转变换",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "剪切变换",
+              "slug": "剪切变换",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -332,7 +396,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 33,
-    "words": 8700
+    "words": 8701
   },
   "filePathRelative": "posts/线性代数.md"
 }

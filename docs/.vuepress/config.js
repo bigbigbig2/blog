@@ -9,6 +9,7 @@ module.exports = {
   theme: "vuepress-theme-gungnir",
 
   themeConfig: {
+    catalog: true,
     docsDir: "docs",
     // lastUpdated: true,  //最后更新时间aa
     searchIcon: "ri-search-2-line",
@@ -21,7 +22,7 @@ module.exports = {
             icon: "fa-fort-awesome"
         },
         {
-            text: "标签",
+            text: "文章分类",
             link: "/tags/",
             icon: "fa-tag"
         },
@@ -91,14 +92,17 @@ module.exports = {
       ga:"G-D9PMLNQ1HD"
 
     },
-
-    markdown: {
-      extractHeaders: {
-        level: [2, 3, 4, 5,6]
-      },
-      code: {
-        lineNumbers: false
-      }
+    
+  },
+  markdown: {
+    extractHeaders: {
+      level: [2, 3, 4, 5,6]
+    },
+    toc:{
+      level: [2, 3, 4, 5, 6]
+    },
+    code: {
+      lineNumbers: true
     }
-  }
+  },
 };

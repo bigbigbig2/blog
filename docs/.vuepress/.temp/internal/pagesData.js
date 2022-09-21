@@ -9,6 +9,10 @@ export const pagesData = {
   "v-364cdc28": () => import(/* webpackChunkName: "v-364cdc28" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/Basic radiometry (辐射度量学).html.js").then(({ data }) => data),
   // path: /posts/cesium%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AC%E6%8D%A2.html
   "v-75417d86": () => import(/* webpackChunkName: "v-75417d86" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/cesium中的坐标系统与转换.html.js").then(({ data }) => data),
+  // path: /posts/plsql.html
+  "v-54caea7c": () => import(/* webpackChunkName: "v-54caea7c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/plsql.html.js").then(({ data }) => data),
+  // path: /posts/PostgreSQL%E7%B4%A2%E5%BC%95.html
+  "v-24f00c16": () => import(/* webpackChunkName: "v-24f00c16" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/PostgreSQL索引.html.js").then(({ data }) => data),
   // path: /posts/Rasterization.html
   "v-01ae88c7": () => import(/* webpackChunkName: "v-01ae88c7" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/Rasterization.html.js").then(({ data }) => data),
   // path: /posts/Ray-tracing(%E4%B8%89).html
@@ -33,6 +37,10 @@ export const pagesData = {
   "v-2a39674b": () => import(/* webpackChunkName: "v-2a39674b" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/哈夫曼树.html.js").then(({ data }) => data),
   // path: /posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86.html
   "v-b5ff2e00": () => import(/* webpackChunkName: "v-b5ff2e00" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/图形学中的数学知识.html.js").then(({ data }) => data),
+  // path: /posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E6%A2%B3%E7%90%86%E5%B0%8F%E7%BB%93.html
+  "v-3dfbaed5": () => import(/* webpackChunkName: "v-3dfbaed5" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/图形学坐标系统梳理小结.html.js").then(({ data }) => data),
+  // path: /posts/%E5%9C%B0%E5%9B%BE%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80.html
+  "v-1f001066": () => import(/* webpackChunkName: "v-1f001066" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/地图学数学基础.html.js").then(({ data }) => data),
   // path: /posts/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR.html
   "v-02c3439c": () => import(/* webpackChunkName: "v-02c3439c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/服务端渲染SSR.html.js").then(({ data }) => data),
   // path: /posts/%E6%9D%90%E8%B4%A8%E4%B8%8E%E8%A1%A8%E9%9D%A2.html
@@ -43,12 +51,16 @@ export const pagesData = {
   "v-bf9bc1da": () => import(/* webpackChunkName: "v-bf9bc1da" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/浏览器的各种流水线.html.js").then(({ data }) => data),
   // path: /posts/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.html
   "v-2970661c": () => import(/* webpackChunkName: "v-2970661c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/环境变量.html.js").then(({ data }) => data),
+  // path: /posts/%E7%9B%B8%E6%9C%BA%E3%80%81%E9%95%9C%E5%A4%B4%E3%80%81%E5%85%89%E5%9C%BA.html
+  "v-4a4102ce": () => import(/* webpackChunkName: "v-4a4102ce" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/相机、镜头、光场.html.js").then(({ data }) => data),
   // path: /posts/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A2%B3%E7%90%86.html
   "v-2b611e2f": () => import(/* webpackChunkName: "v-2b611e2f" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/空间数据库基本理论梳理.html.js").then(({ data }) => data),
   // path: /posts/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html
   "v-c4e09fec": () => import(/* webpackChunkName: "v-c4e09fec" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/线性代数.html.js").then(({ data }) => data),
   // path: /posts/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF.html
   "v-75d99ce6": () => import(/* webpackChunkName: "v-75d99ce6" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/贝塞尔曲线.html.js").then(({ data }) => data),
+  // path: /posts/%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%84%9F%E7%9F%A5.html
+  "v-a823d7fe": () => import(/* webpackChunkName: "v-a823d7fe" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/颜色与感知.html.js").then(({ data }) => data),
   // path: /posts/%E9%AB%98%E7%BA%A7%E5%85%89%E7%BA%BF%E4%BC%A0%E6%92%AD%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%A4%96%E8%A7%82%E5%BB%BA%E6%A8%A1.html
   "v-36a1c02c": () => import(/* webpackChunkName: "v-36a1c02c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/高级光线传播与复杂外观建模.html.js").then(({ data }) => data),
   // path: /404.html
@@ -67,6 +79,12 @@ export const pagesData = {
   "v-2971fce2": () => import(/* webpackChunkName: "v-2971fce2" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/cesium/index.html.js").then(({ data }) => data),
   // path: /tags/%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F/
   "v-9feff422": () => import(/* webpackChunkName: "v-9feff422" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/坐标系统/index.html.js").then(({ data }) => data),
+  // path: /tags/GIS/
+  "v-cd41080a": () => import(/* webpackChunkName: "v-cd41080a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/GIS/index.html.js").then(({ data }) => data),
+  // path: /tags/PostgreSQL/
+  "v-1027b75e": () => import(/* webpackChunkName: "v-1027b75e" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/PostgreSQL/index.html.js").then(({ data }) => data),
+  // path: /tags/PL/pgSQL/
+  "v-6cce4aee": () => import(/* webpackChunkName: "v-6cce4aee" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/PL/pgSQL/index.html.js").then(({ data }) => data),
   // path: /tags/vue/
   "v-cd14fe74": () => import(/* webpackChunkName: "v-cd14fe74" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/vue/index.html.js").then(({ data }) => data),
   // path: /tags/ts/
@@ -105,4 +123,6 @@ export const pagesData = {
   "v-3a1f88c3": () => import(/* webpackChunkName: "v-3a1f88c3" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/3/index.html.js").then(({ data }) => data),
   // path: /page/4/
   "v-3a1f88e2": () => import(/* webpackChunkName: "v-3a1f88e2" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/4/index.html.js").then(({ data }) => data),
+  // path: /page/5/
+  "v-3a1f8901": () => import(/* webpackChunkName: "v-3a1f8901" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/5/index.html.js").then(({ data }) => data),
 }

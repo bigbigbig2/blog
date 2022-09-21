@@ -30,13 +30,51 @@ export const data = {
           "level": 3,
           "title": "2，哈夫曼树定义与原理",
           "slug": "_2-哈夫曼树定义与原理",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "[1]一些名词概念：",
+              "slug": "_1-一些名词概念",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "[2]如何判断一颗树为哈夫曼树",
+              "slug": "_2-如何判断一颗树为哈夫曼树",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "[3]哈夫曼算法描述",
+              "slug": "_3-哈夫曼算法描述",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "3，哈夫曼编码",
           "slug": "_3-哈夫曼编码",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "[1]编码",
+              "slug": "_1-编码",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "[2]解码",
+              "slug": "_2-解码",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "[3]小结",
+              "slug": "_3-小结",
+              "children": []
+            }
+          ]
         }
       ]
     }

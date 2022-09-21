@@ -50,7 +50,51 @@ export const data = {
           "level": 3,
           "title": "AMD",
           "slug": "amd",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "requireJS（库）",
+              "slug": "requirejs-库",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "独立模块作用域",
+              "slug": "独立模块作用域",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "导出模块内部数据(return)",
+              "slug": "导出模块内部数据-return",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "导入外部模块数据",
+              "slug": "导入外部模块数据",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "requireJS的 CommonJS 风格",
+              "slug": "requirejs的-commonjs-风格",
+              "children": [
+                {
+                  "level": 5,
+                  "title": "导出模块内部数据",
+                  "slug": "导出模块内部数据",
+                  "children": []
+                },
+                {
+                  "level": 5,
+                  "title": "导入外部模块数据",
+                  "slug": "导入外部模块数据-1",
+                  "children": []
+                }
+              ]
+            }
+          ]
         },
         {
           "level": 3,
@@ -81,7 +125,20 @@ export const data = {
           "level": 3,
           "title": "导入外部模块数据",
           "slug": "导入外部模块数据-2",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "静态导入",
+              "slug": "静态导入",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "动态导入",
+              "slug": "动态导入",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -136,7 +193,20 @@ export const data = {
           "level": 3,
           "title": "模块编译",
           "slug": "模块编译",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "module 选项",
+              "slug": "module-选项",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "模块导出默认值的问题",
+              "slug": "模块导出默认值的问题",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -173,13 +243,71 @@ export const data = {
           "level": 3,
           "title": "相对与非相对模块导入",
           "slug": "相对与非相对模块导入",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "相对导入",
+              "slug": "相对导入",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "非相对导入",
+              "slug": "非相对导入",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "模块解析策略",
           "slug": "模块解析策略",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "--moduleResolution 选项",
+              "slug": "moduleresolution-选项",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Classic 模块解析策略",
+              "slug": "classic-模块解析策略",
+              "children": [
+                {
+                  "level": 5,
+                  "title": "相对导入",
+                  "slug": "相对导入-1",
+                  "children": []
+                },
+                {
+                  "level": 5,
+                  "title": "非相对导入",
+                  "slug": "非相对导入-1",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "title": "Node 模块解析策略",
+              "slug": "node-模块解析策略",
+              "children": [
+                {
+                  "level": 5,
+                  "title": "相对导入",
+                  "slug": "相对导入-2",
+                  "children": []
+                },
+                {
+                  "level": 5,
+                  "title": "非相对导入",
+                  "slug": "非相对导入-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }

@@ -9,6 +9,7 @@ export const data = {
     "subtitle": "无偏光线传播、有偏的光线传播、高级外观建模：非表面模型(散射介质、头发/毛皮/纤维、颗粒材料)、表面模型(半透明材料BSSRDF、布料、详细模型)",
     "date": "2022-08-27T00:00:00.000Z",
     "useHeaderImage": true,
+    "catalog": true,
     "headerImage": "/img/in-post/2022-8-27/2.jpg",
     "tags": [
       "计算机图形学",
@@ -70,23 +71,73 @@ export const data = {
           "level": 3,
           "title": "[1]Non-surface models非表面模型",
           "slug": "_1-non-surface-models非表面模型",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Participating media散射介质",
+              "slug": "participating-media散射介质",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Hair/fur/fiber (BCSDF)头发/毛皮/纤维",
+              "slug": "hair-fur-fiber-bcsdf-头发-毛皮-纤维",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Kajiya-Kay Model",
+              "slug": "kajiya-kay-model",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Marschner Model",
+              "slug": "marschner-model",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Granular material颗粒材料",
+              "slug": "granular-material颗粒材料",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[2]Surface models表面模型",
           "slug": "_2-surface-models表面模型",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Translucent material (BSSRDF) 半透明材料",
+              "slug": "translucent-material-bssrdf-半透明材料",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Cloth布料",
+              "slug": "cloth布料",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "Detailed material (non-statistical BRDF)详细模型",
+              "slug": "detailed-material-non-statistical-brdf-详细模型",
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1661603965000
   },
   "readingTime": {
     "minutes": 9,
-    "words": 2352
+    "words": 2353
   },
   "filePathRelative": "posts/高级光线传播与复杂外观建模.md"
 }

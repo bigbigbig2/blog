@@ -1,4 +1,5 @@
 export const themeData = {
+  "catalog": true,
   "docsDir": "docs",
   "searchIcon": "ri-search-2-line",
   "languageIcon": "hi-translate",
@@ -10,7 +11,7 @@ export const themeData = {
       "icon": "fa-fort-awesome"
     },
     {
-      "text": "标签",
+      "text": "文章分类",
       "link": "/tags/",
       "icon": "fa-tag"
     },
@@ -59,27 +60,12 @@ export const themeData = {
     }
   },
   "footer": "\n    &copy; <a href=\"https://github.com/bigbigbig2\" target=\"_blank\">2021-2022</a>\n    <br>\n    Powered by VuePress & Gungnir\n    ",
-  "markdown": {
-    "extractHeaders": {
-      "level": [
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    "code": {
-      "lineNumbers": false
-    }
-  },
   "locales": {
     "/": {
       "selectLanguageName": "English"
     }
   },
   "hitokoto": false,
-  "catalog": true,
   "langIcon": "hi-translate",
   "repo": null,
   "sidebar": "auto",

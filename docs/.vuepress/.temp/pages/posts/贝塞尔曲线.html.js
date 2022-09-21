@@ -79,13 +79,39 @@ export const data = {
           "level": 3,
           "title": "[1]绘制二次贝塞尔曲线",
           "slug": "_1-绘制二次贝塞尔曲线",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Q",
+              "slug": "q",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "T",
+              "slug": "t",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[2]绘制三次贝塞尔曲线",
           "slug": "_2-绘制三次贝塞尔曲线",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "C",
+              "slug": "c",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "S",
+              "slug": "s",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -101,7 +127,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 14,
-    "words": 3265
+    "words": 3266
   },
   "filePathRelative": "posts/贝塞尔曲线.md"
 }

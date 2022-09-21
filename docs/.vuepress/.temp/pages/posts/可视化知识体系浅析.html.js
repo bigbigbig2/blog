@@ -30,7 +30,14 @@ export const data = {
           "level": 3,
           "title": "[1]HTML+CSS",
           "slug": "_1-html-css",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "用 HTML+CSS 实现可视化的缺点",
+              "slug": "用-html-css-实现可视化的缺点",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -42,7 +49,14 @@ export const data = {
           "level": 3,
           "title": "[3]Canvas2D",
           "slug": "_3-canvas2d",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "绘图原理",
+              "slug": "绘图原理",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -54,7 +68,20 @@ export const data = {
           "level": 3,
           "title": "[5]总结",
           "slug": "_5-总结",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "选择",
+              "slug": "选择",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "关于坐标系",
+              "slug": "关于坐标系",
+              "children": []
+            }
+          ]
         }
       ]
     },

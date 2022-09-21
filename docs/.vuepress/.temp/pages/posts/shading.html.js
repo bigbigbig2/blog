@@ -31,13 +31,39 @@ export const data = {
           "level": 3,
           "title": "[1]Diffuse(漫反射)",
           "slug": "_1-diffuse-漫反射",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "兰伯特余弦定律",
+              "slug": "兰伯特余弦定律",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "小结",
+              "slug": "小结",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
           "title": "[2]Specular(高光)",
           "slug": "_2-specular-高光",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "半程向量",
+              "slug": "半程向量",
+              "children": []
+            },
+            {
+              "level": 4,
+              "title": "公式推导",
+              "slug": "公式推导",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -148,7 +174,14 @@ export const data = {
           "level": 3,
           "title": "[7]Mipmap",
           "slug": "_7-mipmap",
-          "children": []
+          "children": [
+            {
+              "level": 4,
+              "title": "Trilinear Interpolation三线性插值",
+              "slug": "trilinear-interpolation三线性插值",
+              "children": []
+            }
+          ]
         },
         {
           "level": 3,
@@ -195,7 +228,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 28,
-    "words": 7448
+    "words": 7449
   },
   "filePathRelative": "posts/shading.md"
 }

@@ -54,7 +54,7 @@ export const data = {
   },
   "readingTime": {
     "minutes": 10,
-    "words": 2414
+    "words": 2415
   },
   "filePathRelative": "posts/Ray-tracing(三).md"
 }

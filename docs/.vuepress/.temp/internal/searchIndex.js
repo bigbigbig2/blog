@@ -165,24 +165,736 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]WGS84转Cartesian3",
             "slug": "_2-wgs84转cartesian3",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "(1)通过弧度或经纬度直接转换",
+                "slug": "_1-通过弧度或经纬度直接转换",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "角度制的WGS84转Cartesian3",
+                    "slug": "角度制的wgs84转cartesian3",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "弧度制WGS84转Cartesian3",
+                    "slug": "弧度制wgs84转cartesian3",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "(2)使用椭球体转换",
+                "slug": "_2-使用椭球体转换",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "角度制的WGS84转Cartesian3",
+                    "slug": "角度制的wgs84转cartesian3-1",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "弧度制WGS84转Cartesian3",
+                    "slug": "弧度制wgs84转cartesian3-1",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[3]Cartesian3转WGS84",
             "slug": "_3-cartesian3转wgs84",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "(1)直接转换",
+                "slug": "_1-直接转换",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "(2)通过椭球体转换",
+                "slug": "_2-通过椭球体转换",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[4]Cartesian2与Cartesian3互转",
             "slug": "_4-cartesian2与cartesian3互转",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "(1)Cartesian2转Cartesian3",
+                "slug": "_1-cartesian2转cartesian3",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "(2)Cartesian3转Cartesian2",
+                "slug": "_2-cartesian3转cartesian2",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "参考：",
+                "slug": "参考",
+                "children": []
+              }
+            ]
           }
         ]
       }
     ],
     "path": "/posts/cesium%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AC%E6%8D%A2.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "PL/pgSQL",
+    "subtitle": "PL/pgSQL基本语法、用户自定义函数、存储过程、Cursor游标、触发器等",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.简介",
+        "slug": "_1-简介",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]使用PL/pgSQL的优点",
+            "slug": "_1-使用pl-pgsql的优点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]PostgreSQL PL/pgSQL 的缺点",
+            "slug": "_2-postgresql-pl-pgsql-的缺点",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.$$符号引用的字符串常量",
+        "slug": "_2-符号引用的字符串常量",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]在匿名块中使用$$",
+            "slug": "_1-在匿名块中使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]在函数中使用$$",
+            "slug": "_2-在函数中使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]在存储过程中使用$$",
+            "slug": "_2-在存储过程中使用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.PL/pgSQL 块结构",
+        "slug": "_3-pl-pgsql-块结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]PL/pgSQL 块结构示例",
+            "slug": "_1-pl-pgsql-块结构示例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]PL/pgSQL 子块",
+            "slug": "_2-pl-pgsql-子块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]小结",
+            "slug": "_3-小结",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.变量和常量",
+        "slug": "_4-变量和常量",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]变量",
+            "slug": "_1-变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]复制数据类型",
+            "slug": "_2-复制数据类型",
+            "children": [
+              {
+                "level": 4,
+                "title": "块和子块中的变量",
+                "slug": "块和子块中的变量",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]select into",
+            "slug": "_3-select-into",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]行类型变量",
+            "slug": "_4-行类型变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]记录类型变量",
+            "slug": "_5-记录类型变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]常量",
+            "slug": "_6-常量",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5.报告消息和错误",
+        "slug": "_5-报告消息和错误",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]报告消息",
+            "slug": "_1-报告消息",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]等级",
+            "slug": "_2-等级",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]格式",
+            "slug": "_3-格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]引发错误",
+            "slug": "_4-引发错误",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]Assert",
+            "slug": "_5-assert",
+            "children": [
+              {
+                "level": 4,
+                "title": "1) 条件",
+                "slug": "_1-条件",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "2) 留言",
+                "slug": "_2-留言",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "启用/禁用断言",
+                "slug": "启用-禁用断言",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5.控制结构",
+        "slug": "_5-控制结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]if",
+            "slug": "_1-if",
+            "children": [
+              {
+                "level": 4,
+                "title": "1) PL/pgSQL if-then 语句",
+                "slug": "_1-pl-pgsql-if-then-语句",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "2) PL/pgSQL if-then-else 语句",
+                "slug": "_2-pl-pgsql-if-then-else-语句",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "3) PL/pgSQL if-then-elsif 语句",
+                "slug": "_3-pl-pgsql-if-then-elsif-语句",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]case语句",
+            "slug": "_2-case语句",
+            "children": [
+              {
+                "level": 4,
+                "title": "1) 简单的case语句",
+                "slug": "_1-简单的case语句",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "2) 检索案例陈述",
+                "slug": "_2-检索案例陈述",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]loop循环",
+            "slug": "_3-loop循环",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]while循环",
+            "slug": "_4-while循环",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]for循环",
+            "slug": "_5-for循环",
+            "children": [
+              {
+                "level": 4,
+                "title": "使用 PL/pgSQL for 循环查询结果",
+                "slug": "使用-pl-pgsql-for-循环查询结果",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "使用 PL/pgSQL for 循环动态查询结果",
+                "slug": "使用-pl-pgsql-for-循环动态查询结果",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[6]exit",
+            "slug": "_6-exit",
+            "children": [
+              {
+                "level": 4,
+                "title": "1) 使用 PL/pgSQL Exit 语句终止loop",
+                "slug": "_1-使用-pl-pgsql-exit-语句终止loop",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "2) 使用 PL/pgSQL Exit 语句退出一个块",
+                "slug": "_2-使用-pl-pgsql-exit-语句退出一个块",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[7]continue",
+            "slug": "_7-continue",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7.用户自定义函数",
+        "slug": "_7-用户自定义函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]创建函数",
+            "slug": "_1-创建函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]函数参数模式",
+            "slug": "_2-函数参数模式",
+            "children": [
+              {
+                "level": 4,
+                "title": "1）in模式",
+                "slug": "_1-in模式",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "2）out模式",
+                "slug": "_2-out模式",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "3）inout模式",
+                "slug": "_3-inout模式",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]函数重载",
+            "slug": "_3-函数重载",
+            "children": [
+              {
+                "level": 4,
+                "title": "函数重载和默认值",
+                "slug": "函数重载和默认值",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[4]返回表的函数",
+            "slug": "_4-返回表的函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]删除函数",
+            "slug": "_5-删除函数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8.异常处理",
+        "slug": "_8-异常处理",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]处理 no_data_found 异常示例",
+            "slug": "_1-处理-no-data-found-异常示例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]处理 too_many_rows 异常示例",
+            "slug": "_2-处理-too-many-rows-异常示例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]处理多个异常",
+            "slug": "_3-处理多个异常",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]将异常处理为 SQLSTATE 代码",
+            "slug": "_4-将异常处理为-sqlstate-代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9.存储过程",
+        "slug": "_9-存储过程",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]创建存储过程",
+            "slug": "_1-创建存储过程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]调用存储过程",
+            "slug": "_2-调用存储过程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]删除存储过程",
+            "slug": "_3-删除存储过程",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "10.Cursor游标",
+        "slug": "_10-cursor游标",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]声明游标",
+            "slug": "_1-声明游标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]打开游标",
+            "slug": "_2-打开游标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]使用游标",
+            "slug": "_3-使用游标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]移动光标",
+            "slug": "_4-移动光标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]删除或更新行",
+            "slug": "_5-删除或更新行",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]关闭游标",
+            "slug": "_6-关闭游标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[7]综合示例",
+            "slug": "_7-综合示例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "11.触发器",
+        "slug": "_11-触发器",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]触发器简介",
+            "slug": "_1-触发器简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]创建触发器",
+            "slug": "_2-创建触发器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]删除触发器",
+            "slug": "_3-删除触发器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]重命名触发器",
+            "slug": "_4-重命名触发器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]禁用触发器",
+            "slug": "_5-禁用触发器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]启用触发器",
+            "slug": "_6-启用触发器",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/plsql.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "PostgreSQL索引",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.创建索引",
+        "slug": "_1-创建索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.删除索引",
+        "slug": "_2-删除索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.显示索引",
+        "slug": "_3-显示索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.索引类型",
+        "slug": "_4-索引类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]B-tree 索引",
+            "slug": "_1-b-tree-索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Hash索引",
+            "slug": "_2-hash索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]GIN 索引",
+            "slug": "_3-gin-索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]BRIN索引",
+            "slug": "_4-brin索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]GiST 索引",
+            "slug": "_4-gist-索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]SP-GiST 索引",
+            "slug": "_5-sp-gist-索引",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5.唯一键索引",
+        "slug": "_5-唯一键索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.表达式索引",
+        "slug": "_6-表达式索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.部分索引",
+        "slug": "_7-部分索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.REINDEX重置索引",
+        "slug": "_8-reindex重置索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9.多列索引",
+        "slug": "_9-多列索引",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.索引解释器",
+        "slug": "_10-索引解释器",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]文本解释与 pgAdmin 图形解释",
+            "slug": "_1-文本解释与-pgadmin-图形解释",
+            "children": [
+              {
+                "level": 4,
+                "title": "文本解释器",
+                "slug": "文本解释器",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "图形解释器",
+                "slug": "图形解释器",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2].计划器和索引",
+            "slug": "_2-计划器和索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]带有空间索引的查询计划器",
+            "slug": "_3-带有空间索引的查询计划器",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/PostgreSQL%E7%B4%A2%E5%BC%95.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -280,7 +992,26 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]简介",
             "slug": "_1-简介",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "离散卷积",
+                "slug": "离散卷积",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "连续情况的卷积",
+                "slug": "连续情况的卷积",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "结合滤波器进行理解",
+                "slug": "结合滤波器进行理解",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -317,7 +1048,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]Z-buffer",
             "slug": "_2-z-buffer",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Z-Buffer 实现原理",
+                "slug": "z-buffer-实现原理",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -392,7 +1130,20 @@ export const searchIndex = [
             "level": 3,
             "title": "3，setup参数",
             "slug": "_3-setup参数",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "props",
+                "slug": "props",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "context上下文",
+                "slug": "context上下文",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -411,13 +1162,45 @@ export const searchIndex = [
             "level": 3,
             "title": "2，defineExpose",
             "slug": "_2-defineexpose",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "子组件暴露属性和方法，给父组件引用",
+                "slug": "子组件暴露属性和方法-给父组件引用",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "父组件调用子组件方法和属性",
+                "slug": "父组件调用子组件方法和属性",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "在setup如何定义变量(字符串,对象,数组)",
+                "slug": "在setup如何定义变量-字符串-对象-数组",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "3、Watch和WatchEffect",
             "slug": "_3、watch和watcheffect",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "基本使用：",
+                "slug": "基本使用",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "watch与 watchEffect 比较，推荐watch监听",
+                "slug": "watch与-watcheffect-比较-推荐watch监听",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -458,13 +1241,39 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]Diffuse(漫反射)",
             "slug": "_1-diffuse-漫反射",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "兰伯特余弦定律",
+                "slug": "兰伯特余弦定律",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "小结",
+                "slug": "小结",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]Specular(高光)",
             "slug": "_2-specular-高光",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "半程向量",
+                "slug": "半程向量",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "公式推导",
+                "slug": "公式推导",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -575,7 +1384,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[7]Mipmap",
             "slug": "_7-mipmap",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Trilinear Interpolation三线性插值",
+                "slug": "trilinear-interpolation三线性插值",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -704,7 +1520,20 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]Projection (投影) transformation",
             "slug": "_2-projection-投影-transformation",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Orthographic (正交) projection",
+                "slug": "orthographic-正交-projection",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Perspective (透视) projection",
+                "slug": "perspective-透视-projection",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -859,7 +1688,14 @@ export const searchIndex = [
         "level": 3,
         "title": "10.查找和替换",
         "slug": "_10-查找和替换",
-        "children": []
+        "children": [
+          {
+            "level": 6,
+            "title": "/+输入你要查找的内容，光标将跳跃到你需要查找的内容的地方，如果要查找的内容有多个相同的，那么可以使用回车+n来将光标跳跃到下一个和相同的内容上",
+            "slug": "输入你要查找的内容-光标将跳跃到你需要查找的内容的地方-如果要查找的内容有多个相同的-那么可以使用回车-n来将光标跳跃到下一个和相同的内容上",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/post/2021/12/06/vim/",
@@ -917,13 +1753,39 @@ export const searchIndex = [
             "level": 3,
             "title": "[3]光线和显式表面的求交",
             "slug": "_3-光线和显式表面的求交",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "光线与三角形求交",
+                "slug": "光线与三角形求交",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Möller Trumbore算法",
+                "slug": "moller-trumbore算法",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[4]Box包围盒",
             "slug": "_4-box包围盒",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "光线与二维包围盒求交",
+                "slug": "光线与二维包围盒求交",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "为什么要使用轴对齐？",
+                "slug": "为什么要使用轴对齐",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -942,7 +1804,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]Spatial Partitions空间划分",
             "slug": "_2-spatial-partitions空间划分",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "KD-tree",
+                "slug": "kd-tree",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -977,13 +1846,57 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]implicit隐式几何",
             "slug": "_1-implicit隐式几何",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Algebraic surfaces代数曲面",
+                "slug": "algebraic-surfaces代数曲面",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Constructive solid geometry（CSG）建设性实体几何形状",
+                "slug": "constructive-solid-geometry-csg-建设性实体几何形状",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Distance Functions",
+                "slug": "distance-functions",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Level Set Methods水平集",
+                "slug": "level-set-methods水平集",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]Explicit显式几何",
             "slug": "_2-explicit显式几何",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Point Cloud",
+                "slug": "point-cloud",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Polygon Mesh多边形网格",
+                "slug": "polygon-mesh多边形网格",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Wavefront对象文件（.OBJ）格式",
+                "slug": "wavefront对象文件-obj-格式",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -996,7 +1909,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]Bézier Curves",
             "slug": "_1-bezier-curves",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "de Casteljau算法",
+                "slug": "de-casteljau算法",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1034,13 +1954,39 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]Mesh subdivision网格细分",
             "slug": "_1-mesh-subdivision网格细分",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Loop Subdivision",
+                "slug": "loop-subdivision",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Catmull-Clark 细分(通用网格)",
+                "slug": "catmull-clark-细分-通用网格",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]Mesh simplification网格简化",
             "slug": "_2-mesh-simplification网格简化",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Collapsing An Edge边坍缩",
+                "slug": "collapsing-an-edge边坍缩",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Quadric Error Metrics（二次误差度量）",
+                "slug": "quadric-error-metrics-二次误差度量",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1105,7 +2051,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]HTML+CSS",
             "slug": "_1-html-css",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "用 HTML+CSS 实现可视化的缺点",
+                "slug": "用-html-css-实现可视化的缺点",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1117,7 +2070,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[3]Canvas2D",
             "slug": "_3-canvas2d",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "绘图原理",
+                "slug": "绘图原理",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1129,7 +2089,20 @@ export const searchIndex = [
             "level": 3,
             "title": "[5]总结",
             "slug": "_5-总结",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "选择",
+                "slug": "选择",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "关于坐标系",
+                "slug": "关于坐标系",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1182,13 +2155,51 @@ export const searchIndex = [
             "level": 3,
             "title": "2，哈夫曼树定义与原理",
             "slug": "_2-哈夫曼树定义与原理",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]一些名词概念：",
+                "slug": "_1-一些名词概念",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]如何判断一颗树为哈夫曼树",
+                "slug": "_2-如何判断一颗树为哈夫曼树",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[3]哈夫曼算法描述",
+                "slug": "_3-哈夫曼算法描述",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "3，哈夫曼编码",
             "slug": "_3-哈夫曼编码",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]编码",
+                "slug": "_1-编码",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]解码",
+                "slug": "_2-解码",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[3]小结",
+                "slug": "_3-小结",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1248,7 +2259,20 @@ export const searchIndex = [
             "level": 3,
             "title": "4.向量点乘",
             "slug": "_4-向量点乘",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]数学计算上的理解",
+                "slug": "_1-数学计算上的理解",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]几何理解",
+                "slug": "_2-几何理解",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1291,7 +2315,20 @@ export const searchIndex = [
             "level": 3,
             "title": "4.常见曲线",
             "slug": "_4-常见曲线",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]画贝塞尔曲线",
+                "slug": "_1-画贝塞尔曲线",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]贝塞尔曲线绘制Catmull–Rom",
+                "slug": "_2-贝塞尔曲线绘制catmull–rom",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1316,13 +2353,33 @@ export const searchIndex = [
             "level": 3,
             "title": "3.不同的图形系统如何填充多边形",
             "slug": "_3-不同的图形系统如何填充多边形",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]Canvas2D 填充多边形",
+                "slug": "_1-canvas2d-填充多边形",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]WebGL 填充多边形",
+                "slug": "_2-webgl-填充多边形",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "4.不同图形系统判断点在多边形内部",
             "slug": "_4-不同图形系统判断点在多边形内部",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]Canvas2D判断点在多边形内部",
+                "slug": "_1-canvas2d判断点在多边形内部",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1335,13 +2392,114 @@ export const searchIndex = [
             "level": 3,
             "title": "1.线性变换",
             "slug": "_1-线性变换",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]几何直观理解",
+                "slug": "_1-几何直观理解",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]常见的线性变换",
+                "slug": "_2-常见的线性变换",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "旋转变换",
+                    "slug": "旋转变换",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "缩放变换",
+                    "slug": "缩放变换",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "level": 3,
             "title": "2.非线性变换",
             "slug": "_2-非线性变换",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "[1]几何直观理解",
+                "slug": "_1-几何直观理解-1",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[2]仿射变换",
+                "slug": "_2-仿射变换",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "仿射变换的性质",
+                    "slug": "仿射变换的性质",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "向量的平移",
+                    "slug": "向量的平移",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "小结",
+                    "slug": "小结",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "[3]仿射变换的公式优化",
+                "slug": "_3-仿射变换的公式优化",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "[4]仿射变换应用举例：实现粒子动画",
+                "slug": "_4-仿射变换应用举例-实现粒子动画",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "创建三角形",
+                    "slug": "创建三角形",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "设置 uniform 变量",
+                    "slug": "设置-uniform-变量",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "用requestAnimationFrame实现动画",
+                    "slug": "用requestanimationframe实现动画",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "在片元着色器中着色",
+                    "slug": "在片元着色器中着色",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "[5]CSS 的仿射变换",
+                "slug": "_5-css-的仿射变换",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1353,6 +2511,515 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "计算机图形学中的坐标系统",
+    "subtitle": "局部空间、世界空间、观察空间、裁剪空间、屏幕/像素空间及WebGL上的应用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.计算机图形学中的坐标系统",
+        "slug": "_1-计算机图形学中的坐标系统",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]空间与变换",
+            "slug": "_1-空间与变换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]局部空间",
+            "slug": "_2-局部空间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]世界空间",
+            "slug": "_3-世界空间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]观察空间",
+            "slug": "_4-观察空间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]裁剪空间",
+            "slug": "_5-裁剪空间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]屏幕空间",
+            "slug": "_6-屏幕空间",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.SVG坐标系统",
+        "slug": "_2-svg坐标系统",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.Canvas坐标系统",
+        "slug": "_3-canvas坐标系统",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.WebGL坐标系统",
+        "slug": "_4-webgl坐标系统",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E6%A2%B3%E7%90%86%E5%B0%8F%E7%BB%93.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "地图学数学基础",
+    "subtitle": "比较全篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.地球的数学模拟",
+        "slug": "_1-地球的数学模拟",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]大地水准面Geoids",
+            "slug": "_1-大地水准面geoids",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]旋转椭球体rotational ellipsoid",
+            "slug": "_2-旋转椭球体rotational-ellipsoid",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]参考椭球体reference ellipsoid",
+            "slug": "_3-参考椭球体reference-ellipsoid",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]大地基准面Datum",
+            "slug": "_4-大地基准面datum",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.地理坐标系GCS",
+        "slug": "_2-地理坐标系gcs",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]地理坐标系分类",
+            "slug": "_1-地理坐标系分类",
+            "children": [
+              {
+                "level": 4,
+                "title": "天文经纬度",
+                "slug": "天文经纬度",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "大地经纬度",
+                "slug": "大地经纬度",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "地心经纬度",
+                "slug": "地心经纬度",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]常见的地理/大地坐标系",
+            "slug": "_2-常见的地理-大地坐标系",
+            "children": [
+              {
+                "level": 4,
+                "title": "参心坐标系",
+                "slug": "参心坐标系",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "地心坐标系",
+                "slug": "地心坐标系",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.高程系统",
+        "slug": "_3-高程系统",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]高程系统分类",
+            "slug": "_1-高程系统分类",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]转换",
+            "slug": "_2-转换",
+            "children": [
+              {
+                "level": 4,
+                "title": "不同椭球大地高的转换",
+                "slug": "不同椭球大地高的转换",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "不同高程基准正常高转换",
+                "slug": "不同高程基准正常高转换",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "大地高和正常高的转换",
+                "slug": "大地高和正常高的转换",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]我国常用的高程基准面",
+            "slug": "_3-我国常用的高程基准面",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.投影",
+        "slug": "_4-投影",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]简介",
+            "slug": "_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]投影方法",
+            "slug": "_2-投影方法",
+            "children": [
+              {
+                "level": 4,
+                "title": "几何透视法",
+                "slug": "几何透视法",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "数学分析法",
+                "slug": "数学分析法",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]投影方式分类",
+            "slug": "_3-投影方式分类",
+            "children": [
+              {
+                "level": 4,
+                "title": "按变形性质分类",
+                "slug": "按变形性质分类",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "等角投影",
+                    "slug": "等角投影",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "等面积投影",
+                    "slug": "等面积投影",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "任意投影",
+                    "slug": "任意投影",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "从投影面类型划分",
+                "slug": "从投影面类型划分",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "圆柱投影",
+                    "slug": "圆柱投影",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "圆锥投影",
+                    "slug": "圆锥投影",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "方位投影",
+                    "slug": "方位投影",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "从投影面与地球位置关系划分为",
+                "slug": "从投影面与地球位置关系划分为",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[4]投影坐标系",
+            "slug": "_4-投影坐标系",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]我国常用的投影",
+            "slug": "_5-我国常用的投影",
+            "children": [
+              {
+                "level": 4,
+                "title": "高斯-克吕格Gauss-Kruger投影（横轴等角切圆柱投影）",
+                "slug": "高斯-克吕格gauss-kruger投影-横轴等角切圆柱投影",
+                "children": [
+                  {
+                    "level": 6,
+                    "title": "特点",
+                    "slug": "特点",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "兰伯特Lambert投影（正轴等角割圆锥投影）",
+                "slug": "兰伯特lambert投影-正轴等角割圆锥投影",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "墨卡托Mercator投影（正轴等角圆柱投影）",
+                "slug": "墨卡托mercator投影-正轴等角圆柱投影",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "通用墨卡托投影UTM",
+                "slug": "通用墨卡托投影utm",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "UTM投影分带",
+                    "slug": "utm投影分带",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6.坐标参考系统（Coordinate Reference Systems CRS）",
+        "slug": "_6-坐标参考系统-coordinate-reference-systems-crs",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]WKID与EPSG",
+            "slug": "_1-wkid与epsg",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]常见地理坐标系统GCS",
+            "slug": "_2-常见地理坐标系统gcs",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]常见投影坐标系统PCS",
+            "slug": "_3-常见投影坐标系统pcs",
+            "children": [
+              {
+                "level": 4,
+                "title": "基于于高斯克吕格投影的投影坐标系统",
+                "slug": "基于于高斯克吕格投影的投影坐标系统",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "基于UTM投影的投影坐标系统",
+                "slug": "基于utm投影的投影坐标系统",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "基于网络墨卡托（WebMercator）投影的投影坐标系统",
+                "slug": "基于网络墨卡托-webmercator-投影的投影坐标系统",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[4]各大地图厂商使用的坐标系",
+            "slug": "_4-各大地图厂商使用的坐标系",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7.数据中坐标参考系统",
+        "slug": "_7-数据中坐标参考系统",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]判别",
+            "slug": "_1-判别",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]定义投影",
+            "slug": "_2-定义投影",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]转换投影",
+            "slug": "_3-转换投影",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8.瓦片坐标系",
+        "slug": "_8-瓦片坐标系",
+        "children": [
+          {
+            "level": 3,
+            "title": "[2]WMTS规范",
+            "slug": "_2-wmts规范",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]TMS规范",
+            "slug": "_3-tms规范",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]百度地图",
+            "slug": "_4-百度地图",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]bing地图",
+            "slug": "_5-bing地图",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9.坐标参考系统的表达",
+        "slug": "_9-坐标参考系统的表达",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "10.不同坐标参考系统的转换",
+        "slug": "_10-不同坐标参考系统的转换",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]三参数转换",
+            "slug": "_1-三参数转换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]七参数转换",
+            "slug": "_2-七参数转换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]四参数转换",
+            "slug": "_3-四参数转换",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "11.地图投影前端实现与转换",
+        "slug": "_11-地图投影前端实现与转换",
+        "children": [
+          {
+            "level": 4,
+            "title": "turf.js",
+            "slug": "turf-js",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "proj",
+            "slug": "proj",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E5%9C%B0%E5%9B%BE%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -1376,25 +3043,159 @@ export const searchIndex = [
         "level": 3,
         "title": "三，服务端渲染SSR",
         "slug": "三-服务端渲染ssr",
-        "children": []
+        "children": [
+          {
+            "level": 4,
+            "title": "理解",
+            "slug": "理解",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "服务的渲染的历程",
+            "slug": "服务的渲染的历程",
+            "children": [
+              {
+                "level": 5,
+                "title": "最初只有服务端渲染",
+                "slug": "最初只有服务端渲染",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "出现客户端渲染（出现前后端分离）",
+                "slug": "出现客户端渲染-出现前后端分离",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "又出现服务端渲染",
+                "slug": "又出现服务端渲染",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "level": 3,
         "title": "四，服务端渲染的利弊",
         "slug": "四-服务端渲染的利弊",
-        "children": []
+        "children": [
+          {
+            "level": 4,
+            "title": "优点",
+            "slug": "优点",
+            "children": [
+              {
+                "level": 5,
+                "title": "利于SEO",
+                "slug": "利于seo",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "有利于爬虫来爬你的页面",
+                "slug": "有利于爬虫来爬你的页面",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "首屏加载事件短",
+                "slug": "首屏加载事件短",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "title": "缺点",
+            "slug": "缺点",
+            "children": []
+          }
+        ]
       },
       {
         "level": 3,
         "title": "五，同构",
         "slug": "五-同构",
-        "children": []
+        "children": [
+          {
+            "level": 4,
+            "title": "同构的定义",
+            "slug": "同构的定义",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "同构的实现",
+            "slug": "同构的实现",
+            "children": []
+          }
+        ]
       },
       {
         "level": 3,
         "title": "六，实践",
         "slug": "六-实践",
-        "children": []
+        "children": [
+          {
+            "level": 4,
+            "title": "实现基础的NODEJS服务端渲染",
+            "slug": "实现基础的nodejs服务端渲染",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "实现基础的VUE客户端渲染",
+            "slug": "实现基础的vue客户端渲染",
+            "children": [
+              {
+                "level": 5,
+                "title": "",
+                "slug": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "title": "同构VUE项目",
+            "slug": "同构vue项目",
+            "children": [
+              {
+                "level": 5,
+                "title": "构建配置",
+                "slug": "构建配置",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "第一步：构建服务端代码",
+                "slug": "第一步-构建服务端代码",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "实现模板组件的共享",
+                "slug": "实现模板组件的共享",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "实现路由的共享",
+                "slug": "实现路由的共享",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "数据模型的共享与状态同步",
+                "slug": "数据模型的共享与状态同步",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "level": 3,
@@ -1457,7 +3258,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[7]Microfacet Material微表面材质",
             "slug": "_7-microfacet-material微表面材质",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "微表面材质的BRDF",
+                "slug": "微表面材质的brdf",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1530,7 +3338,51 @@ export const searchIndex = [
             "level": 3,
             "title": "AMD",
             "slug": "amd",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "requireJS（库）",
+                "slug": "requirejs-库",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "独立模块作用域",
+                "slug": "独立模块作用域",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "导出模块内部数据(return)",
+                "slug": "导出模块内部数据-return",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "导入外部模块数据",
+                "slug": "导入外部模块数据",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "requireJS的 CommonJS 风格",
+                "slug": "requirejs的-commonjs-风格",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "导出模块内部数据",
+                    "slug": "导出模块内部数据",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "导入外部模块数据",
+                    "slug": "导入外部模块数据-1",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "level": 3,
@@ -1561,7 +3413,20 @@ export const searchIndex = [
             "level": 3,
             "title": "导入外部模块数据",
             "slug": "导入外部模块数据-2",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "静态导入",
+                "slug": "静态导入",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "动态导入",
+                "slug": "动态导入",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1616,7 +3481,20 @@ export const searchIndex = [
             "level": 3,
             "title": "模块编译",
             "slug": "模块编译",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "module 选项",
+                "slug": "module-选项",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "模块导出默认值的问题",
+                "slug": "模块导出默认值的问题",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1653,13 +3531,71 @@ export const searchIndex = [
             "level": 3,
             "title": "相对与非相对模块导入",
             "slug": "相对与非相对模块导入",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "相对导入",
+                "slug": "相对导入",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "非相对导入",
+                "slug": "非相对导入",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "模块解析策略",
             "slug": "模块解析策略",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "--moduleResolution 选项",
+                "slug": "moduleresolution-选项",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Classic 模块解析策略",
+                "slug": "classic-模块解析策略",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "相对导入",
+                    "slug": "相对导入-1",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "非相对导入",
+                    "slug": "非相对导入-1",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "Node 模块解析策略",
+                "slug": "node-模块解析策略",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "相对导入",
+                    "slug": "相对导入-2",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "非相对导入",
+                    "slug": "非相对导入-2",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1670,12 +3606,13 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
-    "title": "浏览器运行三大流水线",
+    "title": "浏览器运行原理浅析",
+    "subtitle": "从输入URL到页面展示流程（HTTP请求流程、页面渲染流程）",
     "headers": [
       {
         "level": 2,
-        "title": "1.HTTP请求流程",
-        "slug": "_1-http请求流程",
+        "title": "一、HTTP请求流程",
+        "slug": "一、http请求流程",
         "children": [
           {
             "level": 3,
@@ -1735,8 +3672,8 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "2.从输入URL到页面展示流程",
-        "slug": "_2-从输入url到页面展示流程",
+        "title": "二、从输入URL到页面展示流程",
+        "slug": "二、从输入url到页面展示流程",
         "children": [
           {
             "level": 3,
@@ -1748,7 +3685,14 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]URL 请求过程",
             "slug": "_2-url-请求过程",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "响应数据类型处理",
+                "slug": "响应数据类型处理",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1778,8 +3722,8 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "3.渲染流程",
-        "slug": "_3-渲染流程",
+        "title": "三、页面渲染流程",
+        "slug": "三、页面渲染流程",
         "children": [
           {
             "level": 3,
@@ -1791,13 +3735,45 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]样式计算（Recalculate Style）",
             "slug": "_2-样式计算-recalculate-style",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "把 CSS 转换为浏览器能够理解的结构",
+                "slug": "把-css-转换为浏览器能够理解的结构",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "转换样式表中的属性值，使其标准化",
+                "slug": "转换样式表中的属性值-使其标准化",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "计算出 DOM 树中每个节点的具体样式",
+                "slug": "计算出-dom-树中每个节点的具体样式",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[3]布局阶段",
             "slug": "_3-布局阶段",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "创建布局树",
+                "slug": "创建布局树",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "布局计算",
+                "slug": "布局计算",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1825,15 +3801,40 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "[7]渲染流水线大总结",
-            "slug": "_7-渲染流水线大总结",
+            "title": "[7]页面渲染流程小结",
+            "slug": "_7-页面渲染流程小结",
             "children": []
           },
           {
             "level": 3,
             "title": "[8]相关概念补充",
             "slug": "_8-相关概念补充",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "渲染进程与GPU进程",
+                "slug": "渲染进程与gpu进程",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "更新了元素的几何属性（重排）",
+                "slug": "更新了元素的几何属性-重排",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "更新元素的绘制属性（重绘）",
+                "slug": "更新元素的绘制属性-重绘",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "直接合成阶段",
+                "slug": "直接合成阶段",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -1873,18 +3874,179 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]配置文件说明",
             "slug": "_2-配置文件说明",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "环境变量的权重",
+                "slug": "环境变量的权重",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[3]配置文件中的变量名问题",
             "slug": "_3-配置文件中的变量名问题",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "vuecli",
+                "slug": "vuecli",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "vite",
+                "slug": "vite",
+                "children": []
+              }
+            ]
           }
         ]
       }
     ],
     "path": "/posts/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "相机视场、镜头、光场、全光函数",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.相机",
+        "slug": "_1-相机",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Pinholes Camera针孔相机",
+            "slug": "_1-pinholes-camera针孔相机",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]快门与传感器",
+            "slug": "_2-快门与传感器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]Field of View (FOV)视场",
+            "slug": "_3-field-of-view-fov-视场",
+            "children": [
+              {
+                "level": 4,
+                "title": "Focal Length焦距对视场的影响",
+                "slug": "focal-length焦距对视场的影响",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "传感器对视场的影响",
+                "slug": "传感器对视场的影响",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "在较小的传感器上保持FOV",
+                "slug": "在较小的传感器上保持fov",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[4]Exposure曝光",
+            "slug": "_4-exposure曝光",
+            "children": [
+              {
+                "level": 4,
+                "title": "摄影中的暴光控制",
+                "slug": "摄影中的暴光控制",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "快与慢摄影",
+                "slug": "快与慢摄影",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.Thin Lens Approximation(薄透镜近似)",
+        "slug": "_2-thin-lens-approximation-薄透镜近似",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]理想的薄镜头 - 焦点",
+            "slug": "_1-理想的薄镜头-焦点",
+            "children": [
+              {
+                "level": 4,
+                "title": "薄镜头方程",
+                "slug": "薄镜头方程",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]Defocus Blur(散焦模糊)",
+            "slug": "_2-defocus-blur-散焦模糊",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]光圈F数",
+            "slug": "_3-光圈f数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.光线追踪中使用理想透镜",
+        "slug": "_3-光线追踪中使用理想透镜",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.Depth of Field景深",
+        "slug": "_4-depth-of-field景深",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.Light Field / Lumigraph光场",
+        "slug": "_5-light-field-lumigraph光场",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]The Plenoptic Function全光函数",
+            "slug": "_1-the-plenoptic-function全光函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]光场",
+            "slug": "_2-光场",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]光场相机",
+            "slug": "_3-光场相机",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E7%9B%B8%E6%9C%BA%E3%80%81%E9%95%9C%E5%A4%B4%E3%80%81%E5%85%89%E5%9C%BA.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -1907,7 +4069,38 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]空间数据的特征",
             "slug": "_2-空间数据的特征",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "空间特征",
+                "slug": "空间特征",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "非结构化特征",
+                "slug": "非结构化特征",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "空间关系特征",
+                "slug": "空间关系特征",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "时态特征",
+                "slug": "时态特征",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "多尺度特征",
+                "slug": "多尺度特征",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -1949,7 +4142,26 @@ export const searchIndex = [
             "level": 3,
             "title": "[9]空间数据库标准规范",
             "slug": "_9-空间数据库标准规范",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "SFA SQL",
+                "slug": "sfa-sql",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "SQL/MM",
+                "slug": "sql-mm",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "两个标准的对比分析（重点）",
+                "slug": "两个标准的对比分析-重点",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1962,13 +4174,121 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]空间数据模型",
             "slug": "_1-空间数据模型",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "什么是数据模型？",
+                "slug": "什么是数据模型",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "空间数据模型的分类",
+                "slug": "空间数据模型的分类",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "矢量模型",
+                    "slug": "矢量模型",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "栅格模型",
+                    "slug": "栅格模型",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "注记文字模型",
+                    "slug": "注记文字模型",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]几何对象模型",
             "slug": "_2-几何对象模型-1",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "概念模型",
+                "slug": "概念模型",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "地理要素(feature)",
+                    "slug": "地理要素-feature",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "理解该模型的几个要点",
+                    "slug": "理解该模型的几个要点",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "几何对象的方法（函数）",
+                    "slug": "几何对象的方法-函数",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "空间拓扑关系",
+                    "slug": "空间拓扑关系",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "逻辑模型",
+                "slug": "逻辑模型",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "基于预定义数据类型的实现",
+                    "slug": "基于预定义数据类型的实现",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "基于扩展几何类型的实现",
+                    "slug": "基于扩展几何类型的实现",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "level": 4,
+                "title": "物理模型",
+                "slug": "物理模型",
+                "children": [
+                  {
+                    "level": 5,
+                    "title": "WKB",
+                    "slug": "wkb",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "WKT",
+                    "slug": "wkt",
+                    "children": []
+                  },
+                  {
+                    "level": 5,
+                    "title": "注意事项",
+                    "slug": "注意事项",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1987,13 +4307,45 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]postgis",
             "slug": "_1-postgis",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "PostGIS中常用数据类型",
+                "slug": "postgis中常用数据类型",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Shapefile数据导入",
+                "slug": "shapefile数据导入",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]OpenStreetMap",
             "slug": "_2-openstreetmap",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "OSM数据结构",
+                "slug": "osm数据结构",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "OSM数据及下载",
+                "slug": "osm数据及下载",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "基于OSM数据搭建一个地图服务",
+                "slug": "基于osm数据搭建一个地图服务",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -2001,7 +4353,87 @@ export const searchIndex = [
         "level": 2,
         "title": "5.矢量数据的定义与操纵",
         "slug": "_5-矢量数据的定义与操纵",
-        "children": []
+        "children": [
+          {
+            "level": 4,
+            "title": "[1]数据定义与插入",
+            "slug": "_1-数据定义与插入",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[2]管理函数",
+            "slug": "_2-管理函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[3]构造函数",
+            "slug": "_3-构造函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]访问函数",
+            "slug": "_4-访问函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[5]输出函数",
+            "slug": "_5-输出函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]编辑函数",
+            "slug": "_4-编辑函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]几何处理函数",
+            "slug": "_4-几何处理函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]操作符",
+            "slug": "_4-操作符",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]空间关系函数",
+            "slug": "_4-空间关系函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]量测函数",
+            "slug": "_4-量测函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]线性参考",
+            "slug": "_4-线性参考",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]其他函数",
+            "slug": "_4-其他函数",
+            "children": [
+              {
+                "level": 5,
+                "title": "总结",
+                "slug": "总结",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ],
     "path": "/posts/%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A2%B3%E7%90%86.html",
@@ -2040,13 +4472,51 @@ export const searchIndex = [
             "level": 3,
             "title": "[4]思考向量的特点方式",
             "slug": "_4-思考向量的特点方式",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "向量是空间中的箭头",
+                "slug": "向量是空间中的箭头",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "向量是有序的数字列表",
+                "slug": "向量是有序的数字列表",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "三维空间中的向量",
+                "slug": "三维空间中的向量",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[5]向量加法和向量数乘",
             "slug": "_5-向量加法和向量数乘",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "向量加法",
+                "slug": "向量加法",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "向量数乘",
+                "slug": "向量数乘",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "总结",
+                "slug": "总结",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -2065,7 +4535,20 @@ export const searchIndex = [
             "level": 3,
             "title": "[2]张成的空间",
             "slug": "_2-张成的空间",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "二维向量的张成的空间",
+                "slug": "二维向量的张成的空间",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "三维向量的张成的空间",
+                "slug": "三维向量的张成的空间",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -2114,7 +4597,20 @@ export const searchIndex = [
             "level": 3,
             "title": "[4]使用矩阵来线性线性变换",
             "slug": "_4-使用矩阵来线性线性变换",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "旋转变换",
+                "slug": "旋转变换",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "剪切变换",
+                "slug": "剪切变换",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
@@ -2394,13 +4890,39 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]绘制二次贝塞尔曲线",
             "slug": "_1-绘制二次贝塞尔曲线",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Q",
+                "slug": "q",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "T",
+                "slug": "t",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]绘制三次贝塞尔曲线",
             "slug": "_2-绘制三次贝塞尔曲线",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "C",
+                "slug": "c",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "S",
+                "slug": "s",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -2412,6 +4934,169 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "颜色与感知",
+    "subtitle": "颜色的物理\\生物基础、常见颜色空间",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Physical Basis of Color颜色的物理基础",
+        "slug": "_1-physical-basis-of-color颜色的物理基础",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]光的基本组成部分",
+            "slug": "_1-光的基本组成部分",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]可见光谱",
+            "slug": "_2-可见光谱",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]Spectral Power Distribution（SPD 谱功率密度）",
+            "slug": "_3-spectral-power-distribution-spd-谱功率密度",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.Biological Basis of Color颜色的生物基础",
+        "slug": "_2-biological-basis-of-color颜色的生物基础",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]什么是颜色",
+            "slug": "_1-什么是颜色",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]人眼解剖学",
+            "slug": "_2-人眼解剖学",
+            "children": [
+              {
+                "level": 4,
+                "title": "视网膜上的感光细胞",
+                "slug": "视网膜上的感光细胞",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]色彩的三色理论",
+            "slug": "_3-色彩的三色理论",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.同色异普",
+        "slug": "_3-同色异普",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.Color Reproduction / Matching色彩复制/配色",
+        "slug": "_4-color-reproduction-matching色彩复制-配色",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]CIE RGB颜色匹配",
+            "slug": "_1-cie-rgb颜色匹配",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5.Color Spaces颜色空间",
+        "slug": "_5-color-spaces颜色空间",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Standardized RGB (sRGB)",
+            "slug": "_1-standardized-rgb-srgb",
+            "children": [
+              {
+                "level": 4,
+                "title": "RGBA",
+                "slug": "rgba",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "RGB 颜色表示法的局限性",
+                "slug": "rgb-颜色表示法的局限性",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]CIE XYZ",
+            "slug": "_2-cie-xyz",
+            "children": [
+              {
+                "level": 4,
+                "title": "色域Gamut",
+                "slug": "色域gamut",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6.Perceptually Organized Color Spaces感知组织的色彩空间",
+        "slug": "_6-perceptually-organized-color-spaces感知组织的色彩空间",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]HSV/HSL颜色空间",
+            "slug": "_1-hsv-hsl颜色空间",
+            "children": [
+              {
+                "level": 4,
+                "title": "HSL 和 HSV 的局限性",
+                "slug": "hsl-和-hsv-的局限性",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]CIE Lab色彩空间",
+            "slug": "_2-cie-lab色彩空间",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7.互补色理论",
+        "slug": "_7-互补色理论",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.减色系统CMYK",
+        "slug": "_8-减色系统cmyk",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%84%9F%E7%9F%A5.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -2473,13 +5158,63 @@ export const searchIndex = [
             "level": 3,
             "title": "[1]Non-surface models非表面模型",
             "slug": "_1-non-surface-models非表面模型",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Participating media散射介质",
+                "slug": "participating-media散射介质",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Hair/fur/fiber (BCSDF)头发/毛皮/纤维",
+                "slug": "hair-fur-fiber-bcsdf-头发-毛皮-纤维",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Kajiya-Kay Model",
+                "slug": "kajiya-kay-model",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Marschner Model",
+                "slug": "marschner-model",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Granular material颗粒材料",
+                "slug": "granular-material颗粒材料",
+                "children": []
+              }
+            ]
           },
           {
             "level": 3,
             "title": "[2]Surface models表面模型",
             "slug": "_2-surface-models表面模型",
-            "children": []
+            "children": [
+              {
+                "level": 4,
+                "title": "Translucent material (BSSRDF) 半透明材料",
+                "slug": "translucent-material-bssrdf-半透明材料",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Cloth布料",
+                "slug": "cloth布料",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Detailed material (non-statistical BRDF)详细模型",
+                "slug": "detailed-material-non-statistical-brdf-详细模型",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -2549,6 +5284,30 @@ export const searchIndex = [
     "title": "Tags",
     "headers": [],
     "path": "/tags/%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/GIS/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/PostgreSQL/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/PL/pgSQL/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -2701,6 +5460,14 @@ export const searchIndex = [
     "title": "Home",
     "headers": [],
     "path": "/page/4/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "HomePage"
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/page/5/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "HomePage"
