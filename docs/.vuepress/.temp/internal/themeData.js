@@ -29,11 +29,10 @@ export const themeData = {
   "personalInfo": {
     "name": "ooco",
     "avatar": "/img/a.png",
-    "description": "while(life){Motivated++;Interest++;}",
+    "description": "guess->verify",
     "sns": {
       "github": "bigbigbig2",
-      "email": "abcdglas@gmail.com",
-      "twitter": "pibv96YZx5HVHx0"
+      "email": "abcdglas@gmail.com"
     }
   },
   "homeHeaderImages": [
@@ -108,4 +107,17 @@ export const themeData = {
   "search": true,
   "giscusDarkTheme": "https://rocke.top/styles/giscus-dark.css",
   "giscusLightTheme": "light"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateThemeData) {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ themeData }) => {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  })
 }

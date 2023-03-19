@@ -166,7 +166,7 @@ export default{
 </style>
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c78a8d363a1c4168a2759db29e58825b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18e52169a745495a91750715622da6a2~tplv-k3u1fbpfcp-zoom-1.image)
 
 另外一种封装方式
 
@@ -218,6 +218,3 @@ function request(options){
     }
 })
 ```
-
-
-

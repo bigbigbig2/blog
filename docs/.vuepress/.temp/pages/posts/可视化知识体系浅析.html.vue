@@ -1,10 +1,10 @@
 <template><h2 id="_1-可视化知识体系" tabindex="-1"><a class="header-anchor" href="#_1-可视化知识体系" aria-hidden="true">#</a> 1.可视化知识体系</h2>
 <p>可视化是一个比较大的话题，所以下面就学习过程中的知识进行分类。</p>
-<p><img src="https://img-blog.csdnimg.cn/3edb15021f4f466391491c1b4e0291a4.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7806d6ec6daa4fd2847383ce5e1b00f2~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>我们应该把重点放在<strong>理论基础</strong>上，因为随着技术的发展，工具会改变，而基础不会。</p>
 <h2 id="_2-浏览器中实现可视化的四种方式" tabindex="-1"><a class="header-anchor" href="#_2-浏览器中实现可视化的四种方式" aria-hidden="true">#</a> 2.浏览器中实现可视化的四种方式</h2>
 <p>具体用法这里就不展开了，MDN上有通俗易懂的教程👀</p>
-<p><img src="https://img-blog.csdnimg.cn/9219f5c746734599a13076ba3de752e3.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4b0debb29984427bccf30ed33da4180~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h3 id="_1-html-css" tabindex="-1"><a class="header-anchor" href="#_1-html-css" aria-hidden="true">#</a> [1]HTML+CSS</h3>
 <h4 id="用-html-css-实现可视化的缺点" tabindex="-1"><a class="header-anchor" href="#用-html-css-实现可视化的缺点" aria-hidden="true">#</a> 用 HTML+CSS 实现可视化的缺点</h4>
 <ol>
@@ -29,7 +29,7 @@
 </ul>
 <h3 id="_5-总结" tabindex="-1"><a class="header-anchor" href="#_5-总结" aria-hidden="true">#</a> [5]总结</h3>
 <h4 id="选择" tabindex="-1"><a class="header-anchor" href="#选择" aria-hidden="true">#</a> 选择</h4>
-<p><img src="https://img-blog.csdnimg.cn/1f0dd367b2eb4ae1ae33d4555d71367a.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4560133bcf1c4d2cbceccedbf5aa7160~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h4 id="关于坐标系" tabindex="-1"><a class="header-anchor" href="#关于坐标系" aria-hidden="true">#</a> 关于坐标系</h4>
 <ul>
 <li><code>SVG</code> 坐标系和 <code>Canvas</code> 坐标系完全一样</li>
@@ -37,15 +37,15 @@
 <li><code>Canvas</code> 元素上的 <code>width</code> 和 <code>height</code> 属性不等同于 <code>Canvas</code> 元素的 <code>CSS</code> 样式的属性。</li>
 <li><code>Canvas</code> 的 <code>HTML</code> 属性宽高为画布宽高，<code>CSS</code> 样式宽高为样式宽高。</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/d6a9d84921aa4c1e814a8af4f9edfeb7.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2f29197d6f904c15a7731a7ab6eaf598~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>canvas和SVG的坐标系</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/02d725e84eb145c88b2277a43500e5d8.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2b8b9c6e6b94487e840aa55d74ac8d9a~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>将canvas的样式宽高设为256px，画布宽高设为512px时的情况</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/5b40d3392fd34795c05633203712eb4c.png" alt="image-20220323222202538"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b833c9afe68c46f3a6bef89fae6ce569~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220323222202538"></p>
 <blockquote>
 <p>webgl坐标系（x 轴朝右，y 轴朝上，z 轴朝外）</p>
 </blockquote>
@@ -60,7 +60,7 @@
 <li>输出设备</li>
 </ul>
 <h3 id="_2-绘图原理" tabindex="-1"><a class="header-anchor" href="#_2-绘图原理" aria-hidden="true">#</a> [2]绘图原理</h3>
-<p><img src="https://img-blog.csdnimg.cn/d489fb4b57c947b7a5c4a44213d0ef33.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8a602dc053f642deb89c20c242eb0a5a~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>首先，数据经过 <code>CPU</code> 处理，成为具有特定结构的几何信息。然后，这些信息会被送到 GPU 中进行处理。在 GPU 中要经过两个步骤生成光栅信息。这些光栅信息会输出到帧缓存中，最后渲染到屏幕上。</p>
 <blockquote>
 <p><strong>一些名词</strong>：</p>
@@ -72,7 +72,7 @@
 <li>GPU（Graphics Processing Unit）：图形处理单元，负责图形计算。</li>
 </ul>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/bb36740765b24534b68734167da57937.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f63d016ef12147bf86fa98aca50a2804~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>绘图过程主要分为两大部分:</p>
 <ol>
 <li>对给定的<strong>数据结合绘图的场景要素</strong>（例如相机、光源、遮挡物体等等）进行计算，最终将图形变为屏幕空间的 2D 坐标。</li>
@@ -81,6 +81,6 @@
 <h3 id="_3-gpu简介" tabindex="-1"><a class="header-anchor" href="#_3-gpu简介" aria-hidden="true">#</a> [3]GPU简介</h3>
 <p>处理图像应用，实际上就是在处理计算图片上的每一个像素点的颜色和其他信息。每处理一个像素点就相当于完成了一个简单的任务，而一个图片应用又是由成千上万个像素点组成的，所以，我们需要在同一时间处理成千上万个小任务。</p>
 <p>而GPU便是根据这一原理设计为，使用更小、更多的处理单元，是一种更好的处理方式。</p>
-<p><img src="https://img-blog.csdnimg.cn/4372e84490404f489dc3d0680cc18b37.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1912e1da8e3e4d0eb938dbafce8b7d74~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>GPU  是由大量的小型处理单元构成的，它可能远远没有 CPU 那么强大，但胜在数量众多，可以保证每个单元处理一个简单的任务。即使我们要处理一张 800 * 600 大小的图片，GPU 也可以保证这 48 万个像素点分别对应一个小单元，这样我们就可以同时对每个像素点进行计算了。</p>
 </template>

@@ -1,10 +1,4 @@
-I am an undergraduate student majoring in Geospatial Information Engineering, and I am currently learning WebGIS related technologies.  
-
-
-Current research interests are mainly GIS open source technology, spatial database, web graphics technology and their development in the field of GIS.
-
-
-Looking forward to the development of WebGPU graphics technology, and I believe that in the future, it will not only bring a great improvement to the performance of Web graphics, but also promote the development of WebGIS.
+他是目前是一个地理空间信息系统专业的的大三在校生，目前感兴趣的学习研究方向为主要是GIS开源技术、空间数据库、Web3D图形技术等
 
 
 

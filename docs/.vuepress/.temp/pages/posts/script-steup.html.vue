@@ -65,26 +65,26 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li>
 </ul>
 <h4 id="context上下文" tabindex="-1"><a class="header-anchor" href="#context上下文" aria-hidden="true">#</a> context上下文</h4>
-<p><img src="https://img-blog.csdnimg.cn/6e132f23813e41d1b2a48b6cc2d10ed7.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/971e428c49d84a5aa2670f8f731b3004~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <ul>
 <li>
 <p>attrs</p>
 <ul>
-<li><img src="https://img-blog.csdnimg.cn/img_convert/f815c8b8f89bdab3b030ba226e6d16d0.jpeg" alt="img"></li>
+<li><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b3549c9557a24df5890a1a618190820e~tplv-k3u1fbpfcp-zoom-1.image" alt="img"></li>
 </ul>
 </li>
 <li>
 <p>slots</p>
 <ul>
-<li><img src="https://img-blog.csdnimg.cn/img_convert/a0021bdc254c825aa21a99c79b9faeab.jpeg" alt="img"></li>
+<li><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fd629dea03847ea87e89ae2c94b4bcf~tplv-k3u1fbpfcp-zoom-1.image" alt="img"></li>
 </ul>
 </li>
 <li>
 <p>emit</p>
 </li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/10865d8dd53e47a9ab5d7fecda8225b5.png" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/3ca297e2d0994e8ba180d9b49a455614.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24018e895c434454bf2e606fef9747fd~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd8eff5c028047bfb67e68083ef94824~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>/* 参数说明
  * props 是响应式的，当传入新的 prop 时，它将被更新
  * context 是一个普通的上下文JavaScript对象，它暴露组件的三个 property（包括属性，插槽，方法）,
@@ -438,7 +438,7 @@
       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'created'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token function">createds</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/34198523340f45b895fee921282981f8.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f43e548f644406897470b36c663d732~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h3 id="_5、用ts限制define-emits-props-参数类型" tabindex="-1"><a class="header-anchor" href="#_5、用ts限制define-emits-props-参数类型" aria-hidden="true">#</a> 5、用Ts限制define(Emits|Props)参数类型</h3>
 <p><strong>注意：</strong></p>
 <p><strong>1、在setup语法糖中引入组件不需要注册声明就可以直接用了</strong></p>
@@ -500,7 +500,7 @@
     <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><p>补充：$event多事件处理器</p>
-<p><img src="https://img-blog.csdnimg.cn/33c133fd23444caab9c0ad79780b26b4.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee820b0ada654892972dea4baee9f460~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>@blur：失去焦点时触发</p>
 <p>@event对象：拿到当前对象</p>
 <p>2、父组件</p>

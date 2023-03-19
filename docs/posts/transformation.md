@@ -29,7 +29,7 @@ $$
 
 ### [1]缩放
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/72cac1f10a984094accbb0615cdcc50c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/257d8ea020ca4802be20ee471c2af2bd~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 缩放是指点 $(x_0,y_0) $经过缩放因子 $S(x,y)$ 变换之后形成新的点$ (x_1,y_1)$，它们间的关系是：
@@ -59,7 +59,7 @@ $$
 
 旋转是指绕一点作为旋转中心，旋转$θ $角度的变换。 如上图所示，该正方形绕原点旋转了 $θ $角度。假设正方形的边长为 1，那么我们很容易可以得到如下的关系
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/dee6acb92dc94d9ea3f3ba9d5e75cb6d.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2642412860a44669848c58e042d48888~tplv-k3u1fbpfcp-zoom-1.image)
 
 $$
 \begin{bmatrix} x_1 \\ y_1 \end{bmatrix} =
@@ -88,7 +88,7 @@ $$
 
 ### [1]平移变换
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e0269aba2be44168b4acbfe79e292f47.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/beed6ae5cd74433c9a95bc30f1b9aa26~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 平移就是把 (x,y) 移动一段距离 (Tx,Ty) 然后得到一个新的坐标，即：
@@ -148,7 +148,7 @@ $$
 
 逆变换是指把已应用的变换还原的变换，在数学上是指变换矩阵的逆矩阵 $M^−1$。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f6c008cc01a7488a99d10917120d3373.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca0a98bf2bb9472c830fa731ddf1d692~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [4]仿射变换
@@ -200,10 +200,10 @@ $$
 \begin{bmatrix} x_0 \\ y_0 \\ z_0 \\ 1 \end{bmatrix}
 $$
 从 Rx、Ry、Rz 组成任何 3D 旋转？
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a4366be7cc6c4653b2e255b88a5761b3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e24a28a59aa648718b277336227196f6~tplv-k3u1fbpfcp-zoom-1.image)
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3f2eb010bf2c45768bd481ee68b70656.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/388ba25968fa4f1e936f44ea346bbabe~tplv-k3u1fbpfcp-zoom-1.image)
 
 ### [1]正交矩阵
 
@@ -242,7 +242,7 @@ $$
 
 视图变换是用来把世界空间变换成摄像机空间。如下图所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/59890e08c74f423ba86ba866015ca86a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/33812a84919d4da4b2d8f700c69c4182~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 世界空间
@@ -251,7 +251,7 @@ $$
 > - t:视线
 > - g:上方向
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/910a1e387cc142ad904d0a2d3bf713d3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2d21a97054144269d8323bb394fae0d~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 视觉空间
@@ -335,7 +335,7 @@ Projection in Computer Graphics
 - Orthographic projection
 - Perspective projection
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7861d5a548ce4a84bd2c5ccc7c6857aa.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/661e664b4cd0480e84eb714937d9d224~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 #### Orthographic (正交) projection
@@ -346,12 +346,12 @@ A simple way of understanding
 - Drop Z coordinate
 - Translate and scale the resulting rectangle to$ [-1, 1]^2$(方便之后的计算)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d23742d99f2a46f687ed266daf2b4ce7.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a200a6a6f3b043d0b57ab685c0e36fc0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 第二种理解正交投影的形式
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f5842f7ea5f14e878273a37b7c2f5f79.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/142791c69d92493db30fe5ef15489ec0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 在图形学中，正交投影是把 $[l,r]×[b,t]×[f,n]$ 构成的空间压缩成 $[−1,1]^3 $的立方体中。
@@ -421,7 +421,7 @@ $$
 - Further objects are smaller（近大远小）
 - Parallel lines not parallel; converge to single point
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d3c4087c57fa40559f8992ce6fd9179c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f458f2de61cb4c09b6a8b5ce8e2cc3a9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 透视投影与正交投影类似，也是经过类似的步骤：
@@ -434,7 +434,7 @@ $$
 
 下图是 YZ 平面的截面：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b74f65ad67ba45c399c0484514d1094e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ed58008576f40acb0459f741325b57a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 经过压缩后，对于 y 坐标，空间中的一点$ (x,y,z) $会变成$ (x,y′,z)$，根据相似三角形的性质，我们会得到如下的等式：
@@ -586,14 +586,14 @@ $$
 最后的问题就是 $Mortho$（正交投影） 了。对于这个正交投影，我们只知道 [f,n]，还缺少 [l,r] 和 [b,t]，但我们可以通过其他途径来计算出这些需要的值。
 
 对于透视投影，还有两个重要的概念，那就是 `field of view(fov)` 和 `aspect ratio`。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cb6732863e9a49f988e04f25fcd97638.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/59dbd100ad0d4e2c9ba7ef8c408f5383~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 `fov` 是指视野范围，分为 `fovY` 和 `fovX`，两者可以相互推导。
 
 `aspect ratio` 是指近平面的宽高比。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f4ed7b0357d64675be09220fcf97067f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4448a4451d6c46b19b98cca65f91d769~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 根据三角函数，我们可以知道：

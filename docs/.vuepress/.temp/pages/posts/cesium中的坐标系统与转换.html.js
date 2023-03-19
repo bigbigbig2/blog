@@ -18,105 +18,86 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
-      "title": "1.cesium坐标系统",
-      "slug": "_1-cesium坐标系统",
+      "level": 3,
+      "title": "1.cesium坐标介绍",
+      "slug": "_1-cesium坐标介绍",
       "children": [
         {
-          "level": 3,
-          "title": "[1]屏幕二维坐标系",
-          "slug": "_1-屏幕二维坐标系",
+          "level": 4,
+          "title": "[1]屏幕坐标系统",
+          "slug": "_1-屏幕坐标系统",
           "children": []
         },
         {
-          "level": 3,
-          "title": "[2]笛卡尔空间直角坐标系",
-          "slug": "_2-笛卡尔空间直角坐标系",
+          "level": 4,
+          "title": "[2]笛卡尔空间直角坐标系统",
+          "slug": "_2-笛卡尔空间直角坐标系统",
           "children": []
         },
         {
-          "level": 3,
-          "title": "[3]WGS-84地理坐标系",
-          "slug": "_3-wgs-84地理坐标系",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "[4]WebGL坐标系",
-          "slug": "_4-webgl坐标系",
+          "level": 4,
+          "title": "[3]地理坐标",
+          "slug": "_3-地理坐标",
           "children": []
         }
       ]
     },
     {
-      "level": 2,
+      "level": 3,
       "title": "2.cesium坐标转换",
       "slug": "_2-cesium坐标转换",
       "children": [
         {
-          "level": 3,
+          "level": 4,
           "title": "[1]角度与弧度的转换",
           "slug": "_1-角度与弧度的转换",
           "children": []
         },
         {
-          "level": 3,
-          "title": "[2]WGS84转Cartesian3",
-          "slug": "_2-wgs84转cartesian3",
+          "level": 4,
+          "title": "[2]地理坐标转Cartesian3",
+          "slug": "_2-地理坐标转cartesian3",
           "children": [
             {
-              "level": 4,
-              "title": "(1)通过弧度或经纬度直接转换",
-              "slug": "_1-通过弧度或经纬度直接转换",
+              "level": 5,
+              "title": "(1)直接经过经纬度转换",
+              "slug": "_1-直接经过经纬度转换",
               "children": [
                 {
-                  "level": 5,
-                  "title": "角度制的WGS84转Cartesian3",
-                  "slug": "角度制的wgs84转cartesian3",
+                  "level": 6,
+                  "title": "角度制的地理坐标转Cartesian3",
+                  "slug": "角度制的地理坐标转cartesian3",
                   "children": []
                 },
                 {
-                  "level": 5,
-                  "title": "弧度制WGS84转Cartesian3",
-                  "slug": "弧度制wgs84转cartesian3",
+                  "level": 6,
+                  "title": "弧度制与笛卡尔转换",
+                  "slug": "弧度制与笛卡尔转换",
                   "children": []
                 }
               ]
             },
             {
-              "level": 4,
+              "level": 5,
               "title": "(2)使用椭球体转换",
               "slug": "_2-使用椭球体转换",
-              "children": [
-                {
-                  "level": 5,
-                  "title": "角度制的WGS84转Cartesian3",
-                  "slug": "角度制的wgs84转cartesian3-1",
-                  "children": []
-                },
-                {
-                  "level": 5,
-                  "title": "弧度制WGS84转Cartesian3",
-                  "slug": "弧度制wgs84转cartesian3-1",
-                  "children": []
-                }
-              ]
+              "children": []
             }
           ]
         },
         {
-          "level": 3,
-          "title": "[3]Cartesian3转WGS84",
-          "slug": "_3-cartesian3转wgs84",
+          "level": 4,
+          "title": "[3]Cartesian3转地理坐标",
+          "slug": "_3-cartesian3转地理坐标",
           "children": [
             {
-              "level": 4,
+              "level": 5,
               "title": "(1)直接转换",
               "slug": "_1-直接转换",
               "children": []
             },
             {
-              "level": 4,
+              "level": 5,
               "title": "(2)通过椭球体转换",
               "slug": "_2-通过椭球体转换",
               "children": []
@@ -124,26 +105,20 @@ export const data = {
           ]
         },
         {
-          "level": 3,
+          "level": 4,
           "title": "[4]Cartesian2与Cartesian3互转",
           "slug": "_4-cartesian2与cartesian3互转",
           "children": [
             {
-              "level": 4,
+              "level": 5,
               "title": "(1)Cartesian2转Cartesian3",
               "slug": "_1-cartesian2转cartesian3",
               "children": []
             },
             {
-              "level": 4,
+              "level": 5,
               "title": "(2)Cartesian3转Cartesian2",
               "slug": "_2-cartesian3转cartesian2",
-              "children": []
-            },
-            {
-              "level": 4,
-              "title": "参考：",
-              "slug": "参考",
               "children": []
             }
           ]
@@ -152,11 +127,24 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1660906395000
+    "updatedTime": 1663764462000
   },
   "readingTime": {
-    "minutes": 5,
-    "words": 1015
+    "minutes": 6,
+    "words": 1263
   },
   "filePathRelative": "posts/cesium中的坐标系统与转换.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

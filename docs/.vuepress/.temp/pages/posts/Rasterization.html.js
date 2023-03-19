@@ -173,11 +173,24 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1660906395000
+    "updatedTime": 1663764462000
   },
   "readingTime": {
-    "minutes": 17,
-    "words": 4498
+    "minutes": 20,
+    "words": 4858
   },
   "filePathRelative": "posts/Rasterization.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

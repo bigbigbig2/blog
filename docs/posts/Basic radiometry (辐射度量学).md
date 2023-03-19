@@ -38,7 +38,7 @@ $$
 
 单位立体角即为一个点在单位球面上的投影
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7eb02050a8324366b9758bb452f7b932.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bfc5b70d0c944cceac273efd36db9c29~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 最大弧度为2派，最大立体角为4派
@@ -46,7 +46,7 @@ $$
 立体角的国际制单位是**球面度（steradian，sr）**。立体角有一个非国际制单位 **平方度，1*sr* = (180/π)** *square degree*
 
 那么对于单位立体角，也就是取物体表面上的单位面积
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2f0d3ea470454d70a3dfe34316815c89.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee1fff2481c344adaea486df56cbc5b8~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
@@ -56,13 +56,13 @@ $$
 
 定义：辐射强度是点光源发出的单位立体角功率
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/020c61827085488b99e90db6e29e8a4f.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/17f903d80a7a42ce9c67ae8ccbd3c67e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ee907d1665e4b89800ae47d59361846~tplv-k3u1fbpfcp-zoom-1.image)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7329a1b8bbe7478a909108bfd7a6e905~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 一个接近生活的例子：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/da97cc2a4cbf4e8aafb006d0a3bf7d10.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6e140769a6aa4adeb00687ad023bb07f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - lumens：流明
@@ -76,19 +76,19 @@ $$
 注意和Intensity的区别，Intensity定义的是每个立体角上，而Irradiance定义每一个面积上
 
 在现实世界中也就是衡量光源和衡量物体吸收光程度的关系
-![在这里插入图片描述](https://img-blog.csdnimg.cn/140dd740cfc246c9b5c02f7261d4b4a6.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/260ac61918c54b1eb84fb2b7742ba4c5~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 这里指的是垂直照射的功率。如果不是垂直，那么就需要进行一个投影（乘以入射向量与表面法向量夹角的余弦$\cos{\theta}$）。
 
 表面辐照度与光线方向与表面法线夹角的余弦成正比
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/533bb08842c043ffb423ab8a57e749e3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e81711ef878e4d1bb72c2c54bf33c045~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 那么可以使用该Irradiance的概念对之前的进行纠正
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5b8cf60b8d974117a918fa2a10356dd6.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b88043904c7d4d2c94fc456ec8da18ca~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 也就是说并不是Intensity在衰减，而是Irradiance在衰减
@@ -99,7 +99,7 @@ $$
 - 渲染就是计算辐射率
 
 定义：**每单位立体角、每单位垂直面积(投影)的功率**，很像是Intensity和irradiance的结合。它同时指定了**光的方向**与**照射到的表面所接受到的亮度**，所以这个是最常用的。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/bef3c236ec194afcb82de5dfbd545b0e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a89239685139488daf6f192798e24308~tplv-k3u1fbpfcp-zoom-1.image)
 
 $$
 L(p,w)=\frac{dE(p)}{dwcosθ}=\frac{dI(p,w)}{dAcosθ}
@@ -112,7 +112,7 @@ $$
 - Irradiance 辐照度: 面积 dA 接收的总功率
 - Radiance: 从方向dω接收到的面积为dA 的功率
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3553f9a0fe0e483785b269ff301b360b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa3f9c177b7142b883ab47cbafb4944a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 也就是说Irradiance就是把来自四面八方的radiance把它门积起来
@@ -123,19 +123,19 @@ $$
 
 把仿射看出是来自某一个方向的一个radiance照射到物体表面上一单位面积点，能量 *(irradiance)* 被表面**吸收**了，接着表面再将这能量以光线的形式 *(辐射率 radience)* 向着不同方向发射出去(具体方向得看是什么反射，如果是镜面反射则将全部能量向一个方向发出去，如果是漫反射，则向四面八方发射）。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b01ac570deb543ed8bd5550359d2902a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9fd779c387b4e958a27ab4bc266db0a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
  **双向反射分布函数 （Bidirectional Reflectance Distribution Function）**: **描述从不同方向入射之后，反射光线分布情况**（也就是描述了光线与物体如何作用，也就是不同材质与光线的不同作用效果）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1dc6c62d8cc94ccda73f329efc27a803.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68719980ad3e4eaaba829d3847bccc0b~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### 反射方程
 
 所谓反射方程定义的是任何一个着色点在各种不同的光照环境下所有的方向$w_i$的Radiance对出射方向$w_r$的贡献加起来，然后就可以得到非常接近现实的光照效果了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7872039fe60e4e568b7768c3fd49a73f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/826b57bc142145c29ef8429a24ee46ae~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 也就是从任何一个方向/相机观察一个着色点其实就是一个积分，先是以任意$i$方向进入，然后以radiance形式进入，然后使用BRDF
@@ -162,22 +162,22 @@ $$
 
 对于一个点光源的情况：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/83da5c3210394316a1597ba0f0e67c9c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7e4eaf03a86c43188115fd33e61d77b9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 那么多个点光源：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0ec30116c13d4ffda717c7ce3fd97aa8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c1cf0f917ae34c0caa09f29b1e0e1f96~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 更进一步，如果有一个面光源呢？将这个面光源积分起来
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4710fef1affb4879b349ae06787f87d3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d37b628e059146dcb43a6a7847b0be4e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 还未结束，如果有其他点dA的出射光作为入射光射进来呢？把物体反射出来的光也当作一个光源即可
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/218cf6821e874019ab892b785890bbcc.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ae89e09d9a0434aa219f5e6b2a710af~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 在数学上可以通过简化的方式将上面的式子列出来
@@ -210,7 +210,7 @@ $$
 
 下面为不同弹射次数所呈现的场景
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/202a5ad7d6694e48bb622606b8a96ed3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f4aa40c79db045fbad046cef2e210c7d~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如上图所示，弹射次数越多，场景就越趋于真实，当然变化也就越小，越趋近收敛，当弹射次数达到一定时，场景就会趋于稳定状态，在增加也没多大变化了

@@ -6,7 +6,7 @@ export const data = {
   "frontmatter": {
     "layout": "Post",
     "title": "计算机图形学中的坐标系统",
-    "subtitle": "局部空间、世界空间、观察空间、裁剪空间、屏幕/像素空间及WebGL上的应用",
+    "subtitle": "局部空间、世界空间、观察空间、裁剪空间、屏幕/像素空间 及Web绘图系统SVG、Canvas、WebGL的坐标系统上与注意事项",
     "date": "2022-09-12T00:00:00.000Z",
     "useHeaderImage": true,
     "headerImage": "/img/in-post/2022-9-12/3.jpg",
@@ -77,14 +77,33 @@ export const data = {
       "title": "4.WebGL坐标系统",
       "slug": "_4-webgl坐标系统",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "5.Canvas的颜色缓冲区大小和样式大小",
+      "slug": "_5-canvas的颜色缓冲区大小和样式大小",
+      "children": []
     }
   ],
   "git": {
-    "updatedTime": null
+    "updatedTime": 1663764462000
   },
   "readingTime": {
-    "minutes": 8,
-    "words": 2014
+    "minutes": 10,
+    "words": 2564
   },
   "filePathRelative": "posts/图形学坐标系统梳理小结.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

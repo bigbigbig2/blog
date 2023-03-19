@@ -1,20 +1,9 @@
 export const data = {
   "key": "v-b5ff2e00",
   "path": "/posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86.html",
-  "title": "可视化中的数学基础",
+  "title": "",
   "lang": "en-US",
-  "frontmatter": {
-    "layout": "Post",
-    "title": "可视化中的数学基础",
-    "subtitle": "通过几何直观的理解图形学中的数学基础知识",
-    "date": "2022-05-13T00:00:00.000Z",
-    "headerImage": "/img/in-post/bu/5.jpg",
-    "catalog": true,
-    "tags": [
-      "计算机图形学",
-      "可视化"
-    ]
-  },
+  "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
@@ -318,8 +307,21 @@ export const data = {
     "updatedTime": 1660906395000
   },
   "readingTime": {
-    "minutes": 37,
-    "words": 9090
+    "minutes": 39,
+    "words": 9386
   },
   "filePathRelative": "posts/图形学中的数学知识.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

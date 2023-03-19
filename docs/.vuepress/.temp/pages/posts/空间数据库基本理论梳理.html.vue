@@ -70,10 +70,10 @@
 </ul>
 <h3 id="_5-常见的空间数据库管理系统" tabindex="-1"><a class="header-anchor" href="#_5-常见的空间数据库管理系统" aria-hidden="true">#</a> [5]常见的空间数据库管理系统</h3>
 <p><code>Spatial Database Management System，SDBMS</code></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/5f2f61ebf23b25a35c7c5d6f8279c392.png" alt="image-20220417221609580"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93d26299d0134840bc323bf65bc6a982~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417221609580"></p>
 <h3 id="_6-空间数据类型" tabindex="-1"><a class="header-anchor" href="#_6-空间数据类型" aria-hidden="true">#</a> [6]空间数据类型</h3>
 <p>一个普通的数据库有字符串、数字和日期。而空间数据库添加了额外的数据类型来表示<strong>地理特征</strong>。这些数据类型抽象和封装了<code>边界</code>和<code>维度</code>等空间结构。在许多方面，空间数据类型可以简单地理解为形状geometry。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/52fad039ffae666693d3c490ae3999ba.png" alt="image-20220417221758072"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bbdbe4f2b9e445fb85e7215ad91f8704~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417221758072"></p>
 <p>空间数据类型以分层类型组织。每个子类型都继承其父类型的结构（属性）和行为（方法或函数）。</p>
 <h3 id="_7-空间函数" tabindex="-1"><a class="header-anchor" href="#_7-空间函数" aria-hidden="true">#</a> [7]空间函数</h3>
 <p>空间数据库提供一组功能来分析几何组件、确定空间关系和操纵几何。这些空间功能作为构建任何空间项目的“工具”。</p>
@@ -113,10 +113,10 @@
 <h4 id="两个标准的对比分析-重点" tabindex="-1"><a class="header-anchor" href="#两个标准的对比分析-重点" aria-hidden="true">#</a> 两个标准的对比分析（重点）</h4>
 <p>SFA SQL和SQL/MM的Geometry类型总体框架比较近似</p>
 <p><strong>SFA SQL的Geometry类型结构图：</strong>（有空间参考系）</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/effab061ff8026380d71ef1233aa9346.png" alt="preview"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d504e9a27cd44dfb5e3b04b2b41e572~tplv-k3u1fbpfcp-zoom-1.image" alt="preview"></p>
 <p><strong>SQL/MM的Geometry类型结构图：</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/d83a5a080622529c49d94ccd84ccc7c8.png" alt="preview"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/a4cef99fe48ce7a3bd366219230be6b4.png" alt="preview"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57b5619891c34ae6b5595b69f2611d63~tplv-k3u1fbpfcp-zoom-1.image" alt="preview"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9baee1041489438d96067f8e602a23dd~tplv-k3u1fbpfcp-zoom-1.image" alt="preview"></p>
 <h2 id="_2-几何对象模型" tabindex="-1"><a class="header-anchor" href="#_2-几何对象模型" aria-hidden="true">#</a> 2.几何对象模型</h2>
 <h3 id="_1-空间数据模型" tabindex="-1"><a class="header-anchor" href="#_1-空间数据模型" aria-hidden="true">#</a> [1]空间数据模型</h3>
 <h4 id="什么是数据模型" tabindex="-1"><a class="header-anchor" href="#什么是数据模型" aria-hidden="true">#</a> <strong>什么是数据模型？</strong></h4>
@@ -124,7 +124,7 @@
 <h4 id="空间数据模型的分类" tabindex="-1"><a class="header-anchor" href="#空间数据模型的分类" aria-hidden="true">#</a> 空间数据模型的分类</h4>
 <p>现有的空间数据库都是基于某种空间数据模型</p>
 <p><strong>GIS中常见的两大数据模型</strong>：矢量模型和栅格模型</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/49524bc114fe6fb96969832f3e580805.png" alt="image-20220417222654664"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2a045c9f42f4a14a7698c60ad255dcd~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417222654664"></p>
 <h5 id="矢量模型" tabindex="-1"><a class="header-anchor" href="#矢量模型" aria-hidden="true">#</a> 矢量模型</h5>
 <ul>
 <li>利用点、线、多边形的形式来表达现实世界</li>
@@ -153,8 +153,8 @@
 <p>几何对象模型是空间数据库中最常见、最基础的一个模型</p>
 <h4 id="概念模型" tabindex="-1"><a class="header-anchor" href="#概念模型" aria-hidden="true">#</a> 概念模型</h4>
 <p>可以理解为空间数据类型（同关系型数据库中的实体，属性之类的概念）</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/fa9d8a146c3ba44916c43a1145aaa7ad.png" alt="image-20220417222955532"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/036791f4c54e402f662bbbaff919cbed.png" alt="image-20220417223008940"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f041663da43747748fe88e73b81834ac~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417222955532"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c607b3118cfc42b9807f8408c6107ca0~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417223008940"></p>
 <ul>
 <li>一个依赖于空间参考系(Spatial Reference System)</li>
 <li>测量参考系(Measure Reference System)</li>
@@ -189,7 +189,7 @@
 <ol>
 <li><code>OGC</code>仅能表达和处理简单(<code>Simple</code>)的几何对象：简单几何对象是指不自相交的几何对象</li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/e6d7f8b6aff6cd5b16a0a16fe9997a8f.png" alt="image-20220329155928476"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2f9d87aa3a24b7e9748950b59c16ccf~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220329155928476"></p>
 <ol start="2">
 <li>
 <p>任何几何模型都有其边界(<code>boundary</code>)、内部(<code>interior</code>)和外部(<code>exterior</code>)</p>
@@ -266,7 +266,7 @@
 </ul>
 <p>前9种与空间拓扑关系查询有关
 后2种是基于线性参考的空间查询方法</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/dceb1e0735b2345399229702731df209.png" alt="image-20220417223455283"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de4880da69ee4987ba0835688cdb3034~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417223455283"></p>
 <h5 id="空间拓扑关系" tabindex="-1"><a class="header-anchor" href="#空间拓扑关系" aria-hidden="true">#</a> 空间拓扑关系</h5>
 <p>8种空间关系</p>
 <ul>
@@ -287,12 +287,12 @@
 <p>交叠(<code>overlaps</code>)</p>
 <p>如<code>Dim(I(a)) = Dim(I(b)) = Dim(I(𝑎) ∩ 𝐼(𝑏))</code>，且<code>𝑎 ∩ 𝑏 ≠ 𝑎</code>，同时<code>𝑎 ∩ 𝑏 ≠ 𝑏</code>，则a和b交叠</p>
 <p>点/点、线/线、面/面交叠关系，没有线/面等交叠关系</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/42bb9290ded7e585ac5fd0bab9c27e18.png" alt="image-20220329182701564"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b073305ce3104736998b5196d0185247~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220329182701564"></p>
 </li>
 <li>
 <p>包含于(<code>within</code>)
 若𝑎 ∩ 𝑏 = 𝑎，且I 𝑎 ∩ 𝐸 𝑏 = ∅，则a包含于b内</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/acf68b1618f3f415f9f99fffc31041d9.png" alt="image-20220417223933200"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b0e5a54096c14ec4b0cb08d1b80cddf4~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417223933200"></p>
 </li>
 <li>
 <p>包含(<code>contains</code>)
@@ -304,7 +304,7 @@
 若<code>I 𝑎 ∩ 𝐼 𝑏 = ∅，且𝑎 ∩ 𝑏 ≠ ∅</code>，则a和b相接
 面/面、线/线、线/面、点/面、点/线相接关系
 但没有点/点相接关系(为什么?)</p>
-<pre><code>  ![image-20220417223914721](https://img-blog.csdnimg.cn/img_convert/51c102da4ce838bd512b59f3759a8ab9.png)
+<pre><code>  ![image-20220417223914721](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfe5ac7365ab46f9b91b5449ad309a69~tplv-k3u1fbpfcp-zoom-1.image)
 </code></pre>
 </li>
 <li>
@@ -312,15 +312,15 @@
 n 若[Dim(I 𝑎 ∩ 𝐼 𝑏 ) &lt; max(Dim(I(a)), Dim(I(b)))，且Dim(I(b)) !=0， 𝑎 ∩ 𝑏 ≠ 𝑎， 𝑎 ∩ 𝑏 ≠ 𝑏，则a穿越b
 n OGC定义：I 𝑎 ∩ 𝐼 𝑏 ≠ ∅ ， 𝑎 ∩ 𝑏 ≠ 𝑎， 𝑎 ∩ 𝑏 ≠ 𝑏
 n 点/线、点/面、线/线、线/面穿越关系</p>
-<pre><code>  ![image-20220329182843549](https://img-blog.csdnimg.cn/img_convert/9f27cf24b5747a2ca28f6a2f164f2cb5.png)
+<pre><code>  ![image-20220329182843549](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a1ca9a4474748ec95fb49597a1b8e78~tplv-k3u1fbpfcp-zoom-1.image)
 </code></pre>
 </li>
 </ul>
 <p>空间对象的拓扑关系不是非此即彼的，也有一定的分辨精度层次关系</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/65a89d72bca8861e1f9c733e49eb0c18.png" alt="image-20220417223830724"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89e7303e97af46eb87b8a82a1e57db0e~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417223830724"></p>
 <h4 id="逻辑模型" tabindex="-1"><a class="header-anchor" href="#逻辑模型" aria-hidden="true">#</a> 逻辑模型</h4>
 <p>基于概念模型，OGC提出了基于预定义数据类型和基于扩展几何类型的两种实现方法</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/9d817f0c02a41486ff2de4875c09a287.png" alt="image-20220329183442285"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d10deb4f833a4a62a8917ff0a3589b9d~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220329183442285"></p>
 <h5 id="基于预定义数据类型的实现" tabindex="-1"><a class="header-anchor" href="#基于预定义数据类型的实现" aria-hidden="true">#</a> 基于预定义数据类型的实现</h5>
 <ul>
 <li>利用关系数据库中已有的数字(<code>numeric</code>)类型、二进制大对象(<code>BLOB</code>)类型实现空间数据的存储和管理，这些数据类型的解释和维护由DBMS负责、</li>
@@ -328,7 +328,7 @@ n 点/线、点/面、线/线、线/面穿越关系</p>
 <li>与空间数据引擎(如ArcSDE)的区别</li>
 </ul>
 <p>基于<code>numeric</code>和<code>BLOB</code>的实现，要素表(<code>Feature</code>)、几何列表(<code>GEOMETRY_COLUMNS</code>)和空间参考系(<code>SPATIAL_REF_SYS</code>)表的结构都一样，不同之处在于几何(<code>Geometry</code>)表的结构</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/a868cd0502d0dae0019c644898dd3a21.png" alt="image-20220417224138876"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c33cb3821f414cc7866f782e88049750~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220417224138876"></p>
 <blockquote>
 <p><code>要素表</code>和<code>几何表</code>是用户表，用于存储空间数据，几何列表(<code>geometry_columns</code>)和空间参考系表是系统表，用于存储用户表的元数据<code>(meta-data)</code>信息</p>
 </blockquote>
@@ -385,7 +385,7 @@ n 点/线、点/面、线/线、线/面穿越关系</p>
 </li>
 </ul>
 <p>示例</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/f51adb9599f571bd64b59968632fa60d.png" alt="image-20220329185824973"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e68b2af86a3430881c0390f10b42017~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220329185824973"></p>
 <blockquote>
 <p><strong>基于数字类型的Geometry表</strong>：其中，1 或多个坐标值(X 坐标值）将被表达为 Geometry 表中数值类型的对，每 个几何对象用键(GID) 标识，对象中不同元素元由 ESEQ 标识，每个元素的类型用 ETYPE 标识，每个元素分布在要素表的1或多行中，它们特有的顺序用 SEQ 值标识。对于无用的坐标对应将其全集(X Y) 置为 Nil 。</p>
 </blockquote>
@@ -394,7 +394,7 @@ n 点/线、点/面、线/线、线/面穿越关系</p>
 </blockquote>
 <h5 id="基于扩展几何类型的实现" tabindex="-1"><a class="header-anchor" href="#基于扩展几何类型的实现" aria-hidden="true">#</a> 基于扩展几何类型的实现</h5>
 <p>所谓基于扩展 Geometry 类型的实现就是利用对象关系型数据库中对抽象数据类型的支 持，定义 <code>Geometry</code> 类型及其相关的方法与函数，并用该扩展的 Geometry 类型实现空间数 据的存储与管理。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/706c322b18e86c02c6e1ba138d05af91.png" alt="image-20220329190532307"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2731f01105c449382b3eb9145c2bd5c~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220329190532307"></p>
 <p>各表字段解释：</p>
 <p><strong><code>GEOMETRY_COLUMNS</code>和<code>SPATIAL_REF_SYS</code>是系统表，用于存储元数据信息</strong></p>
 <ul>
@@ -439,7 +439,7 @@ Private IsMeasured <span class="token keyword">SmallInt</span> <span class="toke
 <p>SFA SQL 给出了一种较为紧凑的几何数据的二进制方式的存储格式，即 WKB(well-known binary) 。它不仅可用于BLOB中空间对象的存储，还可以用于几何数据二进制流的交换。</p>
 <p><strong>WKB表达</strong></p>
 <p>示例：出一个由两个环构成的多边形的 WKB 表达</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/efc0a1ebbd7150a72b440370a4457dc3.png" alt="image-20220330213911253"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4e7f3894d204fa2b7862ae2d48f13ae~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330213911253"></p>
 <blockquote>
 <ul>
 <li>SFA SQL给出了一种较为紧凑的几何数据的二进制方式的存储格式</li>
@@ -464,9 +464,9 @@ PARAMETER<span class="token punctuation">[</span>“ Scale_Factor”<span class=
 PARAMETER<span class="token punctuation">[</span>“ Latitude_Of_Origin”<span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 UNIT <span class="token punctuation">[</span>“ Meter”<span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
 <span class="token comment">#对象依次为水准面、椭球体、本初子午线和测量的角度单位</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/7483a890153bf915bc67bddc0c41fd34.png" alt="image-20220330214459321"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f2512cd0e0fc4f0885fbfa3f82599865~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330214459321"></p>
 <p>示例：</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/3f48515c7bcaa33ac6f0f65a3f824276.png" alt="image-20220330214131318"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/74e05e0e48fe4954b31ab8831707d1d7~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330214131318"></p>
 <h5 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项</h5>
 <p>WKT和WKB只支持二维几何对象的表达，并没有任何有关空间参考系的信息</p>
 <ul>
@@ -566,7 +566,7 @@ UNIT <span class="token punctuation">[</span>“ Meter”<span class="token punc
 <li><code>double precision</code> 字节为8的浮点数(float8)</li>
 <li><code>character varying</code>可变长字符类型，相当于BLOC</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/e990f43130a5aa365d773db818201564.png" alt="image-20220330165733164"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/746b4c432c2c4d2382e39cf5b57dea93~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330165733164"></p>
 <h4 id="shapefile数据导入" tabindex="-1"><a class="header-anchor" href="#shapefile数据导入" aria-hidden="true">#</a> Shapefile数据导入</h4>
 <p>使用PostGIS 2.0 Shapefile and DBF Loader Exporter</p>
 <p>使用QGIS连接导入</p>
@@ -640,7 +640,7 @@ OSMJSON – json variant of OSM XML
 <p>)<strong>HOT Exports：</strong><a href="http://hot.openstreetmap.org/" target="_blank" rel="noopener noreferrer"><strong>http://hot.openstreetmap.org/</strong></a></p>
 <p><strong>BBBike：</strong><a href="http://extract.bbbike.org/" target="_blank" rel="noopener noreferrer"><strong>http://extract.bbbike.org/</strong></a></p>
 <h4 id="基于osm数据搭建一个地图服务" tabindex="-1"><a class="header-anchor" href="#基于osm数据搭建一个地图服务" aria-hidden="true">#</a> 基于OSM数据搭建一个地图服务</h4>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/d3b9747b894ee2a14d7f1583e8214cf1.png" alt="img"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/786f65d4111040aba1738fd2968a6771~tplv-k3u1fbpfcp-zoom-1.image" alt="img"></p>
 <h2 id="_5-矢量数据的定义与操纵" tabindex="-1"><a class="header-anchor" href="#_5-矢量数据的定义与操纵" aria-hidden="true">#</a> 5.矢量数据的定义与操纵</h2>
 <h4 id="_1-数据定义与插入" tabindex="-1"><a class="header-anchor" href="#_1-数据定义与插入" aria-hidden="true">#</a> [1]数据定义与插入</h4>
 <p>创建一个实践表</p>
@@ -663,14 +663,14 @@ OSMJSON – json variant of OSM XML
 <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span> ‘Timber<span class="token operator">-</span>forest’<span class="token punctuation">,</span>
 ST_GeomFromText<span class="token punctuation">(</span>‘<span class="token keyword">Polygon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">20</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">20</span> <span class="token number">10</span><span class="token punctuation">,</span>
 <span class="token number">10</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>’<span class="token punctuation">,</span> <span class="token number">4326</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">47806700</span><span class="token punctuation">,</span> <span class="token number">34246.2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/2974e52f194bc8592d16fc87f3db2431.png" alt="image-20220330221816575"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a57f3b4615174ff3ba106fc0f7effd4f~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330221816575"></p>
 <p>插入子查询结果（首先建立新表 landuse_ new, 其属性列名与 landuse 相同）
 <strong>例4</strong>：将<code>landuse</code>表中ID号小于15的记录存入表<code>landuse_new</code>中，假设<code>landuse_new</code>属性列只有<code>landuse_id</code>, <code>name</code>,<code>the_geom</code></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> landuse_new
 <span class="token keyword">select</span> landuse_id<span class="token punctuation">,</span> name<span class="token punctuation">,</span> the_geom
 <span class="token keyword">from</span> landuse
 <span class="token keyword">where</span> landuse_id <span class="token operator">&lt;</span> <span class="token number">15</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/ba5246d3fef150221ba0d949c8720ae3.png" alt="image-20220330221830731"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d58e7d9fb4564993935438445d032ff3~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330221830731"></p>
 <h4 id="_2-管理函数" tabindex="-1"><a class="header-anchor" href="#_2-管理函数" aria-hidden="true">#</a> [2]管理函数</h4>
 <p>管理和操纵几何类型的数据表及其元数据</p>
 <ul>
@@ -718,8 +718,8 @@ ST_GeomFromText<span class="token punctuation">(</span>‘<span class="token key
 </ul>
 <p>例5：在<code>landuse</code>表中添加一个新的几何字段</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> AddGeometryColumn<span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">,</span> <span class="token string">'landuse'</span><span class="token punctuation">,</span> <span class="token string">'geom'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'Polygon'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/8d6b827614880bd5a9a12301ab58127a.png" alt="image-20220330222029648"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/b790d409794fa88525c37ee12afb5072.png" alt="image-20220330222059339"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4501430acbda401987c399d4b0f06f61~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330222029648"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6f58b452741640c0b3df9fb61cf4f799~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330222059339"></p>
 <h4 id="_3-构造函数" tabindex="-1"><a class="header-anchor" href="#_3-构造函数" aria-hidden="true">#</a> [3]构造函数</h4>
 <p>根据给定的几何描述，构造相应几何对象</p>
 <ul>
@@ -820,10 +820,10 @@ ST_GeomFromText<span class="token punctuation">(</span> <span class="token strin
 </li>
 </ul>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/a2879b082a9a3e006a5941ea79df43a3.png" alt="image-20220330223147037"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/d01756f265dc64c19f0aaf46d790b300.png" alt="image-20220330223158354"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ce3a441114f742688bc1595d2f250a46~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330223147037"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9680a7352fe4119a7ae52d6dba3a730~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330223158354"></p>
 <h4 id="_4-访问函数" tabindex="-1"><a class="header-anchor" href="#_4-访问函数" aria-hidden="true">#</a> [4]访问函数</h4>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/9e858b7eed9769279a0993079bf11168.png" alt="image-20220330224710698"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c6faba6ed6b442988f02413eb097da35~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330224710698"></p>
 <blockquote>
 <p>注意：</p>
 <ul>
@@ -839,7 +839,7 @@ ST_GeomFromText<span class="token punctuation">(</span> <span class="token strin
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span>
 ST_IsSimple<span class="token punctuation">(</span>ST_GeomFromText<span class="token punctuation">(</span> <span class="token string">'LINESTRING(1 1,2 2, 1 3, 1 2, 2 1)'</span> <span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">As</span> smpl_line<span class="token punctuation">,</span>
 ST_IsSimple<span class="token punctuation">(</span>ST_GeomFromText <span class="token punctuation">(</span><span class="token string">'POLYGON((0 0,0 1, 1 1, 1 0, 0 0))'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">As</span> smpl_plygon
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/75f1a98d3c3be89a88155d4c2d27846e.png" alt="image-20220330225041197"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/620a9b51a7c543babd5dc40db4422172~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330225041197"></p>
 <h4 id="_5-输出函数" tabindex="-1"><a class="header-anchor" href="#_5-输出函数" aria-hidden="true">#</a> [5]输出函数</h4>
 <p>按不同格式的要求输出几何对象</p>
 <ul>
@@ -848,15 +848,15 @@ ST_IsSimple<span class="token punctuation">(</span>ST_GeomFromText <span class="
 </ul>
 <p>示例：以<code>Polygon((0 0, 0 1, 1 1, 1 0, 0 0))</code>为例，分别按二进制、EWKT、SVG的格式输出</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> ST_AsBinary<span class="token punctuation">(</span>ST_GeomFromText <span class="token punctuation">(</span><span class="token string">'POLYGON ((0 0, 0 1, 1 1, 1 0, 0 0))'</span><span class="token punctuation">,</span> <span class="token number">4326</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>	
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/6ad366f87165096c8a0aa2fc85fe68c5.png" alt="image-20220330230137391"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e9fccef8f394e2cabf1e7395a81d81c~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330230137391"></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> ST_AsEWKT<span class="token punctuation">(</span>ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'POLYGON((0 0, 0 1, 1 1, 1 0, 0 0))'</span><span class="token punctuation">,</span> <span class="token number">4326</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/f8264153b313db80c7178f73f80a5e28.png" alt="image-20220330230256739"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c70d710d5b774805b34477fdde046055~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330230256739"></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> ST_AsSVG<span class="token punctuation">(</span>ST_GeomFromText <span class="token punctuation">(</span><span class="token string">'POLYGON((0 0, 0 1, 1 1, 1 0, 0 0))'</span><span class="token punctuation">,</span> <span class="token number">4326</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/b41c0642e1d506443aa0830accdc156e.png" alt="image-20220330230351039"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/572a5426904b468d948be8bcad577e65~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330230351039"></p>
 <h4 id="_4-编辑函数" tabindex="-1"><a class="header-anchor" href="#_4-编辑函数" aria-hidden="true">#</a> [4]编辑函数</h4>
 <p>编辑函数用于增加、删除、修改几何对象的坐标信息</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/b05525ee7bf9b4a8729c7d397fcfef6b.png" alt="image-20220330231043665"></p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/60114e67ccc82b3a50ea044755d81d36.png" alt="image-20220330231102912"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/51d83e308f9d4ce1a9e7c0bdf86ff385~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330231043665"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d010495ca2934611adb45bef59be5ec0~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330231102912"></p>
 <p>示例1：使用<code>ST_Force_Collection</code>函数将原先的<code>Geometry</code>数据类型转换为<code>GeometryCollection</code></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> ST_AsEWKT<span class="token punctuation">(</span>ST_Force_Collection<span class="token punctuation">(</span><span class="token string">'POLYGON((0 0 2, 0 5 2, 5 0 2, 0 0 
 2), (1 1 2, 3 1 2, 1 3 2, 1 1 2))'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -913,14 +913,14 @@ ST_IsSimple<span class="token punctuation">(</span>ST_GeomFromText <span class="
 </ul>
 <p>示例1：获取土地利用表landuse中ID号为12的几何对象的质心</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> ST_Centroid<span class="token punctuation">(</span>the_geom<span class="token punctuation">)</span> <span class="token keyword">From</span> landuse <span class="token keyword">Where</span> landuse_id <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/0d0adba58104b86e57db852a7c92e931.png" alt="image-20220330231950612"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/79606f66ed6e405286a50b6c61c259e2~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330231950612"></p>
 <p>示例2:为土地利用数据表<code>landuse</code>中ID号为12的几何对象建立缓冲区距离为3的缓冲区(<code>ST_Buffer(geometry, float8, [int4]) 可选参数[int4]表示生成缓冲区的一个1/4的圆弧内的点，默认为8</code>)</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> ST_Buffer<span class="token punctuation">(</span>the_geom<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">From</span> Landuse <span class="token keyword">Where</span> Landuse_id <span class="token operator">=</span> <span class="token number">12</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/dab6b4a947d102454a19166c1f06d0aa.png" alt="image-20220330232151592"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7fe4cb6ee004aefbaf015f3b2d13946~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330232151592"></p>
 <h4 id="_4-操作符" tabindex="-1"><a class="header-anchor" href="#_4-操作符" aria-hidden="true">#</a> [4]操作符</h4>
 <p>正如属性数据的&quot;&gt;&quot;、&quot;＝＂、＂&lt;”等操作符一样， PostGIS 也定义了一些空间操作符。</p>
 <p>与几何操作不同的是：操作符 进行空间操作的对象必须有空间索引才行，也就是说空间操作符是与空间索引绑定的。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/c0154c38f98e506d58965e6a5880b42d.png" alt="image-20220330232412776"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fe0b50b9608d46b59ecb7a04b0984c1e~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330232412776"></p>
 <p>示例：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> tbla<span class="token punctuation">.</span>column1<span class="token punctuation">,</span> tblb<span class="token punctuation">.</span>column1<span class="token punctuation">,</span> tbla<span class="token punctuation">.</span>column2 <span class="token operator">&amp;&amp;</span>
 tblb<span class="token punctuation">.</span>column2 <span class="token keyword">As</span> overlaps
@@ -976,7 +976,7 @@ tblb<span class="token punctuation">.</span>column2 <span class="token keyword">
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> ST_Intersects<span class="token punctuation">(</span>
 ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'Polygon((1 1, 2 1, 2 3, 1 1))'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
 ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'Polygon((3 0, 3 2, 4 0, 3 0))'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/666a8f48e61ecf7eec3ab16fb46f8947.png" alt="image-20220330233021144"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/976e166dd3ee48f2a6d8e0912b5ec780~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220330233021144"></p>
 <h4 id="_4-量测函数" tabindex="-1"><a class="header-anchor" href="#_4-量测函数" aria-hidden="true">#</a> [4]量测函数</h4>
 <p>获取几何对象的各类测量值</p>
 <ul>
@@ -1019,7 +1019,7 @@ ST_GeomFromText<span class="token punctuation">(</span><span class="token string
 </blockquote>
 <p>示例1：求两点(0 0)和(1 1)间的方位角</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> ST_Azimuth<span class="token punctuation">(</span>ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'Point(0 0)'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'Point(1 1)'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/img_convert/c0904cca89fea62faeb491071bc0adca.png" alt="image-20220331090844786"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2313e474499147818f1208a4395f367d~tplv-k3u1fbpfcp-zoom-1.image" alt="image-20220331090844786"></p>
 <p>示例2：计算两点在GRS_1980地球椭球体下的曲面距离</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">Select</span> ST_Distance_Spheroid<span class="token punctuation">(</span>ST_Centroid<span class="token punctuation">(</span>the_geom<span class="token punctuation">)</span><span class="token punctuation">,</span>ST_GeomFromText<span class="token punctuation">(</span><span class="token string">'Point(-118, 38)'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'SPHERO ID["GRS_1980", 6378137, 298.257222101]'</span><span class="token punctuation">)</span> <span class="token keyword">from</span> landuse<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h4 id="_4-线性参考" tabindex="-1"><a class="header-anchor" href="#_4-线性参考" aria-hidden="true">#</a> [4]线性参考</h4>

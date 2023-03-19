@@ -22,7 +22,7 @@ tags:
 ## 2.视口变换
 
 **屏幕空间**：在屏幕上建立坐标系。左下角是原点(0,0)，向右是x轴正方向，向上是y轴正方向
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e6f17298c2e543bf83600ecd5feb7bc3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e394107a55b74672a720caa525d49fd3~tplv-k3u1fbpfcp-zoom-1.image)
 
 - 屏幕跨度为：$(0,0) $到 $(width,height)$
 - 像素的索引形式：$(x,y)$，$x,y$ 都是整数
@@ -59,7 +59,7 @@ $$
 
 光栅化过程
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b3d8ab5364f042ccb11ce7e37bfe6bda.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9abdad6e5b6a46248b9ea33b4fab4ccc~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 当我们知道了三角形三个顶点的坐标之后，下一步就是决定哪些像素应该被填充了
@@ -84,7 +84,7 @@ for (int x = 0; x < xmax; ++x) {
 
 类似的，我们可以通过像素中心对屏幕空间进行采样，判断该像素中心是否被三角形覆盖，以此来判断该像素应不应该被填充。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cb2dcb6be98e4372871590c3a905848b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/605fd22e6886401db732f15ef1f7562b~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如上图所示的三角形，我们给出一个采样函数：
@@ -102,7 +102,7 @@ inside(triangle, x, y) =
 $$
 如何判断像素中心是否位于三角形内部呢？之前提到过可以利用叉乘的结果来判断，我们来回忆一下
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1cfacb32651d405e919e34e057417d32.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/465dfa7dc281414885811e4b666a99aa~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 假设三角形的三个顶点分别是 ，，P0，P1，P2，并且三角形是以逆时针的顺序进行绘制的。那么我们可以求出：
@@ -125,19 +125,19 @@ for (int x = 0; x < width; ++x)
 
 实际上，我们只需要对三角形所在的轴向包围盒子（Axis Align Bounding Box，简称 AABB）覆盖的范围进行采样即可
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6b4e980cef22409197d0d95f8c959c6a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fd416aa27a55426299a35b53264bc245~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 但在极端情况下，例如三角形进行过旋转，或者三角形非常扁，AABB 就会偏大，采样时也会造成浪费。
 
 采样完成后，然后我们就能得到如下的结果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/282135aea33a486d89b71e00cb15a08f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c642c12c33b540efb7e9c3cb21f2a86a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 最后，我们对像素进行填充：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6c5f1cb11c09436a894eec669adc48b2.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab418e38445c48f4b4ea0b72762a54b0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 5.锯齿/走样Alising
@@ -157,13 +157,13 @@ for (int x = 0; x < width; ++x)
 
 **抗锯齿理念：**先对信号做模糊（预过滤）之后采样（近视眼处理）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/fd33e0fccdf94268b066c2aa13ee74f9.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f12c3e83ecb84b66ac0be10e57d4552e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8917942cac6f44fcbf20af143743a87d~tplv-k3u1fbpfcp-zoom-1.image)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88eacdc69f784b9bad35e334e0b26e85~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 注意光栅化三角形中的抗锯齿边缘其中像素值取中间值
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9cd6b690571e406499296bece0048a1b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ef694fc12f441da949c680b16f79f65~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 6.Frequency Domain(频域)
@@ -176,19 +176,19 @@ for (int x = 0; x < width; ++x)
 
 **傅里叶级数展开**：任何一个周期函数都可以把它写成一系列正弦和余弦函数的线性组合以及一个常数项
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/374ae876bcb74f218dc0bced01c95e4a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d8f98b301f6b45e4b37a56fe7794bb29~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### 傅里叶变换
 
 **傅里叶变换**：（*时域—>频域*）将函数表示为正弦加权和和余弦
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ca5849a2eb424f2992df7a7668c5a0c2.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/627185a39ba745dfad10a1b18e427c8f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 示例：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/74b3de982b2c4003af34f3b0ad6e615d.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b0c0dd33e2804890b31351e966123795~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > - 上面五个f(x)函数频率从低到高，然后使用完全相同的采样方法来对其采样，然后将采样点连起来用于恢复采样点
@@ -204,14 +204,14 @@ for (int x = 0; x < width; ++x)
 - 在给定采样率下无法区分的两个频率称为“走样”（例如使用相同的采样率去采样两种完全不同的频率，却得到完全相同的结果）
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/705384809a704be69fcdecdf3d985613.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88a4492ba18f4d9e8e78e15d7a60a795~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 8.Filtering滤波
 
 Filtering滤波=去掉一系列的频率
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/25cf4d1e5cb7440698ba15c1d97f461e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c65bbcbb6af34bcd840c91b95f1adc5b~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > - 这里的时域有时也成为空间域
@@ -223,7 +223,7 @@ Filtering滤波=去掉一系列的频率
 
 ### 高通滤波
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/766e48a3261a4d31af4a6594efc33acc.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a8f7bce445a646b2ab2017f7c1bb1ddb~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > - 在频域空间中将低频的信号抹掉，只剩下高频的东西，然后使用逆傅里叶变换将其变回去就变成了上面的样（只表示了图像的边界：边缘检测）
@@ -234,14 +234,14 @@ Filtering滤波=去掉一系列的频率
 
 模糊省掉了边界，剩余低频信息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b07171319de9497784e0726f2478c90c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/17872f38d12c4557bf24ff7a05f936c9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > - 在频域空间中将高频的信号抹掉，只剩下低频的东西
 
 ### 中通滤波
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d67e1677ee414808ac1d732693a0533f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c25639f89c144d7af957b90155f3ebc~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > - 等高线原理
@@ -259,49 +259,49 @@ Filtering滤波=去掉一系列的频率
 
 概率论中卷积的定义
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/40b669b10ace4eac8db8484da0b9a1ed.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88edb1d015ea461a95614ad51dbb78d0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 #### 离散卷积
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c8ae52fc88dc4aaa9c6da4a9c2e4456b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a6673ce892874eabab57e53079b8f956~tplv-k3u1fbpfcp-zoom-1.image)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/af453ea27c1d42e099a0061986c17d90.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0d654a566c0344f08280b86aca7c6563~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 z=30~z=40的卷积的过程
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4cd5b2d9d33e44aeb38d542055c781f1.gif)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6ac4aeacd9d44dcacd02ba04b05f609~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 将p1旋转
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0d8f3d91a5354a2fb31d208436a2ef0f.gif)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/87e37743fb18461b96f3af2e0968477a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 旋转后的卷积过程
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1d4a3aaa7cbf47978b81ae756e9c8bf7.gif)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/214d4616af894f47a4f207a94bf9b9ea~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 上述的过程总结位：卷——>平移——>求和
 
 另一种表现形式
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/40d070840f41449f81bb719b11cd75b2.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d4a9901ab1e44fdaf0016a11a476d0f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
 
 #### 连续情况的卷积
-![在这里插入图片描述](https://img-blog.csdnimg.cn/03f7b68cd26b4a6ca715f6e5b5bdab9e.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3eee007f1a854855b0c85b4a7fa31e49.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/79135ac8747c4884b24c6a94a30d089b~tplv-k3u1fbpfcp-zoom-1.image)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b5cb9a3f3ec94afa8b8c351027aa7310~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
 
 t=9~t=100卷积的过程
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/57137541311c4b5bac69857599111f35.gif)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b217679fa26347f1ab617ca8207f5519~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 同样可以对其进行像离散情况进行旋转后卷积
@@ -312,9 +312,9 @@ t=9~t=100卷积的过程
 - Filtering = Convolution卷积  (= Averaging平均)
 - 卷积操作是把滤波器（或窗口）沿着信号移动
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2885166f17fc42439bfd2a76ac6f70aa.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a00729b9c02548f0a32fdcd49a840e3e~tplv-k3u1fbpfcp-zoom-1.image)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/14c7c18ee77c4628904ca90e63d494f5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d8747d14c504cf5b9936f745d7d3b1e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 其原理就是求平均，在它周围的任何三个数中求平均
@@ -339,7 +339,7 @@ Option 2:
 
 均值模糊/滤波(每个像素取其周围3x3，然后使用滤波器/卷积核，整体操作叫卷积)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1784a89b401a4a3781d39c82b7aa93f0.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/786d6bf665534b3ca19d3b61364f4871~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 时域的卷积=频域的乘积
@@ -360,12 +360,12 @@ Option 2: Antialiasing（反走样）
 
 • i.e. Filtering out high frequencies before sampling（后采样）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8718e1fc883446da9381b117752032a5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31ffc18161bd450fba08bf0490c5abcd~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 对于同一个像素，我们知道它原来有多少地方被覆盖了，这时候如果可以先算出覆盖比例，那么我们就可以根据这个比例对像素进行填充了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c59b2be0b3a14230ac55684230c118fc.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/67a6a382b863465296f3aa371fbd1414~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如上图所示：我们可以用肉眼看出四个像素分别被覆盖了 12.5%、50%、87.5%、100%，但屏幕在填充像素是不能只填充一部分的，只能填充一整个像素。因此这时候可以对该像素进行一次平均，最后得到像素的颜色。
@@ -378,7 +378,7 @@ Option 2: Antialiasing（反走样）
 
 所谓的超采样，是指在一个像素里面放多个采样点来检测三角形是否有被覆盖。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7a168614a6c84404b637abf70729bf0d.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8d3377658bf84db69cf17f15e1420ba1~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 上图表示一个像素里面包含了 16 个采样点，每个采样点采样后再把结果平均起来，最后就能得到三角形对该像素覆盖程度的**近似值**。
@@ -386,23 +386,23 @@ Option 2: Antialiasing（反走样）
 如果想要更准确的近似值的话，可以用更多的采样点，但这样计算量就会更大了。
 
 接下来看看实际例子：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a240c7d1267144dfa083d4866e9459d5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/804cd96aa3b74de78ee876222f1a7ef3~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 上图中一个像素里面只有一个采样点。
 
 超采样的第一步是要为每个像素增加采样点（2x2）：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3c740be5a0104eaa9a956ec8e4b644c3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee1ce6505c53434ba2a115f9fa310abd~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 接下来是对每个像素中的所有采样点的结果进行平均：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8e760998db3445fb8a51339cba062a64.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff71f8e259d34135bc7abc72a2ca07c9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 最后就能得到平均后的结果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/da5f45f9b8a64e28be58941c747854a9.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af3540c5e82e462cbc9b3d1ea0ee7dc5~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 对于 MSAA，我们需要知道如下几点：
@@ -413,12 +413,12 @@ Option 2: Antialiasing（反走样）
 
 ### [2]Sampling=Repeating Frequency Contents
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/fc9a066921f74f9db0afbee300beffb3.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df223a37895a4d16a997073f16437d63~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 左一列的中间是一个周期冲激序列，它在`t=nT`上纵坐标位无穷大，且频域（右中）仍是一个冲激序列，若用其与原信号相乘进行采样，采样的过程不就是让左边上中两图简单相乘就行了
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b6fc290563934d999f455be2631e2eea.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/40c8d3679df74166b930f4f1b9be5ff7~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 10.可见性/遮挡
@@ -426,7 +426,7 @@ Option 2: Antialiasing（反走样）
 当我们要在屏幕上绘制物体的时候，会涉及到物体与物体间的遮挡问题。对于这一问题最常见的做法是像画家绘画那样，先绘制远处的物体，再绘制近处的物体。
 
 但是，这样绘同样会产生一些问题，例如下面三个物体互相遮挡
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2ea2a33ac02f47589cb3da1febb9eef5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/149559a823704872982ace47bb961d1c~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 这类图使用画家算法是无法实现的
@@ -434,7 +434,7 @@ Option 2: Antialiasing（反走样）
 ### [1]画家算法
 
 受画家如何从后到前绘制 Paint 的启发，在帧缓冲区中覆盖，从远处开始画（光栅化），然后到近处（光栅化）的。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7baad2a123134dbb86ffbaa3d67a5dff.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/64eb3047ee26487c88cb2e6939d4f195~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [2]Z-buffer
@@ -443,17 +443,17 @@ Option 2: Antialiasing（反走样）
 
 对每个像素进行排序，而不是像画家算法按图形来排序
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b9298213b71946ebbd95d9bd1ef8ca58.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff7f08f28b9d4bad9a35604bfafeb9ef~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 深度缓冲用来记录每个像素的最小深度
 
 #### Z-Buffer 实现原理
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6806a3e6bb424ff78c85dbd3552f3831.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/33e7fb821eca4ef6981e5da518676dc0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 示例
-![在这里插入图片描述](https://img-blog.csdnimg.cn/39b2260c2efd49adb5751360486ddd4f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1cd9a89c20f04bc9ae1ab3caab3e174c~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 

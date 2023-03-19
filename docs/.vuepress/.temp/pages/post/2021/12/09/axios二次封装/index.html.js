@@ -34,7 +34,20 @@ export const data = {
   },
   "readingTime": {
     "minutes": 5,
-    "words": 869
+    "words": 877
   },
   "filePathRelative": "posts/axios二次封装.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

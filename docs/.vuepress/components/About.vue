@@ -52,7 +52,6 @@ import MarkdownIt from "markdown-it";
 
 const LINKS = {
   github: "https://github.com/bigbigbig2",
-  twitter: "https://www.twitter.com/pibv96YZx5HVHx0",
   email: "mailto:abcdglas@gmail.com"
 };
 

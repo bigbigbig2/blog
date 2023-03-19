@@ -120,105 +120,86 @@ export const searchIndex = [
     "title": "cesium中的坐标系及转换",
     "headers": [
       {
-        "level": 2,
-        "title": "1.cesium坐标系统",
-        "slug": "_1-cesium坐标系统",
+        "level": 3,
+        "title": "1.cesium坐标介绍",
+        "slug": "_1-cesium坐标介绍",
         "children": [
           {
-            "level": 3,
-            "title": "[1]屏幕二维坐标系",
-            "slug": "_1-屏幕二维坐标系",
+            "level": 4,
+            "title": "[1]屏幕坐标系统",
+            "slug": "_1-屏幕坐标系统",
             "children": []
           },
           {
-            "level": 3,
-            "title": "[2]笛卡尔空间直角坐标系",
-            "slug": "_2-笛卡尔空间直角坐标系",
+            "level": 4,
+            "title": "[2]笛卡尔空间直角坐标系统",
+            "slug": "_2-笛卡尔空间直角坐标系统",
             "children": []
           },
           {
-            "level": 3,
-            "title": "[3]WGS-84地理坐标系",
-            "slug": "_3-wgs-84地理坐标系",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "[4]WebGL坐标系",
-            "slug": "_4-webgl坐标系",
+            "level": 4,
+            "title": "[3]地理坐标",
+            "slug": "_3-地理坐标",
             "children": []
           }
         ]
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "2.cesium坐标转换",
         "slug": "_2-cesium坐标转换",
         "children": [
           {
-            "level": 3,
+            "level": 4,
             "title": "[1]角度与弧度的转换",
             "slug": "_1-角度与弧度的转换",
             "children": []
           },
           {
-            "level": 3,
-            "title": "[2]WGS84转Cartesian3",
-            "slug": "_2-wgs84转cartesian3",
+            "level": 4,
+            "title": "[2]地理坐标转Cartesian3",
+            "slug": "_2-地理坐标转cartesian3",
             "children": [
               {
-                "level": 4,
-                "title": "(1)通过弧度或经纬度直接转换",
-                "slug": "_1-通过弧度或经纬度直接转换",
+                "level": 5,
+                "title": "(1)直接经过经纬度转换",
+                "slug": "_1-直接经过经纬度转换",
                 "children": [
                   {
-                    "level": 5,
-                    "title": "角度制的WGS84转Cartesian3",
-                    "slug": "角度制的wgs84转cartesian3",
+                    "level": 6,
+                    "title": "角度制的地理坐标转Cartesian3",
+                    "slug": "角度制的地理坐标转cartesian3",
                     "children": []
                   },
                   {
-                    "level": 5,
-                    "title": "弧度制WGS84转Cartesian3",
-                    "slug": "弧度制wgs84转cartesian3",
+                    "level": 6,
+                    "title": "弧度制与笛卡尔转换",
+                    "slug": "弧度制与笛卡尔转换",
                     "children": []
                   }
                 ]
               },
               {
-                "level": 4,
+                "level": 5,
                 "title": "(2)使用椭球体转换",
                 "slug": "_2-使用椭球体转换",
-                "children": [
-                  {
-                    "level": 5,
-                    "title": "角度制的WGS84转Cartesian3",
-                    "slug": "角度制的wgs84转cartesian3-1",
-                    "children": []
-                  },
-                  {
-                    "level": 5,
-                    "title": "弧度制WGS84转Cartesian3",
-                    "slug": "弧度制wgs84转cartesian3-1",
-                    "children": []
-                  }
-                ]
+                "children": []
               }
             ]
           },
           {
-            "level": 3,
-            "title": "[3]Cartesian3转WGS84",
-            "slug": "_3-cartesian3转wgs84",
+            "level": 4,
+            "title": "[3]Cartesian3转地理坐标",
+            "slug": "_3-cartesian3转地理坐标",
             "children": [
               {
-                "level": 4,
+                "level": 5,
                 "title": "(1)直接转换",
                 "slug": "_1-直接转换",
                 "children": []
               },
               {
-                "level": 4,
+                "level": 5,
                 "title": "(2)通过椭球体转换",
                 "slug": "_2-通过椭球体转换",
                 "children": []
@@ -226,26 +207,20 @@ export const searchIndex = [
             ]
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[4]Cartesian2与Cartesian3互转",
             "slug": "_4-cartesian2与cartesian3互转",
             "children": [
               {
-                "level": 4,
+                "level": 5,
                 "title": "(1)Cartesian2转Cartesian3",
                 "slug": "_1-cartesian2转cartesian3",
                 "children": []
               },
               {
-                "level": 4,
+                "level": 5,
                 "title": "(2)Cartesian3转Cartesian2",
                 "slug": "_2-cartesian3转cartesian2",
-                "children": []
-              },
-              {
-                "level": 4,
-                "title": "参考：",
-                "slug": "参考",
                 "children": []
               }
             ]
@@ -254,6 +229,61 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/cesium%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AC%E6%8D%A2.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "deckgl与mapboxgl整合方案",
+    "headers": [
+      {
+        "level": 4,
+        "title": "[1]overlay",
+        "slug": "_1-overlay",
+        "children": []
+      },
+      {
+        "level": 4,
+        "title": "[2]Interleaving",
+        "slug": "_2-interleaving",
+        "children": [
+          {
+            "level": 5,
+            "title": "Constructor",
+            "slug": "constructor",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/DeckGL%E4%B8%8EMapboxGL%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "Mapbox Terrain-DEM地形切片原理浅析",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Mapbox地形切片简介",
+        "slug": "_1-mapbox地形切片简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.Terrain-RGB与Terrain-DEM",
+        "slug": "_2-terrain-rgb与terrain-dem",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.离线地形切片实践",
+        "slug": "_3-离线地形切片实践",
+        "children": []
+      }
+    ],
+    "path": "/posts/Mapbox%20Terrain-DEM%E5%9C%B0%E5%BD%A2%E5%88%87%E7%89%87%E5%8E%9F%E7%90%86%E6%B5%85%E6%9E%90.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -762,63 +792,268 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
-    "title": "PostgreSQL索引",
+    "title": "使用PostGIS进行领域分析",
+    "subtitle": "PostGIS领域分析，常见的领域分析应用、NN操作符、地理注记Geotagging",
     "headers": [
       {
         "level": 2,
+        "title": "1.最邻近搜索",
+        "slug": "_1-最邻近搜索",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]哪些地方在x距离之内",
+            "slug": "_1-哪些地方在x距离之内",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]使用ST_DWithin和 DISTINCT ON 查找最邻近位置",
+            "slug": "_2-使用st-dwithin和-distinct-on-查找最邻近位置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]带容差的相交",
+            "slug": "_3-带容差的相交",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]距离范围内的地点",
+            "slug": "_4-距离范围内的地点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]使用KNN距离操作符查找 N 个最近的点",
+            "slug": "_5-使用knn距离操作符查找-n-个最近的点",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.对地理类型使用KNN操作符",
+        "slug": "_2-对地理类型使用knn操作符",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]使用窗口函数对最近的N个地点进行编号",
+            "slug": "_1-使用窗口函数对最近的n个地点进行编号",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.地理注记Geotagging",
+        "slug": "_3-地理注记geotagging",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]将数据标记到特定区域",
+            "slug": "_1-将数据标记到特定区域",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]线性参考：将点捕捉到最近的线串",
+            "slug": "_2-线性参考-将点捕捉到最近的线串",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]PostGIS空间聚合窗口函数",
+            "slug": "_3-postgis空间聚合窗口函数",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/PostGIS%E9%A2%86%E5%9F%9F%E5%88%86%E6%9E%90.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "PostgreSQL&PostGIS源码编译安装",
+    "subtitle": "最新版本PostgreSQL1.5.0&PostGIS-3.3.1编译安装",
+    "headers": [
+      {
+        "level": 3,
+        "title": "1.PostgreSQL编译安装",
+        "slug": "_1-postgresql编译安装",
+        "children": [
+          {
+            "level": 4,
+            "title": "[1]相关依赖包查找安装",
+            "slug": "_1-相关依赖包查找安装",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[2]postgresql源码下载及编译安装",
+            "slug": "_2-postgresql源码下载及编译安装",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[3]配置环境变量",
+            "slug": "_3-配置环境变量",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]创建数据库实例",
+            "slug": "_4-创建数据库实例",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[5]访问控制配置文件",
+            "slug": "_5-访问控制配置文件",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[6]内存参数配置",
+            "slug": "_6-内存参数配置",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[7]常用的管理命令",
+            "slug": "_7-常用的管理命令",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "title": "2.postgis编译安装",
+        "slug": "_2-postgis编译安装",
+        "children": [
+          {
+            "level": 4,
+            "title": "[1]geos",
+            "slug": "_1-geos",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[2]proj",
+            "slug": "_2-proj",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[3]gdal",
+            "slug": "_3-gdal",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[4]json-c",
+            "slug": "_4-json-c",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[5]SFCGAL",
+            "slug": "_5-sfcgal",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[6] protobuf-c",
+            "slug": "_6-protobuf-c",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[7]libxml2",
+            "slug": "_7-libxml2",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[8]postgis",
+            "slug": "_8-postgis",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/PostgreSQL&PostGIS%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "PostgreSQL索引",
+    "headers": [
+      {
+        "level": 3,
+        "title": "0.索引引擎与原理",
+        "slug": "_0-索引引擎与原理",
+        "children": []
+      },
+      {
+        "level": 3,
         "title": "1.创建索引",
         "slug": "_1-创建索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "2.删除索引",
         "slug": "_2-删除索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "3.显示索引",
         "slug": "_3-显示索引",
         "children": []
       },
       {
-        "level": 2,
-        "title": "4.索引类型",
-        "slug": "_4-索引类型",
+        "level": 3,
+        "title": "4.索引方法/访问方法",
+        "slug": "_4-索引方法-访问方法",
         "children": [
           {
-            "level": 3,
+            "level": 4,
             "title": "[1]B-tree 索引",
             "slug": "_1-b-tree-索引",
             "children": []
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[2]Hash索引",
             "slug": "_2-hash索引",
             "children": []
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[3]GIN 索引",
             "slug": "_3-gin-索引",
             "children": []
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[4]BRIN索引",
             "slug": "_4-brin索引",
             "children": []
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[4]GiST 索引",
             "slug": "_4-gist-索引",
             "children": []
           },
           {
-            "level": 3,
+            "level": 4,
             "title": "[5]SP-GiST 索引",
             "slug": "_5-sp-gist-索引",
             "children": []
@@ -826,53 +1061,47 @@ export const searchIndex = [
         ]
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "5.唯一键索引",
         "slug": "_5-唯一键索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "6.表达式索引",
         "slug": "_6-表达式索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "7.部分索引",
         "slug": "_7-部分索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "8.REINDEX重置索引",
         "slug": "_8-reindex重置索引",
         "children": []
       },
       {
-        "level": 2,
+        "level": 3,
         "title": "9.多列索引",
         "slug": "_9-多列索引",
         "children": []
       },
       {
-        "level": 2,
-        "title": "10.索引解释器",
-        "slug": "_10-索引解释器",
+        "level": 3,
+        "title": "10.执行计划器的解释",
+        "slug": "_10-执行计划器的解释",
         "children": [
           {
-            "level": 3,
-            "title": "[1]文本解释与 pgAdmin 图形解释",
-            "slug": "_1-文本解释与-pgadmin-图形解释",
+            "level": 4,
+            "title": "[1]文本解释与pgAdmin图形解释",
+            "slug": "_1-文本解释与pgadmin图形解释",
             "children": [
               {
-                "level": 4,
-                "title": "文本解释器",
-                "slug": "文本解释器",
-                "children": []
-              },
-              {
-                "level": 4,
+                "level": 5,
                 "title": "图形解释器",
                 "slug": "图形解释器",
                 "children": []
@@ -880,18 +1109,67 @@ export const searchIndex = [
             ]
           },
           {
-            "level": 3,
-            "title": "[2].计划器和索引",
-            "slug": "_2-计划器和索引",
+            "level": 4,
+            "title": "[2]EXPLAIN输出结果解释",
+            "slug": "_2-explain输出结果解释",
             "children": []
           },
           {
-            "level": 3,
-            "title": "[3]带有空间索引的查询计划器",
-            "slug": "_3-带有空间索引的查询计划器",
+            "level": 4,
+            "title": "[3]EXPLAIN使用示例",
+            "slug": "_3-explain使用示例",
+            "children": [
+              {
+                "level": 5,
+                "title": "format option",
+                "slug": "format-option",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "analyze option",
+                "slug": "analyze-option",
+                "children": []
+              },
+              {
+                "level": 5,
+                "title": "buffer option",
+                "slug": "buffer-option",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "title": "[4]全表扫描",
+            "slug": "_4-全表扫描",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[5]索引扫描",
+            "slug": "_5-索引扫描",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[6]位图扫描",
+            "slug": "_6-位图扫描",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "[7]条件过滤",
+            "slug": "_7-条件过滤",
             "children": []
           }
         ]
+      },
+      {
+        "level": 2,
+        "title": "",
+        "slug": "",
+        "children": []
       }
     ],
     "path": "/posts/PostgreSQL%E7%B4%A2%E5%BC%95.html",
@@ -1621,6 +1899,67 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "vbo,ibo,vao",
+    "subtitle": "webgl(vbo,ibo,vao)",
+    "headers": [
+      {
+        "level": 3,
+        "title": "1.VBO顶点缓冲区对象",
+        "slug": "_1-vbo顶点缓冲区对象",
+        "children": [
+          {
+            "level": 4,
+            "title": "创建VBO函数",
+            "slug": "创建vbo函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "VBO使用",
+            "slug": "vbo使用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "title": "2.IBO索引缓冲对象",
+        "slug": "_2-ibo索引缓冲对象",
+        "children": [
+          {
+            "level": 4,
+            "title": "创建IBO函数",
+            "slug": "创建ibo函数",
+            "children": []
+          },
+          {
+            "level": 4,
+            "title": "使用IBO",
+            "slug": "使用ibo",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "title": "3.顶点数组对象VAO",
+        "slug": "_3-顶点数组对象vao",
+        "children": [
+          {
+            "level": 4,
+            "title": "使用vao",
+            "slug": "使用vao",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/vbo,ibo,vao.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "vim",
     "subtitle": "vim常用操作",
     "headers": [
@@ -1699,6 +2038,297 @@ export const searchIndex = [
       }
     ],
     "path": "/post/2021/12/06/vim/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "WebGL像素处理",
+    "subtitle": "简单颜色滤镜、高斯模糊/平滑、利用帧缓冲区首相多种处理效果叠加",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.颜色滤镜",
+        "slug": "_1-颜色滤镜",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]灰度图",
+            "slug": "_1-灰度图",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]改变图象亮度",
+            "slug": "_2-改变图象亮度",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.高斯模糊/平滑",
+        "slug": "_2-高斯模糊-平滑",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.多层滤镜叠加",
+        "slug": "_3-多层滤镜叠加",
+        "children": []
+      }
+    ],
+    "path": "/posts/WebGL%E5%9B%BE%E5%83%8F%E5%83%8F%E7%B4%A0%E5%A4%84%E7%90%86.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "使用PostGIS构建和使用拓扑",
+    "subtitle": "使用postgis构建与使用拓扑、拓扑检查与修复、插入大型数据集、拓扑几何的简化等",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.什么是topology拓扑",
+        "slug": "_1-什么是topology拓扑",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.使用拓扑",
+        "slug": "_2-使用拓扑",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]添加拓展",
+            "slug": "_1-添加拓展",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]创建拓扑",
+            "slug": "_2-创建拓扑",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]拓扑类型",
+            "slug": "_3-拓扑类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]小结",
+            "slug": "_4-小结",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.Victoria, BC的拓扑结构",
+        "slug": "_3-victoria-bc的拓扑结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]创建Victoria的拓扑模型",
+            "slug": "_1-创建victoria的拓扑模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]将图元添加到拓扑模型中",
+            "slug": "_2-将图元添加到拓扑模型中",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]构建拓扑几何",
+            "slug": "_3-构建拓扑几何",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.通过编辑拓扑图元修复拓扑几何问题",
+        "slug": "_4-通过编辑拓扑图元修复拓扑几何问题",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]通过移除边来移除面",
+            "slug": "_1-通过移除边来移除面",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]检查重叠面",
+            "slug": "_2-检查重叠面",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]编辑拓扑几何",
+            "slug": "_3-编辑拓扑几何",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5.插入与编辑大型数据集",
+        "slug": "_5-插入与编辑大型数据集",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.简化拓扑几何",
+        "slug": "_6-简化拓扑几何",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7.拓扑验证与管理",
+        "slug": "_7-拓扑验证与管理",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E4%BD%BF%E7%94%A8postgis%E6%9E%84%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8B%93%E6%89%91.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "使用shader造型函数绘制图形",
+    "subtitle": "使用smoothstep、step、fract等函数绘制基础图形，加强shader编程思想",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.shader片段着色器基础",
+        "slug": "_1-shader片段着色器基础",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]片段着色器的并行处理结构",
+            "slug": "_1-片段着色器的并行处理结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Uniforms",
+            "slug": "_2-uniforms",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]gl_FragCoord",
+            "slug": "_3-gl-fragcoord",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.使用smoothstep函数绘制图形",
+        "slug": "_2-使用smoothstep函数绘制图形",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]绘制圆",
+            "slug": "_1-绘制圆",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]函数定义",
+            "slug": "_2-函数定义",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]绘制直线",
+            "slug": "_3-绘制直线",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]绘制曲线",
+            "slug": "_4-绘制曲线",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.使用step函数绘制图形",
+        "slug": "_3-使用step函数绘制图形",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]函数定义",
+            "slug": "_1-函数定义",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.绘制矩形",
+        "slug": "_4-绘制矩形",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.使用fract函数绘制网格",
+        "slug": "_5-使用fract函数绘制网格",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]fract函数简介",
+            "slug": "_1-fract函数简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]绘制网格",
+            "slug": "_2-绘制网格",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6.偏移图案",
+        "slug": "_6-偏移图案",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]判断线程中行是奇数还是偶数",
+            "slug": "_1-判断线程中行是奇数还是偶数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7.Truchet 瓷砖",
+        "slug": "_7-truchet-瓷砖",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8.符号距离场渲染SDF",
+        "slug": "_8-符号距离场渲染sdf",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "参考",
+        "slug": "参考",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E4%BD%BF%E7%94%A8shader%E9%80%A0%E5%9E%8B%E5%87%BD%E6%95%B0%E7%BB%98%E5%88%B6%E5%9B%BE%E5%BD%A2.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -2034,6 +2664,54 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "原型模式、单例模式",
+    "subtitle": "Createtional创建型设计模式 in TypeScript——原型模式、单例模式的基本概念及应用场景",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Prototype 原型模式",
+        "slug": "_1-prototype-原型模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本原理",
+            "slug": "基本原理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用举例",
+            "slug": "应用举例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.Singleton 单例模式",
+        "slug": "_2-singleton-单例模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本原理",
+            "slug": "基本原理-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用举例",
+            "slug": "应用举例-1",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F%E3%80%81%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "WEB可视化体系浅析",
     "headers": [
       {
@@ -2210,8 +2888,7 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
-    "title": "可视化中的数学基础",
-    "subtitle": "通过几何直观的理解图形学中的数学基础知识",
+    "title": "",
     "headers": [
       {
         "level": 2,
@@ -2512,12 +3189,11 @@ export const searchIndex = [
     ],
     "path": "/posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86.html",
     "pathLocale": "/",
-    "extraFields": [],
-    "layout": "Post"
+    "extraFields": []
   },
   {
     "title": "计算机图形学中的坐标系统",
-    "subtitle": "局部空间、世界空间、观察空间、裁剪空间、屏幕/像素空间及WebGL上的应用",
+    "subtitle": "局部空间、世界空间、观察空间、裁剪空间、屏幕/像素空间 及Web绘图系统SVG、Canvas、WebGL的坐标系统上与注意事项",
     "headers": [
       {
         "level": 2,
@@ -2579,9 +3255,49 @@ export const searchIndex = [
         "title": "4.WebGL坐标系统",
         "slug": "_4-webgl坐标系统",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.Canvas的颜色缓冲区大小和样式大小",
+        "slug": "_5-canvas的颜色缓冲区大小和样式大小",
+        "children": []
       }
     ],
     "path": "/posts/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E6%A2%B3%E7%90%86%E5%B0%8F%E7%BB%93.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "在shader中使用极坐标绘图",
+    "subtitle": "在shader中使用极坐标绘制基础图形及极坐标的扩展坐标圆柱坐标和球坐标",
+    "headers": [
+      {
+        "level": 3,
+        "title": "[1]用极坐标绘制圆",
+        "slug": "_1-用极坐标绘制圆",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "[2]利用相应的极坐标方程绘制复杂的曲线图",
+        "slug": "_2-利用相应的极坐标方程绘制复杂的曲线图",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "[3]圆柱坐标",
+        "slug": "_3-圆柱坐标",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "[4]球坐标",
+        "slug": "_4-球坐标",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E5%9C%A8shader%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%9E%81%E5%9D%90%E6%A0%87%E7%BB%98%E5%9B%BE.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -3020,6 +3736,80 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/%E5%9C%B0%E5%9B%BE%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "工厂模式、建筑者模式",
+    "subtitle": "Createtional创建型设计模式 in TypeScript——工厂模式、建造者模式的基本概念及应用场景",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Factory 工厂模式",
+        "slug": "factory-工厂模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.简单工厂模式",
+            "slug": "_1-简单工厂模式",
+            "children": [
+              {
+                "level": 4,
+                "title": "基本原理",
+                "slug": "基本原理",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "2.工厂方法模式",
+            "slug": "_2-工厂方法模式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.抽象工厂模式",
+            "slug": "_3-抽象工厂模式",
+            "children": [
+              {
+                "level": 4,
+                "title": "应用举例",
+                "slug": "应用举例",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Builder 建造者模式",
+        "slug": "builder-建造者模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.基本原理",
+            "slug": "_1-基本原理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.应用举例",
+            "slug": "_2-应用举例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.与工厂模式的区别",
+            "slug": "_3-与工厂模式的区别",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F%E3%80%81%E5%BB%BA%E7%AD%91%E8%80%85%E6%A8%A1%E5%BC%8F.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -4825,6 +5615,54 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "装饰器模式、适配器模式",
+    "subtitle": "Structural构造型设计模式 in TypeScript——装饰器模式、适配器模式的基本概念及应用场景",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.Decorator 装饰器模式",
+        "slug": "_1-decorator-装饰器模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本原理",
+            "slug": "基本原理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用举例",
+            "slug": "应用举例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.Adapter适配器模式",
+        "slug": "_2-adapter适配器模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本原理",
+            "slug": "基本原理-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用举例",
+            "slug": "应用举例-1",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "贝塞尔曲线",
     "headers": [
       {
@@ -5299,6 +6137,30 @@ export const searchIndex = [
   {
     "title": "Tags",
     "headers": [],
+    "path": "/tags/mapbox/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/deckgl/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/%E6%95%B0%E6%8D%AE%E5%88%87%E7%89%87/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
     "path": "/tags/PostgreSQL/",
     "pathLocale": "/",
     "extraFields": [],
@@ -5308,6 +6170,14 @@ export const searchIndex = [
     "title": "Tags",
     "headers": [],
     "path": "/tags/PL/pgSQL/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/PostGIS/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -5331,7 +6201,39 @@ export const searchIndex = [
   {
     "title": "Tags",
     "headers": [],
+    "path": "/tags/WebGL/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
     "path": "/tags/vim/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/shader/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/TypeScript/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -5471,5 +6373,34 @@ export const searchIndex = [
     "pathLocale": "/",
     "extraFields": [],
     "layout": "HomePage"
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/page/6/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "HomePage"
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/page/7/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "HomePage"
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

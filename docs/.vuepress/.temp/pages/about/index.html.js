@@ -7,7 +7,7 @@ export const data = {
     "layout": "About",
     "title": "About",
     "avatar": "/img/a.png",
-    "subname": "布鲁塞尔大白菜"
+    "subname": "ooco"
   },
   "excerpt": "",
   "headers": [],
@@ -19,4 +19,17 @@ export const data = {
     "words": 0
   },
   "filePathRelative": "about/README.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

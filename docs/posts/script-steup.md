@@ -66,23 +66,23 @@ tags:
 
 #### context上下文
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6e132f23813e41d1b2a48b6cc2d10ed7.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/971e428c49d84a5aa2670f8f731b3004~tplv-k3u1fbpfcp-zoom-1.image)
 
 
   - attrs
 
-    - ![img](https://img-blog.csdnimg.cn/img_convert/f815c8b8f89bdab3b030ba226e6d16d0.jpeg)
+    - ![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b3549c9557a24df5890a1a618190820e~tplv-k3u1fbpfcp-zoom-1.image)
 
   - slots
 
-    - ![img](https://img-blog.csdnimg.cn/img_convert/a0021bdc254c825aa21a99c79b9faeab.jpeg)
+    - ![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fd629dea03847ea87e89ae2c94b4bcf~tplv-k3u1fbpfcp-zoom-1.image)
 
   - emit
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/10865d8dd53e47a9ab5d7fecda8225b5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24018e895c434454bf2e606fef9747fd~tplv-k3u1fbpfcp-zoom-1.image)
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3ca297e2d0994e8ba180d9b49a455614.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd8eff5c028047bfb67e68083ef94824~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ```vue
@@ -474,7 +474,7 @@ const propsEmitRef = ref()
     createds()
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/34198523340f45b895fee921282981f8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f43e548f644406897470b36c663d732~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### 5、用Ts限制define(Emits|Props)参数类型
@@ -550,7 +550,7 @@ const propsEmitRef = ref()
 
 补充：$event多事件处理器
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/33c133fd23444caab9c0ad79780b26b4.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee820b0ada654892972dea4baee9f460~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 @blur：失去焦点时触发

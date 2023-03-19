@@ -85,7 +85,7 @@ $tag$<string_constant>$tag$
 select $$I'm a string constant that contains a backslash \$$;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/af52a89eb4544c5681b0a67b51a5757e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2eb0622df1dc4f3197aea315069cc1e4~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 使用带标记的美元引号字符串常量语法：
@@ -94,7 +94,7 @@ select $$I'm a string constant that contains a backslash \$$;
 SELECT $message$I'm a string constant that contains a backslash \$message$;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/db11788e3b95435e84a040421384e3e8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6750ac6b8f08429bb1d3452c1d3d25eb~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
@@ -225,7 +225,7 @@ PL/pgSQL 允许您将一个块放置在另一个块的主体内。
 
 下图说明了外块和子块：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/088fc4e5fb514146a1af765889452a66.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cc0c9cb456a9455fa35942c7a57c49bd~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 通常，您将一个大块划分为更小且更具逻辑性的子块。子块中的变量可以具有与外部块中的名称相同的名称，尽管这不是一个好的做法。
@@ -270,7 +270,7 @@ begin
 end $$;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5d0e29effc45407d9729c2593ec88dfe.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/928382d7f5cc4151b29df7d25b54d9b1~tplv-k3u1fbpfcp-zoom-1.image)
 
 ```sql
 do $$
@@ -600,7 +600,7 @@ end $$;
 ```
 
 输出：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cad3dab050344350a8969a0b13237e18.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/526ac613a29d4162a862628e936a1642~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 请注意，并非所有消息都报告给客户端。PostgreSQL 仅将 、 和 level 消息报告`info`回`warning`客户`notice`端。这由`client_min_messages` 配置`log_min_messages` 参数控制
@@ -637,7 +637,7 @@ begin
 end $$;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/04c061723056432c854c38d2b74bf648.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96cd19af3ee345e4a179ec8ffe701e7f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 以下示例说明了如何引发 an`SQLSTATE`及其对应的条件：
@@ -726,7 +726,7 @@ begin
 end$$;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/566c9a06370e4374981480c53fa5b1e8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84de95d406c436c902575e4e777a86a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 小结：
@@ -755,7 +755,7 @@ if condition then
 end if;
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ffa282d63ca94d809403310673ff9f11.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6741ec70084c45959256a3b571e93b27~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 使用示例：
@@ -915,7 +915,7 @@ begin
 end; $$
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9f94c0a69a7c47eb84c8e6aa46f2adfd.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/217dc98b791d4786a9effad9cae375bc~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 #### 2) 检索案例陈述
@@ -1402,7 +1402,7 @@ $$;
 > - 该函数`get_film_count`有两个主要部分：标题和正文
 >
 > - 在块的末尾，使用`return`语句返回`film_count`给函数
-> ![在这里插入图片描述](https://img-blog.csdnimg.cn/ff899a3995e34b4d951c8e6b4dffcbf4.png)
+> ![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73f1aa6044d3481094f5647f09f36a9d~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 调用用户自定义函数：
@@ -1551,7 +1551,7 @@ end;$$
 select get_film_stat();
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/78bfbc40a9304f6c9efe3e91765eae7c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/90cb8882af64492bbd5333ff6bba8868~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 该函数的输出是一条记录。要将输出分隔为列，请使用以下语句：
@@ -1560,7 +1560,7 @@ select get_film_stat();
 select * from get_film_stat();
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e666adb3da20489a8df4b973879e8eb8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb5649b4668d44f49820ee87008f602c~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 #### 3）inout模式
@@ -1588,7 +1588,7 @@ end; $$;
 ```sql
 select * from swap(10,20);
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f7fc0a922f184d5eaf84ffa0fbf0c3df.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eae78ecdbcf4f77826479f7e5dd5d91~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [3]函数重载
@@ -1796,7 +1796,7 @@ end;$$
 SELECT * FROM get_film ('Al%');
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/592e816e3ac0438cb28c96c4f73c9c79.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19a92de5c6d140aeb5422ed1db0556da~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 在实践中，您通常在将每一行附加到函数的结果集中之前对其进行处理：
@@ -1841,7 +1841,7 @@ end; $$
 ```sql
 SELECT * FROM get_film ('%er', 2006);
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3e4387f73e4a4519affff82d60ce2164.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8914546500a34deda39dbaf41e84d946~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [5]删除函数
@@ -2102,7 +2102,7 @@ values('Bob',10000);
 insert into accounts(name,balance)
 values('Alice',10000);
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/efeebbf8e09e49d49821e95efab371e2.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8a4e185a9e5041178c1eace8db38ab92~tplv-k3u1fbpfcp-zoom-1.image)
 
 下面的示例创建一个名为的存储过程`transfer`，将指定金额的资金从一个帐户转移到另一个帐户。
 
@@ -2170,7 +2170,7 @@ PL/pgSQL 游标允许您封装查询并一次处理每一行
 
 在PostgreSQL中使用游标的具体：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/88a01cebfe3c42eda2bcd4e3c1f3c99b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b03d3937aeba48fa9bb6768ab67bfc6a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - **声明一个游标**---要访问游标，你需要在块的声明部分中声明游标变量，游标变量的类型为refcursor
@@ -2302,7 +2302,7 @@ close cursor_variable;
 select title, release_year from film where release_year = 2006; -- 有一千条结果
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ad9df9ec157a484f84629642223d85f0.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2375bef827804de59d64a8e3c02c497e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ```sql
@@ -2344,7 +2344,7 @@ language plpgsql;
 select get_film_titles(2006);
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/90dddf5d3f8c45b1b949cefb485348fb.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b84158f48fb143fda401709032e72180~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 11.触发器

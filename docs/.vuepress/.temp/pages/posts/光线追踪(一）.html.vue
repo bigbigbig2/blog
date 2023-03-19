@@ -9,7 +9,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/4520bc911c224abc83e5334bfd5a455d.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e45c695ce1d41d4933bfd972a88841b~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <ul>
 <li>
 <p>光栅化是一种很快但质量相对较低的技术</p>
@@ -22,7 +22,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/e10d743d29a643ebaae36c11f1cfd828.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa41297471fb4c8a9d0f7e1ca484c6aa~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h2 id="_2-基础的光线追踪算法" tabindex="-1"><a class="header-anchor" href="#_2-基础的光线追踪算法" aria-hidden="true">#</a> 2.基础的光线追踪算法</h2>
 <p><strong>光线追踪中对光线有以下的假设：</strong></p>
 <ol>
@@ -36,14 +36,14 @@
 <li>对于成像平面上每一个像素，<strong>从人眼（相机）连一条线，穿过该像素，打出一条光线</strong>，该光线会打到场景中某个位置（物体），有些物体可以被前面的物体遮挡到</li>
 <li>将打到的位置，<strong>与光源做一条连线</strong>，如果该连线没有和其他物体相交，即该点可以被光源照到，即形成了一条有效的光路，就可应用着色模型着色；</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/a2206c6cbb39470b8a4497245d46be42.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ba9a68ab8bba49e0bd78144d5dc95edb~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>例如：针孔摄像机模型</p>
-<p><img src="https://img-blog.csdnimg.cn/d43fd01a3917431d8f591ee16950b4f5.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7684679bcb624698a586d1ad61ea5179~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>从人眼对某像素投射出一条线（eye ray）（有了出射光线）到场景中，找到最近的交点，从该点向光源再连一条线（入射光线），如果该点能被光照到，再根据该点的法线，即可应用着色模型计算出着色，再将计算出的值，写入该像素点</p>
 <p>但该算法仍只考虑了光的<strong>一次</strong>弹射</p>
 <h3 id="_2-whitted-style-递归光线追踪" tabindex="-1"><a class="header-anchor" href="#_2-whitted-style-递归光线追踪" aria-hidden="true">#</a> [2]Whitted-Style 递归光线追踪</h3>
 <p>一种改进的阴影显示照明模型</p>
-<p><img src="https://img-blog.csdnimg.cn/5593f84ce64144f883cf68fa13f39570.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b743f3772c6843d19c134cb8d383ccd5~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>与 Ray Casting 不同，Whitted-Style 会<strong>递归多次</strong>计算人眼打出光线的折射，反射，并将每次反射、折射的计算结果<strong>叠加</strong>到像素上，（注意能量损失）</p>
 <ul>
 <li>primary ray：人眼打出的检测光线；</li>
@@ -55,10 +55,10 @@
 <h3 id="_1-光线方程及应用" tabindex="-1"><a class="header-anchor" href="#_1-光线方程及应用" aria-hidden="true">#</a> [1]光线方程及应用</h3>
 <p>Ray-Surface Intersection</p>
 <p>光线在数学上的定义为射线</p>
-<p><img src="https://img-blog.csdnimg.cn/3cd9622a8e434619a14ce743c1856fde.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eb30428ad11d48648aac2a6b1bb3c7f5~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">o</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">d</span><span class="mpunct">;</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.7811em;vertical-align:-0.1367em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⩽</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span></span></p>
 <p>在推导出光线于各个物体相交前，这里像推导光线与球相交</p>
-<p><img src="https://img-blog.csdnimg.cn/7a6d54210c734ca0bf3f3b9c82b1a6cd.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a4f81102d9074cc7ad81e891e746f81d~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">o</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⩽</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ere</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>求它们的交点，也就是说这个点即在光线上，也在球面上（联立方程）</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">o</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span></p>
@@ -144,17 +144,17 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>当<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7811em;vertical-align:-0.1367em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⩽</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6542em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>时光线交于平面</p>
 <h4 id="moller-trumbore算法" tabindex="-1"><a class="header-anchor" href="#moller-trumbore算法" aria-hidden="true">#</a> Möller Trumbore算法</h4>
 <p>一种更快的方法，该算法通过<strong>重心坐标</strong>表示的三角形计算，可以直接算三角形是否与光线相交。（使用克莱姆法则）</p>
-<p><img src="https://img-blog.csdnimg.cn/f63139adb7a64ca7a8e0a11d617c5a08.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0ea832184caa4cca829e2956c526443d~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>尽管如此，使用这种方式判断光线于物体相交还是太慢了。所以后来将对光线与三角形的范围推到对一种光线与一种包含空间对象的容器求交的范围，空间的object完全的被容器包围着。</p>
-<p><img src="https://img-blog.csdnimg.cn/3562180ce2f847c587f197afc8d6ce60.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/394e3c23a054485aae3950a89c1e3864~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>其中最常用的是 box 容器</p>
 <h3 id="_4-box包围盒" tabindex="-1"><a class="header-anchor" href="#_4-box包围盒" aria-hidden="true">#</a> [4]Box包围盒</h3>
 <p>Box包围盒并不是我们之前理解的立方体（在空间中占据一定体积的物体），它是由三对<strong>对面</strong>取交集组成，每对对面都是无限大的。</p>
 <p>我们常用的一种是Axis-Aligned Bounding Box (AABB) 轴对⻬包围盒。如下长方体</p>
-<p><img src="https://img-blog.csdnimg.cn/7bb1c3a5bf2e4ad2bdc4518e0bcdee6c.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a06c8da1ce9949679b8e2ac365d7b564~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h4 id="光线与二维包围盒求交" tabindex="-1"><a class="header-anchor" href="#光线与二维包围盒求交" aria-hidden="true">#</a> 光线与二维包围盒求交</h4>
 <p>二维和三维的原理是一样的，这里用二维的场景来简化理解，对于一个二维的包围盒，也就是只有两对”对面“组成的平面（脑补。。。）</p>
-<p><img src="https://img-blog.csdnimg.cn/53be0c1e6a344b91aaf1eaf6193d068c.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b93c0455338347e9bb87d6597df9831e~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>分别计算出光线与每对对面两个交点，然后取交集。即光线进入所有的边后，才算进入，出离一个边后，就算出去。</p>
 <p>核心观点：</p>
 <ul>
@@ -169,17 +169,17 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>总之，<strong>当且仅当进入时间&lt;离开时间且离开时间&gt;=0时</strong>，有交点</p>
 <h4 id="为什么要使用轴对齐" tabindex="-1"><a class="header-anchor" href="#为什么要使用轴对齐" aria-hidden="true">#</a> 为什么要使用轴对齐？</h4>
 <p>可以优化运算过程
-<img src="https://img-blog.csdnimg.cn/f84ff9804b49402cb50401b09a03a467.png" alt="在这里插入图片描述"></p>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58eaa084d3e44906a2e111894350415d~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h2 id="_4-using-aabbs-to-accelerate-ray-tracing" tabindex="-1"><a class="header-anchor" href="#_4-using-aabbs-to-accelerate-ray-tracing" aria-hidden="true">#</a> 4.Using AABBs to accelerate ray tracing</h2>
 <h3 id="_1-uniform-spatial-partitions-grids-统一空间分区" tabindex="-1"><a class="header-anchor" href="#_1-uniform-spatial-partitions-grids-统一空间分区" aria-hidden="true">#</a> [1]Uniform Spatial Partitions (Grids)统一空间分区</h3>
 <p>这里的和物体相交指的是和物体表面相交，将空间中的包围盒重新划分为更小的包围盒</p>
-<p><img src="https://img-blog.csdnimg.cn/fc3fc07bf320453c9b3b5c85cb1b670d.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dee66ca5abdd460aa93eced75ce203b9~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>右上角图有误</p>
 <p>这样就将这个场景进行了预处理了，将灰色的（与物体相交的box）存储起来</p>
 </blockquote>
 <p>然后就可以做光线追踪了，一条光线从场景中经过，我们只记录与其相交的包围盒，然后判断这个包围盒中是否有物体，如果有，再判断光线与这个物体有没有相交。
-<img src="https://img-blog.csdnimg.cn/73bbb42f00ef4e4282b69fd22d4dff35.png" alt="在这里插入图片描述"></p>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f976f254dd2b46cb8b9d9b37b1a5ea12~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>比如上图中，在深蓝色的格子与一个物体相交，在此之前有2个有物体的包围盒，但是并不与物体相交</p>
 <p>关于怎么寻找相交的包围盒的问题，并不需要与所有的包围盒进行判断，我们可以用光栅化一条线（虎书p161）时用的方法（<strong>bresenham</strong>）来做</p>
 <p>因为判断光线与盒子求交比判断光线与物体求交简单得多，所以宁可多做光线与包围盒求交也不做光线与物体求交</p>
@@ -188,7 +188,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <li>如果划分的包围盒特别少：几乎没有加速效果</li>
 <li>如果划分的包围盒特别多：会有很多 <strong>多余的、没有物体的 无效包围盒</strong> 影响效率</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/440e93f61db34b77b2391b43d6c4ed02.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/014048c764494b17a2ed211f49e81174~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>那么对于统一空间分区的使用场景：</p>
 <ul>
 <li>这样的方法适用于场景内均匀分布的很多物体的情况</li>
@@ -202,20 +202,20 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <li>**BSP-Tree：**每次选一次方向来砍</li>
 </ul>
 <h4 id="kd-tree" tabindex="-1"><a class="header-anchor" href="#kd-tree" aria-hidden="true">#</a> KD-tree</h4>
-<p><img src="https://img-blog.csdnimg.cn/8a5c402d1f484fd18345d863b22f4dbb.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/438a01c19499464782e1913ec7576e9a~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>逐步的将物体存储在叶子节点上，内部节点不存储物体</p>
 <p>在下图中，有一道光线从场景中穿过，第一步是判断这个光线与整个场景的包围盒（A）是否有相交</p>
-<p><img src="https://img-blog.csdnimg.cn/22daac1c1a4841b28c796d9233cc90eb.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11170379622d4adcba8479da4d570e96~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>上图中做左边1叶子节点处应该还要划分的，这里偷懒不做划分</p>
 </blockquote>
 <p>如果相交，接着判断光线与其2个子区域1、B是否相交，相交的化在划分节点
-<img src="https://img-blog.csdnimg.cn/b17d5a1f91214968ba9b73ccff8e62ef.png" alt="在这里插入图片描述"></p>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf3df62bf2a740a09ec190d5a5b58821~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>这里2还需划分</p>
 </blockquote>
 <p>和剩下浅色部分在判断，有交点，划分节点</p>
-<p><img src="https://img-blog.csdnimg.cn/de5b263aef654bfda0f0c01d7a23f3d1.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c75262488f58464d8b3521999e69cdfb~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>直到求交到叶子节点于光线无交点。（判断完与某块包围盒相交后还要判断是否和内部的物体相交，如果与里面的物体相交则挺划分，直接成为叶子节点）</p>
 <ul>
 <li><strong>优点</strong>：
@@ -226,7 +226,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 </ul>
 <h3 id="_3-bvh-对象划分" tabindex="-1"><a class="header-anchor" href="#_3-bvh-对象划分" aria-hidden="true">#</a> [3]BVH &amp; 对象划分</h3>
 <p>直接通过物体来划分，才是现代的做法，不管是实时的光线追踪还是离线的，基本上应用的都是这样的一种结构。</p>
-<p><img src="https://img-blog.csdnimg.cn/098517b01d9d48698f3f63155a27076d.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/12b11d9907a94da591e71cacb78ad2f2~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>其划分规则如上图所示：将一个包围盒内的物体先划分成两部分，再重新求他们的包围盒，而不是像KD-tree先将空间划分。</p>
 <p>这样的划分方法，可以保证<strong>每个物体只会出现在一个包围盒当中</strong>，避免了KD-Tree的缺点</p>
 <p>但是它同样有一个小缺陷，它所<strong>划分的物体的包围盒可能会有交错</strong>，不过影响并不大</p>
@@ -248,5 +248,5 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <li>当节点包含几个元素时停止</li>
 </ul>
 <p>BVH的伪代码实现参考：</p>
-<p><img src="https://img-blog.csdnimg.cn/8f8b8b82cbde45a9986dd5625a6e49d9.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/77e468ee40a9429289c31cc1f100fe02~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 </template>

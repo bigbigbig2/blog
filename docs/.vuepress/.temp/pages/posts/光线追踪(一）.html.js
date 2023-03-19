@@ -133,11 +133,24 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1660906395000
+    "updatedTime": 1663764462000
   },
   "readingTime": {
-    "minutes": 12,
-    "words": 3059
+    "minutes": 13,
+    "words": 3227
   },
   "filePathRelative": "posts/光线追踪(一）.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

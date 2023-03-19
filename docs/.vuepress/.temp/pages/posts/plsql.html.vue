@@ -46,10 +46,10 @@
 在此语法中，tag是可选的。它可能包含零个或多个字符。
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>在两个<code>$tag$</code>之间，你可以放置任何带有单引号 ( <code>'</code>) 和反斜杠 ( <code>\</code>) 的字符串。例如：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> $$I'm a string constant that <span class="token keyword">contains</span> a backslash \$$<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/af52a89eb4544c5681b0a67b51a5757e.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2eb0622df1dc4f3197aea315069cc1e4~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>使用带标记的美元引号字符串常量语法：</p>
 <div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>SELECT $message$I'm a string constant that contains a backslash \$message$;
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/db11788e3b95435e84a040421384e3e8.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6750ac6b8f08429bb1d3452c1d3d25eb~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h3 id="_1-在匿名块中使用" tabindex="-1"><a class="header-anchor" href="#_1-在匿名块中使用" aria-hidden="true">#</a> [1]在匿名块中使用$$</h3>
 <p>一个简单的PL/pgSQL匿名块</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">do</span> 
@@ -141,7 +141,7 @@ $$
 <p>PL/pgSQL 允许您将一个块放置在另一个块的主体内。</p>
 <p>嵌套在另一个块中的块称为子块。包含子块的块称为外块。</p>
 <p>下图说明了外块和子块：</p>
-<p><img src="https://img-blog.csdnimg.cn/088fc4e5fb514146a1af765889452a66.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cc0c9cb456a9455fa35942c7a57c49bd~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>通常，您将一个大块划分为更小且更具逻辑性的子块。子块中的变量可以具有与外部块中的名称相同的名称，尽管这不是一个好的做法。</p>
 </blockquote>
@@ -177,7 +177,7 @@ $$
 	   last_name<span class="token punctuation">,</span> 
 	   payment<span class="token punctuation">;</span>
 <span class="token keyword">end</span> $$<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/5d0e29effc45407d9729c2593ec88dfe.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/928382d7f5cc4151b29df7d25b54d9b1~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">do</span> $$
 <span class="token keyword">declare</span> 
 	created_at <span class="token keyword">time</span> :<span class="token operator">=</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -421,7 +421,7 @@ NOTICE:  English Bulworth (51)
   raise notice <span class="token string">'notice message %'</span><span class="token punctuation">,</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">end</span> $$<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>输出：
-<img src="https://img-blog.csdnimg.cn/cad3dab050344350a8969a0b13237e18.png" alt="在这里插入图片描述"></p>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/526ac613a29d4162a862628e936a1642~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>请注意，并非所有消息都报告给客户端。PostgreSQL 仅将 、 和 level 消息报告<code>info</code>回<code>warning</code>客户<code>notice</code>端。这由<code>client_min_messages</code> 配置<code>log_min_messages</code> 参数控制</p>
 </blockquote>
@@ -447,7 +447,7 @@ NOTICE:  English Bulworth (51)
   raise exception <span class="token string">'duplicate email: %'</span><span class="token punctuation">,</span> email 
 		<span class="token keyword">using</span> hint <span class="token operator">=</span> <span class="token string">'check the email again'</span><span class="token punctuation">;</span>
 <span class="token keyword">end</span> $$<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/04c061723056432c854c38d2b74bf648.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96cd19af3ee345e4a179ec8ffe701e7f~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>以下示例说明了如何引发 an<code>SQLSTATE</code>及其对应的条件：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">do</span> $$ 
 <span class="token keyword">begin</span> 
@@ -501,7 +501,7 @@ NOTICE:  English Bulworth (51)
    
    assert film_count <span class="token operator">></span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token string">'1000 Film found, check the film table'</span><span class="token punctuation">;</span>
 <span class="token keyword">end</span>$$<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/566c9a06370e4374981480c53fa5b1e8.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84de95d406c436c902575e4e777a86a~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>小结：</p>
 <ul>
 <li>使用该<code>assert</code>语句将调试检查添加到 PL/pgSQL 代码。</li>
@@ -521,7 +521,7 @@ NOTICE:  English Bulworth (51)
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">if</span> condition <span class="token keyword">then</span>
    statements<span class="token punctuation">;</span>
 <span class="token keyword">end</span> <span class="token keyword">if</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/ffa282d63ca94d809403310673ff9f11.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6741ec70084c45959256a3b571e93b27~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>使用示例：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">do</span> $$
 <span class="token keyword">declare</span>
@@ -650,7 +650,7 @@ elsif condition_n <span class="token keyword">then</span>
 		raise notice <span class="token string">'%'</span><span class="token punctuation">,</span> price_segment<span class="token punctuation">;</span>  
     <span class="token keyword">end</span> <span class="token keyword">if</span><span class="token punctuation">;</span>
 <span class="token keyword">end</span><span class="token punctuation">;</span> $$
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/9f94c0a69a7c47eb84c8e6aa46f2adfd.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/217dc98b791d4786a9effad9cae375bc~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h4 id="_2-检索案例陈述" tabindex="-1"><a class="header-anchor" href="#_2-检索案例陈述" aria-hidden="true">#</a> 2) 检索案例陈述</h4>
 <p>以下语法显示了搜索<code>case</code>语句的语法：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">case</span>
@@ -1005,7 +1005,7 @@ $$<span class="token punctuation">;</span>
 </li>
 <li>
 <p>在块的末尾，使用<code>return</code>语句返回<code>film_count</code>给函数
-<img src="https://img-blog.csdnimg.cn/ff899a3995e34b4d951c8e6b4dffcbf4.png" alt="在这里插入图片描述"></p>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73f1aa6044d3481094f5647f09f36a9d~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 </li>
 </ul>
 </blockquote>
@@ -1126,10 +1126,10 @@ LINE <span class="token number">1</span>: <span class="token keyword">select</sp
 
 <span class="token keyword">end</span><span class="token punctuation">;</span>$$
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> get_film_stat<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/78bfbc40a9304f6c9efe3e91765eae7c.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/90cb8882af64492bbd5333ff6bba8868~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>该函数的输出是一条记录。要将输出分隔为列，请使用以下语句：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> get_film_stat<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/e666adb3da20489a8df4b973879e8eb8.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb5649b4668d44f49820ee87008f602c~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h4 id="_3-inout模式" tabindex="-1"><a class="header-anchor" href="#_3-inout模式" aria-hidden="true">#</a> 3）inout模式</h4>
 <p><code>inout</code>模式是组合<code>in</code>和<code>out</code>模式。</p>
 <p>这意味着调用者可以将参数传递给函数。该函数更改参数并返回更新后的值。</p>
@@ -1145,7 +1145,7 @@ LINE <span class="token number">1</span>: <span class="token keyword">select</sp
 <span class="token keyword">end</span><span class="token punctuation">;</span> $$<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>调用函数：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> swap<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/f7fc0a922f184d5eaf84ffa0fbf0c3df.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eae78ecdbcf4f77826479f7e5dd5d91~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h3 id="_3-函数重载" tabindex="-1"><a class="header-anchor" href="#_3-函数重载" aria-hidden="true">#</a> [3]函数重载</h3>
 <p>PostgreSQL 允许多个函数共享相同的名称，只要它们具有不同的参数</p>
 <p>如果两个或多个函数共享相同的名称，则函数名称将被重载</p>
@@ -1297,7 +1297,7 @@ get_rental_duration(p_customer_id integer, p_from_date date default '2005-01-01'
 </ul>
 </blockquote>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> get_film <span class="token punctuation">(</span><span class="token string">'Al%'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/592e816e3ac0438cb28c96c4f73c9c79.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19a92de5c6d140aeb5422ed1db0556da~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>在实践中，您通常在将每一行附加到函数的结果集中之前对其进行处理：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">create</span> <span class="token operator">or</span> <span class="token keyword">replace</span> <span class="token keyword">function</span> get_film <span class="token punctuation">(</span>
 	p_pattern <span class="token keyword">varchar</span><span class="token punctuation">,</span>
@@ -1331,7 +1331,7 @@ get_rental_duration(p_customer_id integer, p_from_date date default '2005-01-01'
 <p>该<code>return next</code>语句将一行添加到函数的返回表中。</p>
 <p>下面说明如何调用该<code>get_film()</code>函数：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> get_film <span class="token punctuation">(</span><span class="token string">'%er'</span><span class="token punctuation">,</span> <span class="token number">2006</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/3e4387f73e4a4519affff82d60ce2164.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8914546500a34deda39dbaf41e84d946~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h3 id="_5-删除函数" tabindex="-1"><a class="header-anchor" href="#_5-删除函数" aria-hidden="true">#</a> [5]删除函数</h3>
 <p>删除语法：</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">drop</span> <span class="token keyword">function</span> <span class="token punctuation">[</span><span class="token keyword">if</span> <span class="token keyword">exists</span><span class="token punctuation">]</span> function_name<span class="token punctuation">(</span>argument_list<span class="token punctuation">)</span>
@@ -1529,7 +1529,7 @@ SQL state: P0001
 
 <span class="token keyword">insert</span> <span class="token keyword">into</span> accounts<span class="token punctuation">(</span>name<span class="token punctuation">,</span>balance<span class="token punctuation">)</span>
 <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token string">'Alice'</span><span class="token punctuation">,</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/efeebbf8e09e49d49821e95efab371e2.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8a4e185a9e5041178c1eace8db38ab92~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <p>下面的示例创建一个名为的存储过程<code>transfer</code>，将指定金额的资金从一个帐户转移到另一个帐户。</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">create</span> <span class="token operator">or</span> <span class="token keyword">replace</span> <span class="token keyword">procedure</span> transfer<span class="token punctuation">(</span>
    sender <span class="token keyword">int</span><span class="token punctuation">,</span>
@@ -1570,7 +1570,7 @@ SQL state: P0001
 <p>PL/pgSQL 游标允许您封装查询并一次处理每一行</p>
 <p>将大型结果集划分为多个部分并单独处理每个部分时，推荐使用游标。如果一次处理，可能会出现内存溢出错误，而且，你可以开发一个返回对游标的引用的函数。这是从函数返回大型结果集的有效方法。函数的调用者可以根据游标引用处理结果集。</p>
 <p>在PostgreSQL中使用游标的具体：</p>
-<p><img src="https://img-blog.csdnimg.cn/88a01cebfe3c42eda2bcd4e3c1f3c99b.png" alt="在这里插入图片描述"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b03d3937aeba48fa9bb6768ab67bfc6a~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <ul>
 <li><strong>声明一个游标</strong>---要访问游标，你需要在块的声明部分中声明游标变量，游标变量的类型为refcursor</li>
 <li><strong>打开游标</strong>---</li>
@@ -1663,7 +1663,7 @@ move forward <span class="token number">3</span> <span class="token keyword">fro
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="_7-综合示例" tabindex="-1"><a class="header-anchor" href="#_7-综合示例" aria-hidden="true">#</a> [7]综合示例</h3>
 <p>创建一个函数，在这个函数内使用游标实现查找2006发行年份的电影并且电影名中包含ful的信息</p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> title<span class="token punctuation">,</span> release_year <span class="token keyword">from</span> film <span class="token keyword">where</span> release_year <span class="token operator">=</span> <span class="token number">2006</span><span class="token punctuation">;</span> <span class="token comment">-- 有一千条结果</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/ad9df9ec157a484f84629642223d85f0.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2375bef827804de59d64a8e3c02c497e~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">create</span> <span class="token operator">or</span> <span class="token keyword">replace</span> <span class="token keyword">function</span> get_film_titles<span class="token punctuation">(</span>p_year <span class="token keyword">integer</span><span class="token punctuation">)</span>
    <span class="token keyword">returns</span> <span class="token keyword">text</span> <span class="token keyword">as</span> $$
 <span class="token keyword">declare</span> 
@@ -1697,7 +1697,7 @@ move forward <span class="token number">3</span> <span class="token keyword">fro
 
 <span class="token keyword">language</span> plpgsql<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> get_film_titles<span class="token punctuation">(</span><span class="token number">2006</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/90dddf5d3f8c45b1b949cefb485348fb.png" alt="在这里插入图片描述"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b84158f48fb143fda401709032e72180~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p>
 <h2 id="_11-触发器" tabindex="-1"><a class="header-anchor" href="#_11-触发器" aria-hidden="true">#</a> 11.触发器</h2>
 <p>参考：https://www.postgresqltutorial.com/postgresql-plpgsql/</p>
 <h3 id="_1-触发器简介" tabindex="-1"><a class="header-anchor" href="#_1-触发器简介" aria-hidden="true">#</a> [1]触发器简介</h3>

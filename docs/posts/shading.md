@@ -19,7 +19,7 @@ tags:
 
 一个简单的着色模型（Blinn-Phong 反射模型）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ed8331b8b3e549a482336fd0d03936ef.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/80d4064e306749cb9d8a4b1b3889f2ed~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 Blinn-Phong 着色模型主要有三部分组成：
@@ -30,7 +30,7 @@ Blinn-Phong 着色模型主要有三部分组成：
 
 着色是局部的，对于每个着色点，我们可以简化成如下图所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/eef7db86e56c4125bf41de3a31f9ae01.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de5ee416515e4f1d86cc95bf5575e5a7~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 其中：
@@ -52,7 +52,7 @@ Blinn-Phong 着色模型主要有三部分组成：
 
 光线均匀地向各个方向散射，所有观察方向的表面颜色都相同
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/aec0db265bbb41ae85a64e86b7b6a45a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23f166081f744cf5a307eae16828a4d9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 但是还会有一个问题：不同的角度亮度会不同
@@ -63,7 +63,7 @@ Blinn-Phong 着色模型主要有三部分组成：
 
 #### **兰伯特余弦定律**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/948b9007bb7540a6b0553dd198c106bf.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/13a7ee3981344711ad738507c199a29e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 法线n的与入射光I的夹角θ之间的角度决定了物体表面的亮度/吸收的能量的多少（兰伯特余弦定律）
@@ -78,7 +78,7 @@ $$
 $$
 接下来的问题是，能量从哪里来？以点光源为例，它的能量是从中心外四周扩散的，如下图所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/333222370ff64e779ad9711ec07a3a52.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/093d862a4e584b818764da747e4318c0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 假设传播过程中能量守恒，这意味着在半径为 1 时的能量等于半径为 r 时的能量，均为 E。然而，随着半径的增大，球面的表面积也在增大，相当于球面中单位面积的能量减少了。
@@ -125,12 +125,12 @@ $$
 - $kd$ 表示材质的漫反射系数，可调节(就是漫反射中着色点吸收的能量的参数，例如1表示shading point不吸收能量)，不同的点吸收不同的能量，就产生了不同的颜色
 - $眼睛最终看到的能量（漫反射光） = kd⋅到达了多少能量⋅接收多少能量$
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b51bef3156dd4de1b8f9ad98c6731bbf.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/506d68e324f3469e98900b2217f8cc72~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 漫反射由于光照射到一个shading point上，然后能量被均匀的反射到各个方向去，那么这就意味不管从哪里观察它(无论v的方向），我看到的结果都是一模一样的。
 >
-> ![在这里插入图片描述](https://img-blog.csdnimg.cn/71d9d3ebfbd14739956cbd975cbe7e40.png)
+> ![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d3cc6df01244bc18b5fd6fee4bbd898~tplv-k3u1fbpfcp-zoom-1.image)
 
 >
 >$k_d$随法线与入射光线夹角减小（接近垂直）而增大
@@ -147,7 +147,7 @@ $$
 
 当光线发生反射时，如果当前视角方向与反射方向接近时（v和R接近时），我们就能看到高光了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/34136cfdea4b44ba8b5b173f15e2aa8a.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d4bae7e2ad6472187f11b3a24915918~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 和漫反射公式类似，我们也需要知道有多少能量到达了平面，有多少能量被反射出去了，不同的地方是我们需要求视角方向与反射方向的夹角。
@@ -156,7 +156,7 @@ $$
 
 **V close to mirror direction <===> half vector close n**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f3492736ba1f4d9285558f8e40e5e4a7.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d226d2f140745b698e4fb452f05d43e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 在这里先引入一个新的概念——half vector（半程向量h）
@@ -183,7 +183,7 @@ $$
 
 然而，上面公式计算反射光与视角夹角时会得到一个 0~90 度的范围，这意味着在这个范围中都能看到高光，这显然不符合高光的定义。因此需要对该部分进行修正：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/02a81b4dcec943a1a50af37ea5cc13fe.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c30b60eb0db84dc29cc7f6293b3ba6ff~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 高光亮度随v和R角度变化并不是像cos的曲线一样是那么平滑的，而是有一定的特点的，例如在某个范围内的亮度变化是比较大的。
@@ -214,14 +214,14 @@ $$
 - $k_s$ 表示材质的高光系数，可调节
 - $p$ 用来调节高光的可视范围
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/82ae4894d0184b00b117eb9a3b8ccee7.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/04ce382bc26a456da49325e58c4784e2~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
 
 ### [3]Ambient(环境光)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6630d567d3514ff3934937fcefb4751c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5aaa7195c95404cb02317b0ad312e9f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 对于没有光线直接照射的平面（如最开始的茶杯的背光位置），该平面依旧会受到环境中各种光照的反射（来自四面八方的光照），这就是环境光对场景的影响。
@@ -249,7 +249,7 @@ $$
 
 当我们计算出漫反射、高光、环境光之后，把它们加起来，就能得到 Blinn Phong 着色模型的结果了：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a6b562ff2e8c46a7ba9d1507f3abcd57.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6104c6cf5e541d78e72ce35fabdae70~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
@@ -263,7 +263,7 @@ $$
 
 ## 3.Shading Frequecies着色频率
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ef4f42716e304595bfea348680f3ea1f.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b405d4a725864258a738c368803878d3~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 着色频率指的是把着色应用到那些点上，如上图所示，上面三个球都拥有相同的几何形状，但应用了不同的着色频率，分别是：
@@ -286,7 +286,7 @@ $$
 
 对每个像素进行着色，比如基本图元还是三角形，那么可以得出三角形三个顶点的法线，然后通过插值计算出三角形内部每个像素的法线，然后对每个像素进行着色
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6dd633e340df45daad86a1e0c06f8016.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4eb7a02b4d1473eb0060fb759663958~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 如图所示，着色频率对结果的影响，取决于模型的复杂度。模型的复杂度越低，着色结果区别越大，但随着模型复杂度的提高，平面着色也可以达到冯氏着色的效果。因此我们不能迷信冯氏着色一定比平面着色好。
@@ -297,7 +297,7 @@ $$
 
 有一个简单方案：平均周围面的法线
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7ec63781f96c432a94ce4b0ccd86dd8e.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a8479335b822409d965e20104fd456fb~tplv-k3u1fbpfcp-zoom-1.image)
 
 $$
 N_v = \frac{\sum_i N_i}{||\sum_i N_i||}
@@ -308,7 +308,7 @@ $$
 
 顶点法线的重心插值
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c5086475cf6f4fe692dc966baa38d973.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/95bbd36f456d4398b53e73dbc7f815d6~tplv-k3u1fbpfcp-zoom-1.image)
 
 > 不要忘记对插值方向进行归一化
 
@@ -316,7 +316,7 @@ $$
 
 图形（实时渲染）管线
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7e2387d669fb4b4d8aa44128a65c9688.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/647d7f7c1d484d01b57bec63401d91cf~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - **Vertex Processing**：对每个顶点进行Model, View, Projection transforms
@@ -334,33 +334,33 @@ $$
 
 图形管线的硬件实现，用于执行图形管线计算的专用处理器，高度**并行**化处理器（Heterogeneous, Multi-Core Procesor）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1b89b27d4ac84b39b46203c68fee6eaa.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a5bffb25fac46ea9c8bdfa3167390ef~tplv-k3u1fbpfcp-zoom-1.image)
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/651a1c61ace7454ca1562a494bd7757b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43f4e014c04b4eba9433244d8d3869a5~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## 5.Texture Mapping纹理映射
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3804b4957f174082a4bcbe7c5a19c429.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/53df4b3e9c9749169c850549172587d9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 回顾漫反射公式中，我们可以通过改变 $k_d$ 来调整漫反射分量，当这个 $kd$ 包含了纹理中某个区域的颜色时，这其实就相当于把该纹理应用到着色公式中了。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/68b87ea22e194ff0abf65028320ef745.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f4c0ef4fbc742f28c4183f872f034bc~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 地球上的一个点投影到平面上的一个点（这两个点之间的关系也称为**纹理映射**）
 
 由于任意一个三维物体它都是由二维的三角面构成的，因此我们可以利用这个性质，来建立空间中的三角形与二维纹理中的映射关系。 这项工作通常是在建模软件中完成的。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/aea4b4fcab924a838801ba9ac1b8614b.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a8a4c4d51d204e23b2917900270aafa5~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [1]纹理坐标
 
 每个三角形顶点都分配了一个纹理坐标 (u,v)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/56b6f02277be4dec99b4195cbfb2555c.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/90eeae4213ac43ee8ea39089d1919a18~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 $u、v$的范围默认为$[0,1]$
@@ -382,7 +382,7 @@ $u、v$的范围默认为$[0,1]$
  重心坐标是以三角形的其中一个顶点为原点，分别以另外两个顶点作为基向量作为一个新的坐标系$(\alpha,\beta,\gamma)$
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2f5f5fe526334d4eb96bc108f0cc0779.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1098c5df01d44f1792adaf2531ac31e1~tplv-k3u1fbpfcp-zoom-1.image)
 
 重心坐标：这三个顶点所形成平面内任何一个点$(x,y)$都可以用三个顶点的坐标的线性组合来表示
 $$
@@ -396,7 +396,7 @@ $$
 
 重心坐标还有另一种表示方式，即每一个分量等于该顶点所对应的面积与整个三角形面积的比值：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f62eb15187aa4becb6b679b4d98b73a6.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/086cbfb8d47e410685542917bf4e2955~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如图所示，A 所对应的面积为$A_A$ ，B 所对应的面积为$A_B$ ，C 所对应的面积为$C_A $，于是重心坐标的三个分量就是：
@@ -422,7 +422,7 @@ $$
 $$
 有了重心坐标之后，我们就能计算出三角形中任意一点的属性了（位置、法线、颜色、UV 等等）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cada7e9e904a44f8b1f6305673673007.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6a3140c9439746fba559ac5817078c70~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 需要注意的是，由于三角形在投影前后的重心坐标（形状）会发生变化，因此并不能用投影后的三角形的重心坐标来计算，必须把它还原成投影前的三角形，然后计算其重心坐标，再计算对应的属性。
@@ -447,7 +447,7 @@ for each rasteried screen sample(x, y):  //Usually a pixel's center
 
 显然，根据重心坐标计算出来的 UV 坐标是一个浮点数，它会落在纹理中的任意位置。当我们尝试在该位置采样的时候，就会遇到一个问题：我们应该取什么颜色？
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f56e86ce7bb04f49afbb3187296df9e5.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/941de0b5e1154dd8b4c0d3338c87877e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 显然，我们需要一个采样策略去决定应该获得什么颜色，常见的策略有：
@@ -456,7 +456,7 @@ for each rasteried screen sample(x, y):  //Usually a pixel's center
 - **Bilinear Interpolation**（双线性插值）
 - **Bicubic**：原理同双线性插值，只不过它是取16个点进行插值（运算量大）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/608ba8fde94546638197ada74511eb67.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ecaebc38f86344209b562b9237ab9a83~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - 先通过Linear interpolation(线性插值)计算出$u_0$、$u_1$的值
@@ -464,7 +464,7 @@ for each rasteried screen sample(x, y):  //Usually a pixel's center
 - 这样就实现了平滑过渡效果
 - 双线性插值通常以合理的成本获得相当不错的结果
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a8787d87b648406a825f5fed255878c2.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/60c5dadaa8a74656b57f981a75116426~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
@@ -473,12 +473,12 @@ for each rasteried screen sample(x, y):  //Usually a pixel's center
 
 多个屏幕像素可以映射到单个纹素——Texture Magnification纹理放大，这种情况其实比纹理缩小Texture Minification容易引起更严重的问题（远处出现摩尔纹，近处出现锯齿）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1d657e3dfa02494dbb615ca9b94f6688.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02444f55885744af8682b185a49abc3e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 这是因为每个像素对应的纹素区域不同导致的。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/de22f17f76504d80869664d9d459b980.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d3193a55005d407bb5a1508ca0e7b847~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - 对于近距离的像素来说，它所覆盖的纹素范围较少，纹理发生了放大
@@ -488,7 +488,7 @@ for each rasteried screen sample(x, y):  //Usually a pixel's center
 
 这是一个典型的走样问题，我们可以通过超采样**来实现反走样，下面是 512 倍超采样的结果
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2fbaf9b3a635424394d2821b4fc9b336.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/55cf1a1afb2443ab863007927bb696ac~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 可以看到，超采样的效果比较明显，但它有一个致命的问题：性能消耗巨大
@@ -508,7 +508,7 @@ Mipmap 是指根据一张纹理去生成一系列更小的纹理的技术。
 
 允许（快速的, 近似的, 正方形的）做范围查询
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7dc157638ba145e4a0f651501cf5a309.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/92f44193dff54366b74ba0085622c4c0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如图所示：
@@ -531,7 +531,7 @@ Mipmap 是指根据一张纹理去生成一系列更小的纹理的技术。
 
 那要怎么计算一个像素覆盖了多少纹素呢？其实有很多方法可以计算的，这里只介绍一个简单的做法：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b3acd998aa9f40d09c3c6cff8bb13e70.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26d51fb4f17f4c34baa196b3ebd77eb4~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 只要根据该像素的四个角的 UV 坐标，计算出它们映射到纹理上的位置，然后把它们连起来就可以了。 实际上，我们在采样 mipmap 的时候，会把这个查询区域近似看成**正方形**，而这个过程中有更复杂的算法去实现，具体可以查阅相关资料。
@@ -544,17 +544,17 @@ $$
 
 #### Trilinear Interpolation三线性插值
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7c00f30f3a324becbe7ff51835e20776.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/665ba2a9dc24425fbbaa788361bfe9cb~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 基于在D层上双线性插值的结果和在D+1层上在做一次插值（**层与层之间**）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d0936115327144758cc8ae546afc9d26.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6064a435d3c042b4bfe4c6708ac31b58~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 三线性插值结果对比（过渡效果明显）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/dcc083c58f5541cfab77d72f128b4b38.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab47f2f660dc4450b52ccad118e863cc~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 对对比之前的一张图，发现还有问题啊!(*￣(￣　*)
@@ -564,7 +564,7 @@ $$
 
 ### [8]Anisotropic Filtering各向异性过滤
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ca42d9b24f6746dc9c3bce6415ebb7e8.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1b56043cc6b44366941e7926bb3befb0~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它们覆盖的纹素实际上并不是一个正方形，而是一个扁矩形，采样 `mipmap` 的时候以正方形区域来采样会带来比较大的误差
@@ -573,7 +573,7 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 
 和 mipmap 类似，各向异性过滤也是利用原纹理去生成更小尺寸的纹理的技术，mipmap 生成的是宽高比例不变的纹理，而各向异性过滤生成的是宽高比例会发生变化的纹理。如下图所示
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/fddf58b0d65749e7b5fd9f0fb79017f6.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f85d14a0290844ceb9d221f812510e0a~tplv-k3u1fbpfcp-zoom-1.image)
 
 > 可以看出它的开销是原本的三倍
 
@@ -581,7 +581,7 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 
 和 mipmap 一样，各向异性过滤和也是有层级的，对于上面的那张图，层级如下图所示，相同颜色的区域表示相同层级下的各向异性过滤：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/165367b58d4d488bb45bf6e2acb83691.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3509a01c617481d97f09bacdbed675a~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 我们可以在各种图形 API 中去控制应该生成哪些层级的各向异性过滤的纹理。
@@ -597,14 +597,14 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 - 将数据带入片元计算的一般方法
 - Environment lighting（环境光映射/纹理）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c95428bc98b143d2ab145082c39bc4fc.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eba2359d12f240d29a0e3cdff60e7bf5~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ### [1]Spherical Map球面贴图
 
 环境贴图可以用来表示环境光照。由于环境光是来自四面八方的，因此在采样环境光的时候可以把其看成是一个球面
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/94dce0173a17456f84776c9e64716271.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f2aa1f350e3c4a21abc9a20c7b716c9f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 上图中左图是把环境贴图应用在球面上，然后右图的场景中则是利用该环境贴图进行采样得到的结果。
@@ -615,12 +615,12 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 
 向量沿该方向映射到立方体。 该立方体用6个平方纹理图纹理
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/84f4c2d038ee47a09efbfc9d598056d7.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/467cefee17a34d5ca2b39a803c288215~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 立方体贴图是另一种环境贴图，它是利用六张图来构建成一个立方体，然后再根据法线方向去判断采样哪一个面。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4f5c1286568848d2be8dd728d8cde178.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f508db32ac5248768096f2d96b2ca787~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 
@@ -631,7 +631,7 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 
 凹凸贴图有时候也叫法线贴图
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/bf72a68f7bf347cabd607bfcd1d51c96.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0c07b363d2ee49f098248631b782c248~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 如果使用之前的普通三角形来实现上面的“橘子”那么需要很多三角形才能实现了，但是使用凹凸贴图的话就会方便很多
@@ -643,12 +643,12 @@ Mipmap在远处出现了模糊效果是因为对于远处的像素来说，它�
 - 添加表面细节而不添加更多三角形
 - 模拟物体表面变化下的法线
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4f8893f1bc7948dca0ca9f260c7d82a6.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1dd19c6b0db9499fb0a165c48c0de51e~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 示例：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/bf588ccb82b84a30a764c23c43148200.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/886b72211c3e4d35a519380bf35ebded~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 - 原物体表面是平整的，这里的蓝色线表示的是凹凸贴图定义的表面，
@@ -687,7 +687,7 @@ $$
 
 - 原理与凹凸贴图大致相同，只是唯一贴图是真实的移动了顶点
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/269ba2629e1a424e8a1d03c204e255b1.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/13ed363157d740f5830ea139b54cbc9f~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 通过上图可以发现：
@@ -699,10 +699,7 @@ $$
 
 除了上面的应用，纹理映射还要许多有意思的应用，比如下图
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3c7b6f6d6966412bb91b64cc176f89d0.png)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0eedc76bb2241f6ab0fcadaaf8f7e31~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 > 该图通过三维图形中的噪声函数来实现纹理贴图，也就是说并不存在上面实际的纹理图，纹理图是通过三维图形中的噪声函数实时生成的
-
-
-
