@@ -80,24 +80,11 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1660906395000
+    "updatedTime": 1679201802000
   },
   "readingTime": {
     "minutes": 7,
     "words": 1719
   },
   "filePathRelative": "posts/哈夫曼树.md"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

@@ -193,24 +193,11 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1660906395000
+    "updatedTime": 1679201802000
   },
   "readingTime": {
     "minutes": 13,
     "words": 3153
   },
   "filePathRelative": "posts/服务端渲染SSR.md"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

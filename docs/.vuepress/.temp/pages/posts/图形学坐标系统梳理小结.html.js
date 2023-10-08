@@ -86,24 +86,11 @@ export const data = {
     }
   ],
   "git": {
-    "updatedTime": 1663764462000
+    "updatedTime": 1679201802000
   },
   "readingTime": {
     "minutes": 10,
     "words": 2564
   },
   "filePathRelative": "posts/图形学坐标系统梳理小结.md"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

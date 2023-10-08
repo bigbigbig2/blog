@@ -234,6 +234,27 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "DeckGL MVTLayer+Mapbox注入shader实现简单效果",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.数据获取与处理",
+        "slug": "_1-数据获取与处理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.注入shader添加自定义效果",
+        "slug": "_2-注入shader添加自定义效果",
+        "children": []
+      }
+    ],
+    "path": "/posts/deckglmapbox.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "deckgl与mapboxgl整合方案",
     "headers": [
       {
@@ -262,6 +283,183 @@ export const searchIndex = [
     "layout": "Post"
   },
   {
+    "title": "deckGL自定义图层学习笔记",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.自定义图层",
+        "slug": "_1-自定义图层",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]图层的生命周期",
+            "slug": "_1-图层的生命周期",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]复合层",
+            "slug": "_2-复合层",
+            "children": [
+              {
+                "level": 4,
+                "title": "Adaptor Layers",
+                "slug": "adaptor-layers",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Collection Layers",
+                "slug": "collection-layers",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "小结",
+                "slug": "小结",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[3]Subclassed Layers",
+            "slug": "_3-subclassed-layers",
+            "children": [
+              {
+                "level": 4,
+                "title": "Overriding Attribute Calculation",
+                "slug": "overriding-attribute-calculation",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Overriding Shaders",
+                "slug": "overriding-shaders",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Defining Additional Uniforms",
+                "slug": "defining-additional-uniforms",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Defining Additional Attributes",
+                "slug": "defining-additional-attributes",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "Layer Extensions",
+                "slug": "layer-extensions",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[4]Primitive Layers",
+            "slug": "_4-primitive-layers",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]shader注入",
+            "slug": "_5-shader注入",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.API使用",
+        "slug": "_2-api使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]Using Layers",
+            "slug": "_1-using-layers",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]add Interactivity",
+            "slug": "_2-add-interactivity",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]坐标系统CS",
+            "slug": "_3-坐标系统cs",
+            "children": [
+              {
+                "level": 4,
+                "title": "基本概念",
+                "slug": "基本概念",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.源码学习",
+        "slug": "_3-源码学习",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]view",
+            "slug": "_1-view",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]View State",
+            "slug": "_2-view-state",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]Viewport",
+            "slug": "_3-viewport",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "坐标变换",
+            "slug": "坐标变换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Layer",
+            "slug": "layer",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "MapboxLayer",
+            "slug": "mapboxlayer",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "安装说明",
+            "slug": "安装说明",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/deckgl%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E5%B1%82.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
     "title": "Mapbox Terrain-DEM地形切片原理浅析",
     "headers": [
       {
@@ -284,6 +482,77 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/Mapbox%20Terrain-DEM%E5%9C%B0%E5%BD%A2%E5%88%87%E7%89%87%E5%8E%9F%E7%90%86%E6%B5%85%E6%9E%90.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "Phong反射模型及glsl实现",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]光照模型拆解",
+        "slug": "_1-光照模型拆解",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]环境反射",
+        "slug": "_2-环境反射",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]平行光",
+        "slug": "_3-平行光",
+        "children": [
+          {
+            "level": 3,
+            "title": "平行光的漫反射",
+            "slug": "平行光的漫反射",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "平行光的镜面反射",
+            "slug": "平行光的镜面反射",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[4]点光源",
+        "slug": "_4-点光源",
+        "children": [
+          {
+            "level": 3,
+            "title": "点光源的漫反射",
+            "slug": "点光源的漫反射",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "点光源的衰减",
+            "slug": "点光源的衰减",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "点光源的镜面反射",
+            "slug": "点光源的镜面反射",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[5]phong着色模型与Blinn-Phong着色模型",
+        "slug": "_5-phong着色模型与blinn-phong着色模型",
+        "children": []
+      }
+    ],
+    "path": "/posts/Phong%E5%8F%8D%E5%B0%84%E6%A8%A1%E5%9E%8B.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -1712,6 +1981,827 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/shading.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js中加载模型及模型动画",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]GLTF",
+        "slug": "_1-gltf",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]GLTF 格式",
+        "slug": "_2-gltf-格式",
+        "children": [
+          {
+            "level": 3,
+            "title": "glTF",
+            "slug": "gltf",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "glTF-Binary",
+            "slug": "gltf-binary",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "glTF-Draco",
+            "slug": "gltf-draco",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "glTF-Embedded",
+            "slug": "gltf-embedded",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "选择",
+            "slug": "选择",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[3]在three中加载模型",
+        "slug": "_3-在three中加载模型",
+        "children": [
+          {
+            "level": 3,
+            "title": "加载.gltf",
+            "slug": "加载-gltf",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "加载Draco compression",
+            "slug": "加载draco-compression",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[4]动画",
+        "slug": "_4-动画",
+        "children": [
+          {
+            "level": 3,
+            "title": "加载动画模型",
+            "slug": "加载动画模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "处理模型动画",
+            "slug": "处理模型动画",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[5]Three.js editor",
+        "slug": "_5-three-js-editor",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%A8%A1%E5%9E%8B%E5%8F%8A%E6%A8%A1%E5%9E%8B%E5%8A%A8%E7%94%BB.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js使用着色器绘制图案",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]uv坐标的玩法",
+        "slug": "_1-uv坐标的玩法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]内置函数图案",
+        "slug": "_2-内置函数图案",
+        "children": [
+          {
+            "level": 3,
+            "title": "mod",
+            "slug": "mod",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "step",
+            "slug": "step",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "abs",
+            "slug": "abs",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "floor",
+            "slug": "floor",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "distance",
+            "slug": "distance",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "atan",
+            "slug": "atan",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[3]旋转uv",
+        "slug": "_3-旋转uv",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]绘制圆",
+        "slug": "_4-绘制圆",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]改变uv",
+        "slug": "_5-改变uv",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[6]噪声",
+        "slug": "_6-噪声",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[7]混合颜色",
+        "slug": "_7-混合颜色",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E4%BD%BF%E7%94%A8%E7%9D%80%E8%89%B2%E5%99%A8%E7%BB%98%E5%88%B6%E5%9B%BE%E6%A1%88.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js修改内置材质着色器代码",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]获取材质的着色器",
+        "slug": "_1-获取材质的着色器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]向顶点着色器中添加内容",
+        "slug": "_2-向顶点着色器中添加内容",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]旋转坐标",
+        "slug": "_3-旋转坐标",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]动画",
+        "slug": "_4-动画",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]阴影修复",
+        "slug": "_5-阴影修复",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[6]法向修复",
+        "slug": "_6-法向修复",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E4%BF%AE%E6%94%B9%E5%86%85%E7%BD%AE%E6%9D%90%E8%B4%A8%E7%9D%80%E8%89%B2%E5%99%A8%E4%BB%A3%E7%A0%81.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js光线投射",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]创建光线投射器",
+        "slug": "_1-创建光线投射器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]相交检测方法",
+        "slug": "_2-相交检测方法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]对每一帧进行测试",
+        "slug": "_3-对每一帧进行测试",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]通过鼠标使用光线投射器",
+        "slug": "_4-通过鼠标使用光线投射器",
+        "children": [
+          {
+            "level": 3,
+            "title": "鼠标悬停",
+            "slug": "鼠标悬停",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "鼠标进入和鼠标离开事件",
+            "slug": "鼠标进入和鼠标离开事件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "鼠标点击",
+            "slug": "鼠标点击",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/three.js%E5%85%89%E7%BA%BF%E6%8A%95%E5%B0%84%E5%99%A8.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js基于滚动的动画",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]css设置",
+        "slug": "_1-css设置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]固定弹性卷轴",
+        "slug": "_2-固定弹性卷轴",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]在Three画布中添加多个对象",
+        "slug": "_3-在three画布中添加多个对象",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]视差Parallax",
+        "slug": "_4-视差parallax",
+        "children": [
+          {
+            "level": 3,
+            "title": "光标",
+            "slug": "光标",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[5]额外效果",
+        "slug": "_5-额外效果",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E5%9F%BA%E4%BA%8E%E6%BB%9A%E5%8A%A8%E7%9A%84%E5%8A%A8%E7%94%BB.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js性能优化微指南",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]性能监测",
+        "slug": "_1-性能监测",
+        "children": [
+          {
+            "level": 3,
+            "title": "检测FPS",
+            "slug": "检测fps",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "禁用 FPS 限制",
+            "slug": "禁用-fps-限制",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "监视绘制调用",
+            "slug": "监视绘制调用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "渲染信息",
+        "slug": "渲染信息",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]销毁",
+        "slug": "_2-销毁",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]灯光",
+        "slug": "_3-灯光",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]阴影",
+        "slug": "_4-阴影",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]合理的使用castShadow和Shadow",
+        "slug": "_5-合理的使用castshadow和shadow",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[6]关闭阴影自动更新",
+        "slug": "_6-关闭阴影自动更新",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[7]Textures",
+        "slug": "_7-textures",
+        "children": [
+          {
+            "level": 3,
+            "title": "调整纹理大小",
+            "slug": "调整纹理大小",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "保存2次方的分辨率",
+            "slug": "保存2次方的分辨率",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用正确的格式",
+            "slug": "使用正确的格式",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[8]Geometries",
+        "slug": "_8-geometries",
+        "children": [
+          {
+            "level": 3,
+            "title": "使用缓冲区几何图形",
+            "slug": "使用缓冲区几何图形",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "不更新顶点",
+            "slug": "不更新顶点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "共用几何图形",
+            "slug": "共用几何图形",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "合并几何图形",
+            "slug": "合并几何图形",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[9]Materials",
+        "slug": "_9-materials",
+        "children": [
+          {
+            "level": 3,
+            "title": "共用材质",
+            "slug": "共用材质",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用简单的材质",
+            "slug": "使用简单的材质",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[10]mesh",
+        "slug": "_10-mesh",
+        "children": [
+          {
+            "level": 3,
+            "title": "使用实例化网格",
+            "slug": "使用实例化网格",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[11]模型",
+        "slug": "_11-模型",
+        "children": [
+          {
+            "level": 3,
+            "title": "Draco压缩",
+            "slug": "draco压缩",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Gzip",
+            "slug": "gzip",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[12]相机",
+        "slug": "_12-相机",
+        "children": [
+          {
+            "level": 3,
+            "title": "视野",
+            "slug": "视野",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Near and far",
+            "slug": "near-and-far",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[13]render",
+        "slug": "_13-render",
+        "children": [
+          {
+            "level": 3,
+            "title": "像素比",
+            "slug": "像素比",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "电源选项",
+            "slug": "电源选项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "抗锯齿",
+            "slug": "抗锯齿",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[14]后处理",
+        "slug": "_14-后处理",
+        "children": [
+          {
+            "level": 3,
+            "title": "限制通道数",
+            "slug": "限制通道数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[15]shader",
+        "slug": "_15-shader",
+        "children": [
+          {
+            "level": 3,
+            "title": "指定精度",
+            "slug": "指定精度",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用优雅的代码",
+            "slug": "使用优雅的代码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用纹理",
+            "slug": "使用纹理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用defines",
+            "slug": "使用defines",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "在顶点着色器重进行运算",
+            "slug": "在顶点着色器重进行运算",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/posts/three.js%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9B%B8%E5%85%B3.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js提升渲染效果",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]light",
+        "slug": "_1-light",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]model",
+        "slug": "_2-model",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]Environment map",
+        "slug": "_3-environment-map",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]将环境映射应用为默认值",
+        "slug": "_4-将环境映射应用为默认值",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]render",
+        "slug": "_5-render",
+        "children": [
+          {
+            "level": 3,
+            "title": "Output encoding",
+            "slug": "output-encoding",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Textures encoding",
+            "slug": "textures-encoding",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "色调映射",
+            "slug": "色调映射",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[6]抗锯齿",
+        "slug": "_6-抗锯齿",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[7]Shadows",
+        "slug": "_7-shadows",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E6%8F%90%E5%8D%87%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js着色器材质",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]RawShaderMaterial",
+        "slug": "_1-rawshadermaterial",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[2]Properties",
+        "slug": "_2-properties",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[3]补充说明",
+        "slug": "_3-补充说明",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[4]内置函数",
+        "slug": "_4-内置函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]传递Attributes",
+        "slug": "_5-传递attributes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[6]传递Uniforms",
+        "slug": "_6-传递uniforms",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[7]纹理贴图",
+        "slug": "_7-纹理贴图",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[8]ShaderMaterial",
+        "slug": "_8-shadermaterial",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E7%9D%80%E8%89%B2%E5%99%A8%E6%9D%90%E8%B4%A8.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "three.js项目的代码组织结构",
+    "headers": [
+      {
+        "level": 2,
+        "title": "[1]常用工具类封装",
+        "slug": "_1-常用工具类封装",
+        "children": [
+          {
+            "level": 3,
+            "title": "EventEmitter",
+            "slug": "eventemitter",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "resize",
+            "slug": "resize",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Time",
+            "slug": "time",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[2]核心类封装",
+        "slug": "_2-核心类封装",
+        "children": [
+          {
+            "level": 3,
+            "title": "scene",
+            "slug": "scene",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "camera",
+            "slug": "camera",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "renderer",
+            "slug": "renderer",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[3]World",
+        "slug": "_3-world",
+        "children": [
+          {
+            "level": 3,
+            "title": "Environment",
+            "slug": "environment",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Resources",
+            "slug": "resources",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "fox",
+            "slug": "fox",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "[4]Debug",
+        "slug": "_4-debug",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "[5]销毁场景中所有的物体",
+        "slug": "_5-销毁场景中所有的物体",
+        "children": []
+      }
+    ],
+    "path": "/posts/three.js%E9%A1%B9%E7%9B%AE%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -3810,6 +4900,225 @@ export const searchIndex = [
       }
     ],
     "path": "/posts/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F%E3%80%81%E5%BB%BA%E7%AD%91%E8%80%85%E6%A8%A1%E5%BC%8F.html",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Post"
+  },
+  {
+    "title": "常见三维数据模型梳理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.三维数据模型",
+        "slug": "_1-三维数据模型",
+        "children": [
+          {
+            "level": 3,
+            "title": "[2]体素模型（Voxel Models）",
+            "slug": "_2-体素模型-voxel-models",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]参数化表面（Parametric Surfaces）",
+            "slug": "_3-参数化表面-parametric-surfaces",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]隐式表面（Implicit Surfaces）",
+            "slug": "_4-隐式表面-implicit-surfaces",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]点云（Point Clouds）",
+            "slug": "_5-点云-point-clouds",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.桌面端常见的三维模型数据格式",
+        "slug": "_2-桌面端常见的三维模型数据格式",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]OSGB",
+            "slug": "_1-osgb",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]OBJ",
+            "slug": "_2-obj",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]FBX",
+            "slug": "_3-fbx",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[4]STL",
+            "slug": "_4-stl",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[5]3DS",
+            "slug": "_5-3ds",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[6]DAE",
+            "slug": "_6-dae",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[7]PLY",
+            "slug": "_7-ply",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.Web端常见的三维模型数据格式",
+        "slug": "_3-web端常见的三维模型数据格式",
+        "children": [
+          {
+            "level": 3,
+            "title": "常见的Web渲染引擎支持的三维数据格式",
+            "slug": "常见的web渲染引擎支持的三维数据格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[1]glTF",
+            "slug": "_1-gltf",
+            "children": [
+              {
+                "level": 4,
+                "title": "glTF 1.0与glTF 2.0",
+                "slug": "gltf-1-0与gltf-2-0",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": ".gltf与.glb",
+                "slug": "gltf与-glb",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "注意事项",
+                "slug": "注意事项",
+                "children": []
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "title": "[2]高效三维数据格式：3D Tiles",
+            "slug": "_2-高效三维数据格式-3d-tiles",
+            "children": [
+              {
+                "level": 4,
+                "title": "3D Tiles定义",
+                "slug": "_3d-tiles定义",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "3D Tiles数据结构",
+                "slug": "_3d-tiles数据结构",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "3D Tiles的生成方法",
+                "slug": "_3d-tiles的生成方法",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "坐标系统",
+                "slug": "坐标系统",
+                "children": []
+              },
+              {
+                "level": 4,
+                "title": "study source link：",
+                "slug": "study-source-link",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.体积渲染",
+        "slug": "_4-体积渲染",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.测绘领域中的4D产品",
+        "slug": "_5-测绘领域中的4d产品",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "",
+        "slug": "",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6.倾斜摄影三维建模软件",
+        "slug": "_6-倾斜摄影三维建模软件",
+        "children": [
+          {
+            "level": 3,
+            "title": "[1]ContextCapture（Smart3D）",
+            "slug": "_1-contextcapture-smart3d",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[2]Pix4Dmapper",
+            "slug": "_2-pix4dmapper",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "[3]PhotoScanz",
+            "slug": "_3-photoscanz",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "",
+            "slug": "-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7.常见的三维建模软件",
+        "slug": "_7-常见的三维建模软件",
+        "children": []
+      }
+    ],
+    "path": "/posts/%E5%B8%B8%E8%A7%81%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E6%A2%B3%E7%90%86.html",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Post"
@@ -6161,6 +7470,14 @@ export const searchIndex = [
   {
     "title": "Tags",
     "headers": [],
+    "path": "/tags/WebGL/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
     "path": "/tags/PostgreSQL/",
     "pathLocale": "/",
     "extraFields": [],
@@ -6193,7 +7510,7 @@ export const searchIndex = [
   {
     "title": "Tags",
     "headers": [],
-    "path": "/tags/ts/",
+    "path": "/tags/three.js/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -6201,7 +7518,7 @@ export const searchIndex = [
   {
     "title": "Tags",
     "headers": [],
-    "path": "/tags/WebGL/",
+    "path": "/tags/ts/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -6250,6 +7567,14 @@ export const searchIndex = [
     "title": "Tags",
     "headers": [],
     "path": "/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "Tags"
+  },
+  {
+    "title": "Tags",
+    "headers": [],
+    "path": "/tags/3D/",
     "pathLocale": "/",
     "extraFields": [],
     "layout": "Tags"
@@ -6389,18 +7714,21 @@ export const searchIndex = [
     "pathLocale": "/",
     "extraFields": [],
     "layout": "HomePage"
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/page/8/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "HomePage"
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/page/9/",
+    "pathLocale": "/",
+    "extraFields": [],
+    "layout": "HomePage"
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

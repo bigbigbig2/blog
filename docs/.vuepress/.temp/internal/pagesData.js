@@ -9,10 +9,16 @@ export const pagesData = {
   "v-364cdc28": () => import(/* webpackChunkName: "v-364cdc28" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/Basic radiometry (辐射度量学).html.js").then(({ data }) => data),
   // path: /posts/cesium%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AC%E6%8D%A2.html
   "v-75417d86": () => import(/* webpackChunkName: "v-75417d86" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/cesium中的坐标系统与转换.html.js").then(({ data }) => data),
+  // path: /posts/deckglmapbox.html
+  "v-44fdc8e7": () => import(/* webpackChunkName: "v-44fdc8e7" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/deckglmapbox.html.js").then(({ data }) => data),
   // path: /posts/DeckGL%E4%B8%8EMapboxGL%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88.html
   "v-6afa7d55": () => import(/* webpackChunkName: "v-6afa7d55" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/DeckGL与MapboxGL整合方案.html.js").then(({ data }) => data),
+  // path: /posts/deckgl%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E5%B1%82.html
+  "v-73b4950d": () => import(/* webpackChunkName: "v-73b4950d" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/deckgl自定义图层.html.js").then(({ data }) => data),
   // path: /posts/Mapbox%20Terrain-DEM%E5%9C%B0%E5%BD%A2%E5%88%87%E7%89%87%E5%8E%9F%E7%90%86%E6%B5%85%E6%9E%90.html
   "v-56a232ce": () => import(/* webpackChunkName: "v-56a232ce" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/Mapbox Terrain-DEM地形切片原理浅析.html.js").then(({ data }) => data),
+  // path: /posts/Phong%E5%8F%8D%E5%B0%84%E6%A8%A1%E5%9E%8B.html
+  "v-114242ac": () => import(/* webpackChunkName: "v-114242ac" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/Phong反射模型.html.js").then(({ data }) => data),
   // path: /posts/plsql.html
   "v-54caea7c": () => import(/* webpackChunkName: "v-54caea7c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/plsql.html.js").then(({ data }) => data),
   // path: /posts/PostGIS%E9%A2%86%E5%9F%9F%E5%88%86%E6%9E%90.html
@@ -29,6 +35,24 @@ export const pagesData = {
   "v-08874067": () => import(/* webpackChunkName: "v-08874067" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/script-steup.html.js").then(({ data }) => data),
   // path: /posts/shading.html
   "v-58f2b2e4": () => import(/* webpackChunkName: "v-58f2b2e4" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/shading.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%A8%A1%E5%9E%8B%E5%8F%8A%E6%A8%A1%E5%9E%8B%E5%8A%A8%E7%94%BB.html
+  "v-309e6040": () => import(/* webpackChunkName: "v-309e6040" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js中加载模型及模型动画.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E4%BD%BF%E7%94%A8%E7%9D%80%E8%89%B2%E5%99%A8%E7%BB%98%E5%88%B6%E5%9B%BE%E6%A1%88.html
+  "v-57b46fb1": () => import(/* webpackChunkName: "v-57b46fb1" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js使用着色器绘制图案.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E4%BF%AE%E6%94%B9%E5%86%85%E7%BD%AE%E6%9D%90%E8%B4%A8%E7%9D%80%E8%89%B2%E5%99%A8%E4%BB%A3%E7%A0%81.html
+  "v-38e80041": () => import(/* webpackChunkName: "v-38e80041" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js修改内置材质着色器代码.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E5%85%89%E7%BA%BF%E6%8A%95%E5%B0%84%E5%99%A8.html
+  "v-84ea0590": () => import(/* webpackChunkName: "v-84ea0590" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js光线投射器.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E5%9F%BA%E4%BA%8E%E6%BB%9A%E5%8A%A8%E7%9A%84%E5%8A%A8%E7%94%BB.html
+  "v-43e2713a": () => import(/* webpackChunkName: "v-43e2713a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js基于滚动的动画.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9B%B8%E5%85%B3.html
+  "v-bb4d03f4": () => import(/* webpackChunkName: "v-bb4d03f4" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js性能优化相关.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E6%8F%90%E5%8D%87%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.html
+  "v-196f5a56": () => import(/* webpackChunkName: "v-196f5a56" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js提升渲染效果.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E7%9D%80%E8%89%B2%E5%99%A8%E6%9D%90%E8%B4%A8.html
+  "v-20a2b47a": () => import(/* webpackChunkName: "v-20a2b47a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js着色器材质.html.js").then(({ data }) => data),
+  // path: /posts/three.js%E9%A1%B9%E7%9B%AE%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84.html
+  "v-1aefc4fb": () => import(/* webpackChunkName: "v-1aefc4fb" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/three.js项目的代码组织结构.html.js").then(({ data }) => data),
   // path: /posts/transformation.html
   "v-9beafb4a": () => import(/* webpackChunkName: "v-9beafb4a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/transformation.html.js").then(({ data }) => data),
   // path: /post/2021/12/23/ts%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%E6%B7%B1%E5%85%A5/
@@ -63,6 +87,8 @@ export const pagesData = {
   "v-1f001066": () => import(/* webpackChunkName: "v-1f001066" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/地图学数学基础.html.js").then(({ data }) => data),
   // path: /posts/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F%E3%80%81%E5%BB%BA%E7%AD%91%E8%80%85%E6%A8%A1%E5%BC%8F.html
   "v-70856d82": () => import(/* webpackChunkName: "v-70856d82" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/工厂模式、建筑者模式.html.js").then(({ data }) => data),
+  // path: /posts/%E5%B8%B8%E8%A7%81%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E6%A2%B3%E7%90%86.html
+  "v-207f447c": () => import(/* webpackChunkName: "v-207f447c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/常见三维数据模型梳理.html.js").then(({ data }) => data),
   // path: /posts/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR.html
   "v-02c3439c": () => import(/* webpackChunkName: "v-02c3439c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/posts/服务端渲染SSR.html.js").then(({ data }) => data),
   // path: /posts/%E6%9D%90%E8%B4%A8%E4%B8%8E%E8%A1%A8%E9%9D%A2.html
@@ -111,6 +137,8 @@ export const pagesData = {
   "v-5d777424": () => import(/* webpackChunkName: "v-5d777424" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/deckgl/index.html.js").then(({ data }) => data),
   // path: /tags/%E6%95%B0%E6%8D%AE%E5%88%87%E7%89%87/
   "v-a1720f2a": () => import(/* webpackChunkName: "v-a1720f2a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/数据切片/index.html.js").then(({ data }) => data),
+  // path: /tags/WebGL/
+  "v-47608b5a": () => import(/* webpackChunkName: "v-47608b5a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/WebGL/index.html.js").then(({ data }) => data),
   // path: /tags/PostgreSQL/
   "v-1027b75e": () => import(/* webpackChunkName: "v-1027b75e" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/PostgreSQL/index.html.js").then(({ data }) => data),
   // path: /tags/PL/pgSQL/
@@ -119,10 +147,10 @@ export const pagesData = {
   "v-609b323b": () => import(/* webpackChunkName: "v-609b323b" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/PostGIS/index.html.js").then(({ data }) => data),
   // path: /tags/vue/
   "v-cd14fe74": () => import(/* webpackChunkName: "v-cd14fe74" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/vue/index.html.js").then(({ data }) => data),
+  // path: /tags/three.js/
+  "v-685e6479": () => import(/* webpackChunkName: "v-685e6479" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/three.js/index.html.js").then(({ data }) => data),
   // path: /tags/ts/
   "v-abc6eeda": () => import(/* webpackChunkName: "v-abc6eeda" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/ts/index.html.js").then(({ data }) => data),
-  // path: /tags/WebGL/
-  "v-47608b5a": () => import(/* webpackChunkName: "v-47608b5a" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/WebGL/index.html.js").then(({ data }) => data),
   // path: /tags/vim/
   "v-cd15569c": () => import(/* webpackChunkName: "v-cd15569c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/vim/index.html.js").then(({ data }) => data),
   // path: /tags/shader/
@@ -135,6 +163,8 @@ export const pagesData = {
   "v-6cf5868e": () => import(/* webpackChunkName: "v-6cf5868e" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/可视化/index.html.js").then(({ data }) => data),
   // path: /tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/
   "v-63f73328": () => import(/* webpackChunkName: "v-63f73328" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/数据结构与算法/index.html.js").then(({ data }) => data),
+  // path: /tags/3D/
+  "v-abc8e23e": () => import(/* webpackChunkName: "v-abc8e23e" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/3D/index.html.js").then(({ data }) => data),
   // path: /tags/SSR/
   "v-cd35d44c": () => import(/* webpackChunkName: "v-cd35d44c" */"F:/ooco-blog/docs/.vuepress/.temp/pages/tags/SSR/index.html.js").then(({ data }) => data),
   // path: /tags/%E6%9D%90%E8%B4%A8/
@@ -169,4 +199,8 @@ export const pagesData = {
   "v-3a1f8920": () => import(/* webpackChunkName: "v-3a1f8920" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/6/index.html.js").then(({ data }) => data),
   // path: /page/7/
   "v-3a1f893f": () => import(/* webpackChunkName: "v-3a1f893f" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/7/index.html.js").then(({ data }) => data),
+  // path: /page/8/
+  "v-3a1f895e": () => import(/* webpackChunkName: "v-3a1f895e" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/8/index.html.js").then(({ data }) => data),
+  // path: /page/9/
+  "v-3a1f897d": () => import(/* webpackChunkName: "v-3a1f897d" */"F:/ooco-blog/docs/.vuepress/.temp/pages/page/9/index.html.js").then(({ data }) => data),
 }
